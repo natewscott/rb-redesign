@@ -1,0 +1,127 @@
+
+form {
+  font-family: $sans-thin;
+}
+form fieldset {
+  border: none;
+}
+form legend {
+  @include responsive-typography(18px, 28px, false);
+}
+form p {
+  margin-bottom: 10px;
+}
+form button {
+  background-color: lighten($primary,30%);
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0.4rem;
+
+  &:hover {
+    background-color: lighten($primary, 10%);
+  }
+}
+// form button[disabled] {
+//   cursor: auto;
+//   background-color: #777777;
+//   opacity: 0.25;
+// }
+form input {
+  display: block;
+  padding: .5rem 1rem;
+  margin: 0.4rem 0 1.6rem 0;
+  @include responsive-typography(18px, 24px, false);
+  width: 100%;
+  outline: none;
+  color: #111111;
+  border-radius: 0.2rem;
+  -webkit-transition: border 0.5s ease 0.125s;
+  transition: border 0.5s ease 0.125s;
+}
+form input[type=checkbox] {
+  width: auto;
+  display: inline-block;
+  border: none;
+  margin-top: 1.4rem;
+}
+form input::-webkit-input-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:-moz-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input::-moz-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:-ms-input-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:focus::-webkit-input-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:focus:-moz-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:focus::-moz-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:focus:-ms-input-placeholder {
+  font-family: $sans-thin;
+  color: #CCCCCC;
+  font-weight: 300;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.25s ease 0.125s;
+  transition: opacity 0.25s ease 0.125s;
+}
+form input:required:focus:invalid {
+  border: 1px solid #FF4136;
+}
+form input:required:invalid {
+  border: 1px solid #F5F5F5;
+}
+form input:required:valid {
+  border: 1px solid #2ECC40;
+}

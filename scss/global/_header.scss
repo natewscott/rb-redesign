@@ -1,0 +1,260 @@
+header {
+  background: rgba(white, 0.45);
+  @include full;
+  position:relative;
+  z-index: 100;
+  // background:white;
+  @include display-flex;
+  @include justify-content(space-between);
+  @include flex-direction(column);
+  // @include align-items(center);
+
+  @include breakpoint($medium) {
+    @include align-items(center);
+  }
+
+  
+  span {
+    margin-left: -9999px;
+  }
+  img {
+    width:15em;
+    @include breakpoint($medium) {
+      width: 25em;
+    }
+    padding:2% 0 0 2%;
+  }
+}
+
+.landing-page {
+    background-color: darken($primary,10%);
+  }
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  overflow-x: hidden;
+  overflow-y: auto;
+  float: right;
+}
+
+.nav ul {
+  display: block;
+  position: relative;
+  zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background:$primary;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:active,
+.nav a:visited {
+  font-family: $sans-serif;
+  font-weight: $sans-thin;
+  display: block;
+  position: relative;
+}
+
+
+.nav-button,
+.nav-close {
+  position: absolute;
+  top: 0;
+  width: 2.4rem;
+  height: 4.4rem;
+  overflow: hidden;
+  z-index: 902;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 4.4rem;
+  color: $primary;
+}
+
+.nav-button:before,
+.nav-close:before {
+  display: block;
+  text-align: center;
+}
+
+.nav-button {
+  display: block;
+  right: 1rem;
+  font-size: 1.7rem;
+}
+
+.nav-close {
+  display: none;
+  right: 4rem;
+  font-size: 1.9rem;
+}
+
+.nav {
+  padding-top: 4.4rem;
+  line-height: 4.4rem;
+  color: $primary;
+}
+
+
+.nav li {
+  border-top: .1px solid lighten($primary,100%);
+  cursor: pointer;
+}
+
+.nav li:hover > a,
+.nav li.nav-active > a {
+  color: lighten($primary,100%);
+  background: darken($primary,10%);
+  @include breakpoint($medium) {
+    color: $primary;
+    background:none;
+  }
+}
+
+.nav .nav-submenu > ul {
+  margin-left: 10px;
+}
+
+.nav .nav-submenu > a {
+  padding-right: 30px !important;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:active,
+.nav a:visited {
+  padding: 0 15px 1px;
+  color: white;
+  text-decoration: none;
+
+  @include breakpoint($medium) {
+    color: $primary;
+  }
+
+}
+
+
+.nav-submenu {
+  ul li {
+    a {
+      color: white !important;
+    }
+  }
+}
+
+.fa-angle-down:before {
+  padding-left: 5px;
+}
+
+
+@media only screen and (min-width: 960px) {
+
+.nav {
+  display: block;
+  position: relative;
+  bottom: auto;
+  overflow: visible;
+}
+
+.nav li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav > ul > li {
+  display: inline-block;
+}
+
+.nav ul {
+  background:none;
+  display: block;
+}
+
+.nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 901;
+}
+
+.nav ul ul ul {
+  top: 5px;
+  left: 95%;
+  z-index: 902;
+}
+
+.nav ul ul ul ul {
+  z-index: 903;
+}
+
+.nav ul ul ul ul ul {
+  z-index: 904;
+}
+
+.nav ul ul li.nav-left > ul {
+  left: auto;
+  right: 95%;
+}
+
+.nav-no-js .nav li:hover > ul {
+  display: block;
+}
+
+
+.nav-button {
+  display: none;
+}
+
+.nav {
+  padding: 0 !important;
+}
+
+.nav > ul > li {
+  border-top: none;
+}
+
+.nav li > ul {
+  background:darken($primary,20%);
+}
+
+.nav ul ul ul {
+  border-radius: 0 6px 6px 6px;
+}
+
+.nav ul ul ul li:first-child {
+  border-top: none;
+}
+
+.nav .nav-left > ul {
+  border-radius: 6px 0 6px 6px;
+}
+
+.nav .nav-submenu li {
+  min-width: 110px;
+}
+
+.nav .nav-submenu > ul {
+  margin: 0;
+}
+
+}
+
+@media only screen and (max-width: 959px) {
+
+.nav-no-js .nav-button:hover + .nav,
+.nav-no-js .nav:hover,
+.nav-no-js .nav-button:hover + .nav + .nav-close,
+.nav-no-js .nav:hover + .nav-close {
+  display: block;
+}
+
+}
+

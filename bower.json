@@ -1,0 +1,16 @@
+{
+  "name": "susy-template",
+  "version": "0.0.0",
+  "homepage": "https://github.com/natewscott/susy-template",
+  "authors": [
+    "Nate Scott <nate@natescottdesign.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

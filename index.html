@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="nav-no-js">
+    include "head.html"
+    <body class="home">
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <div class="page-wrap">
+            include "header.html"
+            <section class="main-content">
+                include "slide.html"
+                include "home-products.html"
+                include "clients.html"
+                <!-- include "skills.html" -->
+                <!-- include "contact.html" -->
+            </section>
+            
+        </div>
+        include "footer.html"
+        include "foot.html"
+        <script>
+        document.addEventListener('DOMContentLoaded', function(){
+        Typed.new("#typed", {
+        stringsElement: document.getElementById('typed-strings'),
+        typeSpeed: 250,
+        backDelay: 500,
+        loop: true,
+        contentType: 'html', // or text
+        // defaults to null for infinite loop
+        loopCount: null,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+        });
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+        resetElement.addEventListener('click', function() {
+        document.getElementById('typed')._typed.reset();
+        });
+        }
+        });
+        function newTyped(){ /* A new typed object */ }
+        function foo(){ console.log("Callback"); }
+        </script>
+    </body>
+</html>

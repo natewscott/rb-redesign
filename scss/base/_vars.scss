@@ -1,0 +1,37 @@
+// Colors
+
+$primary: #0033a0;
+$secondary: #FF530D;
+$tertiary: #AD2B11;
+$accent: #4B6D0B;
+$accent-2: #9FEC0C;
+$compliment: black;
+$link: $tertiary;
+// $hover: $tertiary;
+
+
+// // Typefaces
+
+$sans-serif: 'Lato', sans-serif;
+$sans-thin: 'Lato 100', sans-serif;
+$sans-regular: 'Lato 400', sans-serif;
+$sans-bold: 'Lato 600', sans-serif;
+
+
+$serif: 'Josefin Slab', serif;
+$serif-thin: 'Josefin Slab 300', serif;
+$serif-regular: 'Josefin Slab 400', serif;
+$serif-bold: 'Josefin Slab 600', serif;
+
+$li-padding: 5px;
+
+
+$animation-delay: .7s;
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+

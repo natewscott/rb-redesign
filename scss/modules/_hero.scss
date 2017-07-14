@@ -1,0 +1,20 @@
+#small-diameter {
+	background-image: url("../img/hero/small diameter training-10.jpg");
+	background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+#fusion-training {
+    background-image: url("../img/hero/fusion-training.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+	   background-image: url("../img/hero/fusion-training.jpg");
+    }
+	background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
