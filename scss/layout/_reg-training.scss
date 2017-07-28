@@ -4,7 +4,7 @@
 			padding: 10% 0 0 5%;
 		}
 		h1,h2 {
-			font-family: $sans-regular;
+			font-family: $sans-serif;
 			font-weight: 100;
 			// color: white;
 			text-transform: uppercase;
@@ -60,7 +60,7 @@
      } 
     }
     h1  {
-      font-family: $sans-regular;
+      font-family: $sans-serif;
       text-align: center;
       @include responsive-typography(21px, 28px, false);
       line-height: 1.25;

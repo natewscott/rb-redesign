@@ -1,27 +1,24 @@
 // Colors
-
-$primary: #0033a0;
-$secondary: #FF530D;
-$tertiary: #AD2B11;
+$primary: rgb(0,51,160);
+$secondary: #082053;
+$action: #AD2B11;
+$black: #111820;
+$lb: rgb(34,34,34);
 $accent: #4B6D0B;
-$accent-2: #9FEC0C;
-$compliment: black;
-$link: $tertiary;
-// $hover: $tertiary;
-
+$lg: #9FEC0C;
+$link: $action;
+$hover: lighten($action,10);
 
 // // Typefaces
 
-$sans-serif: 'Lato', sans-serif;
-$sans-thin: 'Lato 100', sans-serif;
-$sans-regular: 'Lato 400', sans-serif;
-$sans-bold: 'Lato 600', sans-serif;
+$sans-serif: 'Open Sans', sans-serif;
+$sans-thin: 'Open Sans 300', sans-serif;
+$sans-bold: 'Open Sans 600', sans-serif;
 
 
-$serif: 'Josefin Slab', serif;
-$serif-thin: 'Josefin Slab 300', serif;
-$serif-regular: 'Josefin Slab 400', serif;
-$serif-bold: 'Josefin Slab 600', serif;
+$serif: 'Roboto slab', serif;
+$serif-regular: 'Roboto slab 400', serif;
+$serif-bold: 'Roboto slab 700', serif;
 
 $li-padding: 5px;
 
@@ -35,3 +32,15 @@ $animation-delay: .7s;
           border-radius: $radius;
 }
 
+/* BREAKPOINT MIXINS */
+@mixin bp-small {
+  @media(min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin bp-normal {
+  @media(min-width: 960px) {
+    @content;
+  }
+}

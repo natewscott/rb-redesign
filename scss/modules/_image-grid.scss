@@ -1,0 +1,73 @@
+.history-images {
+	@include full;
+}
+.grid {
+	// max-width:1380px;
+	// margin:0 auto;
+	@include display-flex;
+	@include flex-flow(wrap);
+
+	.grid-item {
+		cursor: pointer;
+		@include display-flex;
+		@include flex(1 0 100%);
+		-webkit-filter: sepia(75%);
+	  	filter: sepia(75%);
+	  	-webkit-transition: .3s ease-in-out;
+	  	transition: .3s ease-in-out;
+
+	  	&:hover,focus {
+	  		-webkit-filter: sepia(0);
+	  		filter: sepia(0);
+	  	}
+	  	&:nth-child(1) {
+	  		background: url("../img/history/rb.jpg")no-repeat center center;
+	  		background-size: cover;
+	  	}
+	  	&:nth-child(2) {
+	  		background: url("../img/history/warehouse.jpg")no-repeat center center;
+	  		background-size: cover;
+	  	}
+	  	&:nth-child(3) {
+	  		background: url("../img/history/office.jpg")no-repeat center center;
+	  		background-size: cover;
+	  	}
+	  	&:nth-child(4) {
+	  		background: url("../img/history/train-valves.jpg")no-repeat center center;
+	  		background-size: cover;
+	  	}
+	  	&:before {
+	  		content: "";
+	  		padding-top: 100%;
+	  		display: inline-block;
+	  	}
+	  	.grid-content {
+	  		@include display-flex;
+	  		@include align-items(center);
+	  		@include justify-content(center);
+	  		position: absolute;
+	  		bottom: 0;
+	  		top: 0;
+	  		left: 0;
+	  		right: 0;
+	  		padding: 25px;
+	  	}
+	  	  @include bp-small {
+         //Give item 1/2 of viewport width on smaller devices
+         flex: 1 0 50%;
+         
+         &:nth-child(even) {
+            border-left: none;
+         }
+      }
+      
+      @include bp-normal {
+         //Give item 1/4 of viewport width on bigger devices
+         flex: 1 0 25%;
+         
+         &:nth-child(4n-1) {
+            border-left: none;
+         }
+      }
+	}
+}

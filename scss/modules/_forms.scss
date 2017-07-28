@@ -1,6 +1,6 @@
 
 form {
-  font-family: $sans-thin;
+  // font-family: $sans-thin;
 }
 form fieldset {
   border: none;
@@ -53,65 +53,65 @@ form input[type=checkbox] {
   margin-top: 1.4rem;
 }
 form input::-webkit-input-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:-moz-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input::-moz-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:-ms-input-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:focus::-webkit-input-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:focus:-moz-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:focus::-moz-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
 }
 form input:focus:-ms-input-placeholder {
-  font-family: $sans-thin;
+  font-family: $sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: $sans-thin;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;

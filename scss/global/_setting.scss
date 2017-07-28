@@ -23,13 +23,10 @@ body, html {
    a {
     color: $link;
     text-decoration: none;
-    // &:hover {
-    //   color: $hover;
-    // }
+
   }
 
 .page-wrap {
-   // @include container;
    @include full;
 }
 
@@ -37,15 +34,17 @@ body, html {
   @include full;
 }
 
-// .fusion-training {
-//   max-width: 1280px;
-//   margin:0 auto;
-//   padding: 0 5% 0 5%;
-//     // @include breakpoint($medium) {
-//     //   padding: 0 20% 0 20%;
-//     // }
+.content {
+  @include full
+}
 
-// }
+#lead-in {
+  max-width: 1280px;
+  margin:0 auto;
+}
+.lead-in-text {
+  margin: 5%;
+}
 
 
 

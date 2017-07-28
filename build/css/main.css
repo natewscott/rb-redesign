@@ -222,6 +222,7 @@ td, th {
   padding: 0;
 }
 
+/* BREAKPOINT MIXINS */
 /* line 62, ../../scss/base/_type.scss */
 body {
   font-size: 18px;
@@ -249,8 +250,8 @@ body {
 
 /* line 67, ../../scss/base/_type.scss */
 h1, h2, h3, h4 {
-  font-family: "Josefin Slab", serif;
-  font-weight: "Josefin Slab 400", serif;
+  font-family: "Roboto slab", serif;
+  font-weight: 400;
 }
 
 /* line 72, ../../scss/base/_type.scss */
@@ -306,6 +307,7 @@ h2 {
   font-size: 20px;
   font-size: 1.17647rem;
   line-height: 1.4;
+  font-weight: 300;
   margin: 0 0 24px;
 }
 @media (min-width: 360px) {
@@ -323,7 +325,7 @@ h2 {
   }
 }
 
-/* line 88, ../../scss/base/_type.scss */
+/* line 89, ../../scss/base/_type.scss */
 h3 {
   font-size: 18px;
   font-size: 1.05882rem;
@@ -331,7 +333,7 @@ h3 {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 88, ../../scss/base/_type.scss */
+  /* line 89, ../../scss/base/_type.scss */
   h3 {
     font-size: 23px;
     font-size: calc(1.39082vw + 18px - 0.01391 * 360px);
@@ -340,7 +342,7 @@ h3 {
   }
 }
 @media (min-width: 1080px) {
-  /* line 88, ../../scss/base/_type.scss */
+  /* line 89, ../../scss/base/_type.scss */
   h3 {
     font-size: 28px;
     font-size: 1.64706rem;
@@ -348,7 +350,7 @@ h3 {
   }
 }
 
-/* line 93, ../../scss/base/_type.scss */
+/* line 94, ../../scss/base/_type.scss */
 h4 {
   font-size: 19px;
   font-size: 1.11765rem;
@@ -356,7 +358,7 @@ h4 {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 93, ../../scss/base/_type.scss */
+  /* line 94, ../../scss/base/_type.scss */
   h4 {
     font-size: 21.5px;
     font-size: calc(0.69541vw + 19px - 0.00695 * 360px);
@@ -365,7 +367,7 @@ h4 {
   }
 }
 @media (min-width: 1080px) {
-  /* line 93, ../../scss/base/_type.scss */
+  /* line 94, ../../scss/base/_type.scss */
   h4 {
     font-size: 24px;
     font-size: 1.41176rem;
@@ -373,13 +375,13 @@ h4 {
   }
 }
 
-/* line 98, ../../scss/base/_type.scss */
+/* line 99, ../../scss/base/_type.scss */
 p {
   font-weight: 300;
   margin-bottom: 24px;
 }
 
-/* line 104, ../../scss/base/_type.scss */
+/* line 105, ../../scss/base/_type.scss */
 pre {
   text-align: left;
   margin: 24px 0 48px;
@@ -389,7 +391,7 @@ pre {
   display: inline-block;
 }
 
-/* line 113, ../../scss/base/_type.scss */
+/* line 114, ../../scss/base/_type.scss */
 code {
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -417,7 +419,7 @@ body, html {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: #eee;
   box-sizing: border-box;
@@ -447,7 +449,7 @@ a {
   text-decoration: none;
 }
 
-/* line 31, ../../scss/global/_setting.scss */
+/* line 29, ../../scss/global/_setting.scss */
 .page-wrap {
   clear: both;
   width: 100%;
@@ -456,13 +458,33 @@ a {
   margin-right: 0;
 }
 
-/* line 36, ../../scss/global/_setting.scss */
+/* line 33, ../../scss/global/_setting.scss */
 .main-content {
   clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
+}
+
+/* line 37, ../../scss/global/_setting.scss */
+.content {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 41, ../../scss/global/_setting.scss */
+#lead-in {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* line 45, ../../scss/global/_setting.scss */
+.lead-in-text {
+  margin: 5%;
 }
 
 /* line 1, ../../scss/global/_header.scss */
@@ -540,8 +562,8 @@ header img {
 .nav a:hover,
 .nav a:active,
 .nav a:visited {
-  font-family: "Lato", sans-serif;
-  font-weight: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: "Open Sans 300", sans-serif;
   display: block;
   position: relative;
 }
@@ -1642,7 +1664,7 @@ fieldset .legend {
 /* line 1, ../../scss/modules/_accordion.scss */
 .accordion {
   margin: auto;
-  max-width: 980px;
+  max-width: 1280px;
 }
 
 /* line 5, ../../scss/modules/_accordion.scss */
@@ -1928,130 +1950,760 @@ h1.card-title {
   margin-bottom: 1.25rem;
 }
 
-/* Card Images */
-/* line 2, ../../scss/modules/_card-images.scss */
+/* Card Images Home Page */
+/* line 3, ../../scss/modules/_card-images.scss */
 .card-image-waterworks {
   background-image: url("../img/product/valves.jpg");
 }
 
-/* line 5, ../../scss/modules/_card-images.scss */
+/* line 6, ../../scss/modules/_card-images.scss */
 .card-image-fire-protection {
   background-image: url("../img/product/fire-protection.jpg");
 }
 
-/* line 8, ../../scss/modules/_card-images.scss */
+/* line 9, ../../scss/modules/_card-images.scss */
 .card-image-fusion {
   background-image: url("../img/product/rentals.jpg");
 }
 
-/* line 11, ../../scss/modules/_card-images.scss */
+/* End Home */
+/* Products Page Images */
+/* line 16, ../../scss/modules/_card-images.scss */
 .card-image-backflow {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 14, ../../scss/modules/_card-images.scss */
+/* line 19, ../../scss/modules/_card-images.scss */
 .card-image-boxes {
   background-image: url("../img/product/lid-water.jpg");
 }
 
-/* line 17, ../../scss/modules/_card-images.scss */
+/* line 22, ../../scss/modules/_card-images.scss */
 .card-image-couplings {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 20, ../../scss/modules/_card-images.scss */
+/* line 25, ../../scss/modules/_card-images.scss */
 .card-image-custom-fab {
   background-image: url("../img/product/custom-fab.jpg");
 }
 
-/* line 23, ../../scss/modules/_card-images.scss */
+/* line 28, ../../scss/modules/_card-images.scss */
 .card-image-drains {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 26, ../../scss/modules/_card-images.scss */
+/* line 31, ../../scss/modules/_card-images.scss */
 .card-image-fire-protection {
   background-image: url("../img/product/fire-protection.jpg");
 }
 
-/* line 29, ../../scss/modules/_card-images.scss */
+/* line 34, ../../scss/modules/_card-images.scss */
 .card-image-fittings {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 32, ../../scss/modules/_card-images.scss */
+/* line 37, ../../scss/modules/_card-images.scss */
 .card-image-guages {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 35, ../../scss/modules/_card-images.scss */
+/* line 40, ../../scss/modules/_card-images.scss */
 .card-image-hydrants {
   background-image: url("../img/product/hydrants.jpg");
 }
 
-/* line 38, ../../scss/modules/_card-images.scss */
+/* line 43, ../../scss/modules/_card-images.scss */
 .card-image-manholes {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 41, ../../scss/modules/_card-images.scss */
+/* line 46, ../../scss/modules/_card-images.scss */
 .card-image-paints {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 44, ../../scss/modules/_card-images.scss */
+/* line 49, ../../scss/modules/_card-images.scss */
 .card-image-pipe {
   background-image: url("../img/product/blue-pipe.jpg");
 }
 
-/* line 47, ../../scss/modules/_card-images.scss */
+/* line 52, ../../scss/modules/_card-images.scss */
 .card-image-pumps {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 50, ../../scss/modules/_card-images.scss */
+/* line 55, ../../scss/modules/_card-images.scss */
 .card-image-rentals {
   background-image: url("../img/product/rentals.jpg");
 }
 
-/* line 53, ../../scss/modules/_card-images.scss */
+/* line 58, ../../scss/modules/_card-images.scss */
 .card-image-service-brass {
   background-image: url("../img/product/service-saddle.jpg");
 }
 
-/* line 56, ../../scss/modules/_card-images.scss */
+/* line 61, ../../scss/modules/_card-images.scss */
 .card-image-valves {
   background-image: url("../img/product/valves.jpg");
 }
 
-/* line 59, ../../scss/modules/_card-images.scss */
+/* line 64, ../../scss/modules/_card-images.scss */
 .card-image-meters {
   background-image: url("../img/product/backflow.jpg");
 }
 
-/* line 62, ../../scss/modules/_card-images.scss */
+/* line 1, ../../scss/modules/_image-grid.scss */
+.history-images {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 4, ../../scss/modules/_image-grid.scss */
+.grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+}
+/* line 10, ../../scss/modules/_image-grid.scss */
+.grid .grid-item {
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 1 0 100%;
+  flex: 1 0 100%;
+  -webkit-filter: sepia(75%);
+  filter: sepia(75%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+/* line 19, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:hover, .grid .grid-item focus {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+/* line 23, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:nth-child(1) {
+  background: url("../img/history/rb.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 27, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:nth-child(2) {
+  background: url("../img/history/warehouse.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 31, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:nth-child(3) {
+  background: url("../img/history/office.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 35, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:nth-child(4) {
+  background: url("../img/history/train-valves.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 39, ../../scss/modules/_image-grid.scss */
+.grid .grid-item:before {
+  content: "";
+  padding-top: 100%;
+  display: inline-block;
+}
+/* line 44, ../../scss/modules/_image-grid.scss */
+.grid .grid-item .grid-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+}
+@media (min-width: 480px) {
+  /* line 10, ../../scss/modules/_image-grid.scss */
+  .grid .grid-item {
+    flex: 1 0 50%;
+  }
+  /* line 59, ../../scss/modules/_image-grid.scss */
+  .grid .grid-item:nth-child(even) {
+    border-left: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 10, ../../scss/modules/_image-grid.scss */
+  .grid .grid-item {
+    flex: 1 0 25%;
+  }
+  /* line 68, ../../scss/modules/_image-grid.scss */
+  .grid .grid-item:nth-child(4n-1) {
+    border-left: none;
+  }
+}
+
+/* line 1, ../../scss/modules/_training-card-images.scss */
 .card-image-small-diameter {
   background-image: url("../img/training/small diameter training-9.jpg");
 }
 
-/* line 65, ../../scss/modules/_card-images.scss */
+/* line 4, ../../scss/modules/_training-card-images.scss */
 .card-image-medium-diameter {
   background-image: url("../img/training/Irvin.jpg");
 }
 
-/* line 68, ../../scss/modules/_card-images.scss */
+/* line 7, ../../scss/modules/_training-card-images.scss */
 .card-image-large-diameter {
   background-image: url("../img/training/large-diameter.jpg");
 }
 
-/* line 71, ../../scss/modules/_card-images.scss */
+/* line 10, ../../scss/modules/_training-card-images.scss */
 .card-image-fusion-inspection {
   background-image: url("../img/training/inspection.jpg");
 }
 
-/* line 2, ../../scss/modules/_forms.scss */
-form {
-  font-family: "Lato 100", sans-serif;
+/* Bakersfield */
+/* line 2, ../../scss/modules/_staff-card-images.scss */
+.card-image-kevin-jr {
+  background-image: url("../img/staff/kevin-jr.jpg");
+}
+
+/* line 5, ../../scss/modules/_staff-card-images.scss */
+.card-image-richard {
+  background-image: url("../img/staff/richard.jpg");
+}
+
+/* line 8, ../../scss/modules/_staff-card-images.scss */
+.card-image-kenny {
+  background-image: url("../img/staff/kenny-despot.jpg");
+}
+
+/* line 11, ../../scss/modules/_staff-card-images.scss */
+.card-image-howard {
+  background-image: url("../img/staff/howard.PNG");
+}
+
+/* line 14, ../../scss/modules/_staff-card-images.scss */
+.card-image-tony-r {
+  background-image: url("../img/staff/tony-rodriguez.jpg");
+}
+
+/* Chico */
+/* line 19, ../../scss/modules/_staff-card-images.scss */
+.card-image-ryan-evans {
+  background-image: url("../img/staff/ryan-evans.jpg");
+}
+
+/* line 22, ../../scss/modules/_staff-card-images.scss */
+.card-image-james-dunn {
+  background-image: url("../img/staff/jim-dunn.jpg");
+}
+
+/* Fresno */
+/* line 27, ../../scss/modules/_staff-card-images.scss */
+.card-image-kevin-chambers {
+  background-image: url("../img/staff/kevin-chambers.jpg");
+}
+
+/* line 30, ../../scss/modules/_staff-card-images.scss */
+.card-image-brady-g {
+  background-image: url("../img/staff/brady-guzman.jpg");
+}
+
+/* line 33, ../../scss/modules/_staff-card-images.scss */
+.card-image-allyn-s {
+  background-image: url("../img/staff/allyn-shadowens.jpg");
+}
+
+/* line 36, ../../scss/modules/_staff-card-images.scss */
+.card-image-hunter-c {
+  background-image: url("../img/staff/hunter.jpg");
+}
+
+/* line 39, ../../scss/modules/_staff-card-images.scss */
+.card-image-dan-a {
+  background-image: url("../img/staff/dan-acosta.jpg");
+}
+
+/* line 42, ../../scss/modules/_staff-card-images.scss */
+.card-image-brad-o {
+  background-image: url("../img/staff/brad-opitz.jpg");
+}
+
+/* line 45, ../../scss/modules/_staff-card-images.scss */
+.card-image-marc-m {
+  background-image: url("../img/staff/marc-magill.jpg");
+}
+
+/* Manteca */
+/* line 51, ../../scss/modules/_staff-card-images.scss */
+.card-image-roger-h {
+  background-image: url("../img/staff/roger.jpg");
+}
+
+/* line 54, ../../scss/modules/_staff-card-images.scss */
+.card-image-tiffany-m {
+  background-image: url("../img/staff/tiffany.jpg");
+}
+
+/* line 57, ../../scss/modules/_staff-card-images.scss */
+.card-image-romiro-c {
+  background-image: url("../img/staff/romiro.jpg");
+}
+
+/* line 60, ../../scss/modules/_staff-card-images.scss */
+.card-image-bart-t {
+  background-image: url("../img/staff/bart.jpg");
+}
+
+/* line 63, ../../scss/modules/_staff-card-images.scss */
+.card-image-dave-m {
+  background-image: url("../img/staff/dave-m.jpg");
+}
+
+/* line 66, ../../scss/modules/_staff-card-images.scss */
+.card-image-mathew-o {
+  background-image: url("../img/staff/matthew-ortiz.jpg");
+}
+
+/* line 69, ../../scss/modules/_staff-card-images.scss */
+.card-image-jeanette-g {
+  background-image: url("../img/staff/jeanette-garcia.jpg");
+}
+
+/* line 72, ../../scss/modules/_staff-card-images.scss */
+.card-image-paul-n {
+  background-image: url("../img/staff/paul-nehring.jpg");
+}
+
+/* Oakley */
+/* line 78, ../../scss/modules/_staff-card-images.scss */
+.card-image-richie-a {
+  background-image: url("../img/staff/richie.jpg");
+}
+
+/* line 81, ../../scss/modules/_staff-card-images.scss */
+.card-image-mo-y {
+  background-image: url("../img/staff/mo-yusuff.jpg");
+}
+
+/* line 84, ../../scss/modules/_staff-card-images.scss */
+.card-image-jeff-f {
+  background-image: url("../img/staff/jeff-franks.jpg");
+}
+
+/* line 87, ../../scss/modules/_staff-card-images.scss */
+.card-image-ryan-m {
+  background-image: url("../img/staff/ryan-marten.jpg");
+}
+
+/* line 90, ../../scss/modules/_staff-card-images.scss */
+.card-image-misty-w {
+  background-image: url("../img/staff/misty_w.jpg");
+}
+
+/* line 93, ../../scss/modules/_staff-card-images.scss */
+.card-image-shannon-g {
+  background-image: url("../img/staff/shannon.jpg");
+}
+
+/* line 96, ../../scss/modules/_staff-card-images.scss */
+.card-image-joe-a {
+  background-image: url("../img/staff/joe_a.jpg");
+}
+
+/* Redwood City */
+/* line 102, ../../scss/modules/_staff-card-images.scss */
+.card-image-obie-g {
+  background-image: url("../img/staff/obie-gomez.jpg");
+}
+
+/* line 105, ../../scss/modules/_staff-card-images.scss */
+.card-image-fernando-v {
+  background-image: url("../img/staff/fernando-sr.jpg");
+}
+
+/* line 108, ../../scss/modules/_staff-card-images.scss */
+.card-image-alan-n {
+  background-image: url("../img/staff/alan-nelson.jpg");
+}
+
+/* line 111, ../../scss/modules/_staff-card-images.scss */
+.card-image-juan-v {
+  background-image: url("../img/staff/juan-valdez.jpg");
+}
+
+/* line 114, ../../scss/modules/_staff-card-images.scss */
+.card-image-jake-p {
+  background-image: url("../img/staff/jake.jpg");
+}
+
+/* line 117, ../../scss/modules/_staff-card-images.scss */
+.card-image-jon-d {
+  background-image: url("../img/staff/jon-drake.jpg");
+}
+
+/* line 120, ../../scss/modules/_staff-card-images.scss */
+.card-image-miguel-b {
+  background-image: url("../img/staff/miguel-barriga.jpg");
+}
+
+/* line 123, ../../scss/modules/_staff-card-images.scss */
+.card-image-rory-g {
+  background-image: url("../img/staff/rory-gamblin.jpg");
+}
+
+/* line 126, ../../scss/modules/_staff-card-images.scss */
+.card-image-bobby-g {
+  background-image: url("../img/staff/bobby.jpg");
+}
+
+/* line 129, ../../scss/modules/_staff-card-images.scss */
+.card-image-boris-c {
+  background-image: url("../img/staff/boris.JPG");
+}
+
+/* line 132, ../../scss/modules/_staff-card-images.scss */
+.card-image-les-s {
+  background-image: url("../img/staff/les-sharp.jpg");
+}
+
+/* line 135, ../../scss/modules/_staff-card-images.scss */
+.card-image-matt-dean {
+  background-image: url("../img/staff/matt-dean.jpg");
+}
+
+/* line 138, ../../scss/modules/_staff-card-images.scss */
+.card-image-vanessa-d {
+  background-image: url("../img/staff/vanessa-diricco.jpg");
+}
+
+/* Sacramento */
+/* line 145, ../../scss/modules/_staff-card-images.scss */
+.card-image-bob-barstad {
+  background-image: url("../img/staff/bob-barstad.jpg");
+}
+
+/* line 148, ../../scss/modules/_staff-card-images.scss */
+.card-image-daniel-f {
+  background-image: url("../img/staff/daniel-franey.jpg");
+}
+
+/* line 151, ../../scss/modules/_staff-card-images.scss */
+.card-image-tom-m {
+  background-image: url("../img/staff/tom-m.jpg");
+}
+
+/* line 154, ../../scss/modules/_staff-card-images.scss */
+.card-image-leilana-b {
+  background-image: url("../img/staff/leilana-becker.jpg");
+}
+
+/* line 157, ../../scss/modules/_staff-card-images.scss */
+.card-image-ed-b {
+  background-image: url("../img/staff/ed-bearby.JPG");
+}
+
+/* line 160, ../../scss/modules/_staff-card-images.scss */
+.card-image-daniel-v {
+  background-image: url("../img/staff/daniel-v.jpg");
+}
+
+/* line 163, ../../scss/modules/_staff-card-images.scss */
+.card-image-jon-denham {
+  background-image: url("../img/staff/jon-denham.jpg");
+}
+
+/* line 166, ../../scss/modules/_staff-card-images.scss */
+.card-image-jack-b {
+  background-image: url("../img/staff/jack-becker.jpg");
+}
+
+/* Salinas */
+/* line 172, ../../scss/modules/_staff-card-images.scss */
+.card-image-max-y {
+  background-image: url("../img/staff/max.jpg");
+}
+
+/* line 175, ../../scss/modules/_staff-card-images.scss */
+.card-image-adam-m {
+  background-image: url("../img/staff/adam-miller.jpg");
+}
+
+/* line 178, ../../scss/modules/_staff-card-images.scss */
+.card-image-matt-sharpe {
+  background-image: url("../img/staff/matt-sharpe.jpg");
+}
+
+/* line 181, ../../scss/modules/_staff-card-images.scss */
+.card-image-bob-barth {
+  background-image: url("../img/staff/bob-bartholomew.jpg");
+}
+
+/* line 184, ../../scss/modules/_staff-card-images.scss */
+.card-image-andrea-b {
+  background-image: url("../img/staff/andrea.jpg");
+}
+
+/* San Jose Fusion */
+/* line 190, ../../scss/modules/_staff-card-images.scss */
+.card-image-paul-h {
+  background-image: url("../img/staff/paul-harrington.jpg");
+}
+
+/* line 193, ../../scss/modules/_staff-card-images.scss */
+.card-image-murray-s {
+  background-image: url("../img/staff/murray-sullivan.jpg");
+}
+
+/* line 196, ../../scss/modules/_staff-card-images.scss */
+.card-image-glen-g {
+  background-image: url("../img/staff/glen-gates.jpg");
+}
+
+/* line 199, ../../scss/modules/_staff-card-images.scss */
+.card-image-jimmy-l {
+  background-image: url("../img/staff/jimmy-l.JPG");
+}
+
+/* line 202, ../../scss/modules/_staff-card-images.scss */
+.card-image-tony-v {
+  background-image: url("../img/staff/tony-v.jpg");
+}
+
+/* line 205, ../../scss/modules/_staff-card-images.scss */
+.card-image-mario-p {
+  background-image: url("../img/staff/mario-puentes.jpg");
+}
+
+/* line 208, ../../scss/modules/_staff-card-images.scss */
+.card-image-hector-s {
+  background-image: url("../img/staff/hector.jpeg");
+}
+
+/* line 211, ../../scss/modules/_staff-card-images.scss */
+.card-image-manuel-g {
+  background-image: url("../img/staff/manuel-garcia.jpg");
+}
+
+/* line 214, ../../scss/modules/_staff-card-images.scss */
+.card-image-irvin-c {
+  background-image: url("../img/staff/irvin.jpg");
+}
+
+/* line 217, ../../scss/modules/_staff-card-images.scss */
+.card-image-daniel-i {
+  background-image: url("../img/staff/daniel-i.jpg");
+}
+
+/* line 220, ../../scss/modules/_staff-card-images.scss */
+.card-image-alyx-d {
+  background-image: url("../img/staff/alyx.jpg");
+}
+
+/*San Jose */
+/* line 227, ../../scss/modules/_staff-card-images.scss */
+.card-image-dave-d {
+  background-image: url("../img/staff/dave-d.jpg");
+}
+
+/* line 230, ../../scss/modules/_staff-card-images.scss */
+.card-image-chris-t {
+  background-image: url("../img/staff/chris-t.jpg");
+}
+
+/* line 233, ../../scss/modules/_staff-card-images.scss */
+.card-image-chuck-h {
+  background-image: url("../img/staff/chuck-h.jpg");
+}
+
+/* line 236, ../../scss/modules/_staff-card-images.scss */
+.card-image-david-h {
+  background-image: url("../img/staff/david-h.jpg");
+}
+
+/* line 239, ../../scss/modules/_staff-card-images.scss */
+.card-image-jeff-w {
+  background-image: url("../img/staff/jeff-w.jpg");
+}
+
+/* line 242, ../../scss/modules/_staff-card-images.scss */
+.card-image-joe-f {
+  background-image: url("../img/staff/joe-f.jpg");
+}
+
+/* line 245, ../../scss/modules/_staff-card-images.scss */
+.card-image-lane-d {
+  background-image: url("../img/staff/lane-dore.jpg");
+}
+
+/* line 248, ../../scss/modules/_staff-card-images.scss */
+.card-image-nancy-d {
+  background-image: url("../img/staff/nancy-dore.jpg");
+}
+
+/* line 251, ../../scss/modules/_staff-card-images.scss */
+.card-image-ray-r {
+  background-image: url("../img/staff/ray-rogers.jpg");
+}
+
+/* line 254, ../../scss/modules/_staff-card-images.scss */
+.card-image-carey-m {
+  background-image: url("../img/staff/carey-m.jpg");
+}
+
+/* line 257, ../../scss/modules/_staff-card-images.scss */
+.card-image-ken-s {
+  background-image: url("../img/staff/ken-s.jpg");
+}
+
+/* line 260, ../../scss/modules/_staff-card-images.scss */
+.card-image-nancy-m {
+  background-image: url("../img/staff/nancy-m.jpg");
+}
+
+/* line 263, ../../scss/modules/_staff-card-images.scss */
+.card-image-al-m {
+  background-image: url("../img/staff/al-m.jpg");
+}
+
+/* line 266, ../../scss/modules/_staff-card-images.scss */
+.card-image-oscar-h {
+  background-image: url("../img/staff/oscar-h.jpg");
+  background-position: center;
+}
+
+/* Corp */
+/* line 274, ../../scss/modules/_staff-card-images.scss */
+.card-image-reed-m {
+  background-image: url("../img/staff/reed.jpg");
+}
+
+/* line 277, ../../scss/modules/_staff-card-images.scss */
+.card-image-tom-g {
+  background-image: url("../img/staff/tom-g.jpg");
+}
+
+/* line 280, ../../scss/modules/_staff-card-images.scss */
+.card-image-chris-j {
+  background-image: url("../img/staff/chris-j.jpg");
+}
+
+/* line 283, ../../scss/modules/_staff-card-images.scss */
+.card-image-peggy-s {
+  background-image: url("../img/staff/peggy-stockwell.jpg");
+}
+
+/* line 286, ../../scss/modules/_staff-card-images.scss */
+.card-image-kurt-v {
+  background-image: url("../img/staff/kurt-vincelette.jpg");
+}
+
+/* line 289, ../../scss/modules/_staff-card-images.scss */
+.card-image-raul-s {
+  background-image: url("../img/staff/raul.jpg");
+}
+
+/* line 292, ../../scss/modules/_staff-card-images.scss */
+.card-image-tony-h {
+  background-image: url("../img/staff/tony-han.jpg");
+}
+
+/* line 295, ../../scss/modules/_staff-card-images.scss */
+.card-image-ken-g {
+  background-image: url("../img/staff/ken-grace.JPG");
+}
+
+/* line 298, ../../scss/modules/_staff-card-images.scss */
+.card-image-nate-s {
+  background-image: url("../img/staff/nate.jpg");
+}
+
+/* line 301, ../../scss/modules/_staff-card-images.scss */
+.card-image-josh-c {
+  background-image: url("../img/staff/josh-c.jpg");
+}
+
+/* line 304, ../../scss/modules/_staff-card-images.scss */
+.card-image-trina-s {
+  background-image: url("../img/staff/trina-scott.jpg");
+}
+
+/* line 307, ../../scss/modules/_staff-card-images.scss */
+.card-image-alin-v {
+  background-image: url("../img/staff/alin.jpg");
+}
+
+/* line 310, ../../scss/modules/_staff-card-images.scss */
+.card-image-mickey-p {
+  background-image: url("../img/staff/mickey-p.jpg");
+}
+
+/* line 313, ../../scss/modules/_staff-card-images.scss */
+.card-image-ashley-m {
+  background-image: url("../img/staff/ashley-m.jpg");
+}
+
+/* line 316, ../../scss/modules/_staff-card-images.scss */
+.card-image-carol-b {
+  background-image: url("../img/staff/carol-b.jpg");
+}
+
+/* line 319, ../../scss/modules/_staff-card-images.scss */
+.card-image-laura-z {
+  background-image: url("../img/staff/laura-z.jpg");
+}
+
+/* line 322, ../../scss/modules/_staff-card-images.scss */
+.card-image-linda-r {
+  background-image: url("../img/staff/linda-ruiz.jpg");
+}
+
+/* line 325, ../../scss/modules/_staff-card-images.scss */
+.card-image-jessica-m {
+  background-image: url("../img/staff/jessica-mendoza.jpg");
+}
+
+/* line 328, ../../scss/modules/_staff-card-images.scss */
+.card-image-kristi-g {
+  background-image: url("../img/staff/kristy-gribbin.jpg");
+}
+
+/* line 331, ../../scss/modules/_staff-card-images.scss */
+.card-image-monica-g {
+  background-image: url("../img/staff/monica.jpg");
+}
+
+/* line 334, ../../scss/modules/_staff-card-images.scss */
+.card-image-esly-v {
+  background-image: url("../img/staff/esly.jpg");
+}
+
+/* line 337, ../../scss/modules/_staff-card-images.scss */
+.card-image-lisa-l {
+  background-image: url("../img/staff/lisa-l.jpg");
+}
+
+/* Santa Rosa */
+/* line 343, ../../scss/modules/_staff-card-images.scss */
+.card-image-lorrie-d {
+  background-image: url("../img/staff/lorrie-d.jpg");
+}
+
+/* line 346, ../../scss/modules/_staff-card-images.scss */
+.card-image-brad-r {
+  background-image: url("../img/staff/brad-rugg.jpg");
+}
+
+/* line 349, ../../scss/modules/_staff-card-images.scss */
+.card-image-jesse-l {
+  background-image: url("../img/staff/jesse.jpg");
 }
 
 /* line 5, ../../scss/modules/_forms.scss */
@@ -2143,9 +2795,9 @@ form input[type=checkbox] {
 
 /* line 55, ../../scss/modules/_forms.scss */
 form input::-webkit-input-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2153,9 +2805,9 @@ form input::-webkit-input-placeholder {
 
 /* line 63, ../../scss/modules/_forms.scss */
 form input:-moz-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2163,9 +2815,9 @@ form input:-moz-placeholder {
 
 /* line 71, ../../scss/modules/_forms.scss */
 form input::-moz-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2173,9 +2825,9 @@ form input::-moz-placeholder {
 
 /* line 79, ../../scss/modules/_forms.scss */
 form input:-ms-input-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2183,9 +2835,9 @@ form input:-ms-input-placeholder {
 
 /* line 87, ../../scss/modules/_forms.scss */
 form input:focus::-webkit-input-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2193,9 +2845,9 @@ form input:focus::-webkit-input-placeholder {
 
 /* line 95, ../../scss/modules/_forms.scss */
 form input:focus:-moz-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2203,9 +2855,9 @@ form input:focus:-moz-placeholder {
 
 /* line 103, ../../scss/modules/_forms.scss */
 form input:focus::-moz-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2213,9 +2865,9 @@ form input:focus::-moz-placeholder {
 
 /* line 111, ../../scss/modules/_forms.scss */
 form input:focus:-ms-input-placeholder {
-  font-family: "Lato 100", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-weight: 300;
+  font-weight: "Open Sans 300", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2462,6 +3114,50 @@ button.md-close {
   opacity: 1;
 }
 
+/* line 1, ../../scss/modules/_inner-hero.scss */
+.inner-hero {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #111820;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  min-height: 300px;
+  height: 350px;
+}
+@media (min-width: 75em) {
+  /* line 1, ../../scss/modules/_inner-hero.scss */
+  .inner-hero {
+    height: 500px;
+  }
+}
+/* line 13, ../../scss/modules/_inner-hero.scss */
+.inner-hero h1 {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  color: #fefefe;
+}
+
+/* line 20, ../../scss/modules/_inner-hero.scss */
+#locations-hero {
+  background-image: url("../img/hero/Cali Map.svg");
+}
+
+/* line 23, ../../scss/modules/_inner-hero.scss */
+#staff-hero {
+  background-image: url("../img/hero/Nicholas Construction - Drought Relief.jpg");
+}
+
+/* line 26, ../../scss/modules/_inner-hero.scss */
+#history-hero {
+  background-image: url("../img/hero/rb-history.jpg");
+}
+
 /* line 1, ../../scss/layout/_slide.scss */
 .home {
   background-image: url("../img/hero/sf-arteries.jpg");
@@ -2476,13 +3172,12 @@ button.md-close {
   max-width: 980px;
   height: 100vh;
   margin: 0 auto;
-  color: white;
+  color: #AD2B11;
   text-align: center;
   padding-top: 10%;
 }
 /* line 14, ../../scss/layout/_slide.scss */
 .home .hero h1 {
-  font-family: "Lato 100", sans-serif;
   font-weight: 100;
   margin-bottom: 0;
   font-size: 31px;
@@ -2601,7 +3296,7 @@ button.md-close {
 }
 /* line 6, ../../scss/layout/_reg-training.scss */
 .small-training .hero h1, .small-training .hero h2 {
-  font-family: "Lato 400", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -2712,7 +3407,7 @@ button.md-close {
 }
 /* line 62, ../../scss/layout/_reg-training.scss */
 .small-training .benifits h1 {
-  font-family: "Lato 400", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 21px;
   font-size: 1.23529rem;
@@ -2759,4 +3454,40 @@ button.md-close {
     font-size: 21px;
     font-size: 1.23529rem;
   }
+}
+
+/* line 2, ../../scss/layout/_staff.scss */
+.staff .cards {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 5, ../../scss/layout/_staff.scss */
+.staff .cards-item {
+  width: 100%;
+}
+@media (min-width: 47em) {
+  /* line 5, ../../scss/layout/_staff.scss */
+  .staff .cards-item {
+    width: 50%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 5, ../../scss/layout/_staff.scss */
+  .staff .cards-item {
+    width: 400px;
+    max-width: 400px;
+  }
+}
+/* line 15, ../../scss/layout/_staff.scss */
+.staff .card-title {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #0033a0;
+}
+/* line 20, ../../scss/layout/_staff.scss */
+.staff h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem !important;
+  color: #111820;
+  margin-bottom: 0;
 }
