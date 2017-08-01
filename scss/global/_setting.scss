@@ -26,6 +26,10 @@ body, html {
 
   }
 
+  p {
+    margin: 0;
+  }
+
 .page-wrap {
    @include full;
 }
@@ -35,15 +39,36 @@ body, html {
 }
 
 .content {
-  @include full
+  @include full;
+  margin-top: 5%;
+  margin-bottom: 5%;  
 }
 
 #lead-in {
+  // @include full;
   max-width: 1280px;
   margin:0 auto;
+  clear: both;
+
+  // article {
+  //   max-width: 800px;
+  //   float: left;
+  // }
 }
+
 .lead-in-text {
-  margin: 5%;
+   max-width: 800px;
+   margin-bottom: 1.25%;
+   float: left;
+}
+// .body-text {
+//   margin: 1.5% 5%;
+//   // margin-bottom: 0;
+// }
+aside {
+  video {
+    margin-left: 1.25%;
+  }
 }
 
 
