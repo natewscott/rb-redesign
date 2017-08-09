@@ -41,3 +41,80 @@
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+// .gallery{
+//   display: flex;
+//   -webkit-display: flex;
+//   height: 88vh;
+//   margin: auto;
+//   padding: 0;
+//   width: 100%;
+// }
+
+// .title{
+//   font-size: 2em;
+//   font-weight: 700;
+// }
+// #img1{
+//   background-image: url("http://www.seanalexanderfree.com/codepen/gallery1/city-street-1.jpg");
+// }
+// #img2{
+//   background-image: url("http://www.seanalexanderfree.com/codepen/gallery1/city-street-2.jpg");
+// }
+// #img3{
+//   background-image: url("http://www.seanalexanderfree.com/codepen/gallery1/city-street-3.jpg");
+// }
+// .img{ 
+//   align-items: center;
+//   -webkit-align-items: center;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   box-shadow: inset 0 0 0 #232323;
+//   display: flex;
+//   -webkit-display: flex;
+//   flex-grow: 1;
+//   -webkit-flex-grow: 1;
+  
+//   height: 100%;
+//   filter: saturate(10%) brightness(30%);
+//   -webkit-filter: saturate(10%) brightness(30%);
+//   justify-content: center;
+//   -webkit-justify-content: center;
+//   margin: 0;
+//   position: relative;
+//   transition: all 750ms ease-in-out;
+//   -webkit-transition: all 750ms ease-in-out;
+// }
+// .img:after{
+//   background: rgba(55,55,55,0.5);
+//   border: solid;
+//   content: "Click Me!";
+//   color: #0ff;
+//   font-family: Raleway, sans-serif;
+//   font-size: 2em;
+//   font-weight: 900;
+//   opacity: 0;
+//   padding: 10px;
+//   transition: all 650ms ease-in-out;
+// }
+// .img:hover{
+//   cursor: pointer;
+// }
+// .img:not(.focus):hover:after{
+//   opacity: 1;
+// }
+// .img:not(.focus):hover{
+//   filter: saturate(30%) brightness(60%);
+//   -webkit-filter: saturate(30%) brightness(60%);
+// } 
+// .focus{
+//   box-shadow: inset 0 0 45px 5px #000;
+//   filter: saturate(120%) brightness(90%);
+//   -webkit-filter: saturate(120%) brightness(90%);
+//   flex-grow: 10;
+//   -webkit-flex-grow: 10;
+// }
+// .focus:after{
+//   opacity: 0;
+// }

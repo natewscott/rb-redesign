@@ -442,19 +442,23 @@ ul, li {
   margin: 0;
   padding: 0;
 }
-
 /* line 23, ../../scss/global/_setting.scss */
+ul li, li li {
+  margin-bottom: 2%;
+}
+
+/* line 27, ../../scss/global/_setting.scss */
 a {
   color: #AD2B11;
   text-decoration: none;
 }
 
-/* line 29, ../../scss/global/_setting.scss */
+/* line 33, ../../scss/global/_setting.scss */
 p {
   margin: 0;
 }
 
-/* line 33, ../../scss/global/_setting.scss */
+/* line 37, ../../scss/global/_setting.scss */
 .page-wrap {
   clear: both;
   width: 100%;
@@ -463,7 +467,7 @@ p {
   margin-right: 0;
 }
 
-/* line 37, ../../scss/global/_setting.scss */
+/* line 41, ../../scss/global/_setting.scss */
 .main-content {
   clear: both;
   width: 100%;
@@ -472,7 +476,7 @@ p {
   margin-right: 0;
 }
 
-/* line 41, ../../scss/global/_setting.scss */
+/* line 45, ../../scss/global/_setting.scss */
 .content {
   clear: both;
   width: 100%;
@@ -483,21 +487,25 @@ p {
   margin-bottom: 5%;
 }
 
-/* line 47, ../../scss/global/_setting.scss */
+/* line 51, ../../scss/global/_setting.scss */
 #lead-in {
   max-width: 1280px;
   margin: 0 auto;
   clear: both;
 }
 
-/* line 59, ../../scss/global/_setting.scss */
+/* line 57, ../../scss/global/_setting.scss */
 .lead-in-text {
-  max-width: 800px;
   margin-bottom: 1.25%;
+}
+
+/* line 60, ../../scss/global/_setting.scss */
+.history.lead-in-text {
+  max-width: 800px;
   float: left;
 }
 
-/* line 69, ../../scss/global/_setting.scss */
+/* line 66, ../../scss/global/_setting.scss */
 aside video {
   margin-left: 1.25%;
 }
@@ -1083,28 +1091,28 @@ textarea {
   overflow-y: auto;
 }
 
-/* line 109, ../../scss/global/_forms.scss */
+/* line 103, ../../scss/global/_forms.scss */
 fieldset .legend {
   margin-top: 0;
 }
 
-/* line 112, ../../scss/global/_forms.scss */
+/* line 106, ../../scss/global/_forms.scss */
 .formrow .label {
   font-size: 18px;
 }
 
-/* line 115, ../../scss/global/_forms.scss */
+/* line 109, ../../scss/global/_forms.scss */
 .formrow .label.req:after {
   content: "*";
   color: #d23;
 }
 
-/* line 119, ../../scss/global/_forms.scss */
+/* line 113, ../../scss/global/_forms.scss */
 .formrow > .label {
   display: none;
 }
 
-/* line 122, ../../scss/global/_forms.scss */
+/* line 116, ../../scss/global/_forms.scss */
 .formrow .formitem {
   display: inline-block;
   vertical-align: baseline;
@@ -1112,18 +1120,18 @@ fieldset .legend {
   padding: 0 0 15px;
 }
 
-/* line 128, ../../scss/global/_forms.scss */
+/* line 122, ../../scss/global/_forms.scss */
 .formrow .formitem > * {
   float: left;
 }
 
-/* line 131, ../../scss/global/_forms.scss */
+/* line 125, ../../scss/global/_forms.scss */
 .formrow .formitem > .label {
   float: none;
   display: block;
 }
 
-/* line 135, ../../scss/global/_forms.scss */
+/* line 129, ../../scss/global/_forms.scss */
 .formrow .formitem input[type="text"],
 .formrow .formitem input[type="password"],
 .formrow .formitem input[type="number"],
@@ -1141,7 +1149,7 @@ fieldset .legend {
   width: 100%;
 }
 
-/* line 151, ../../scss/global/_forms.scss */
+/* line 145, ../../scss/global/_forms.scss */
 .formrow .formitem label.error {
   clear: left;
   font-size: 11px;
@@ -1149,12 +1157,12 @@ fieldset .legend {
   color: #d23;
 }
 
-/* line 157, ../../scss/global/_forms.scss */
+/* line 151, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks {
   padding: 5px 0 0;
 }
 
-/* line 160, ../../scss/global/_forms.scss */
+/* line 154, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label {
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -1163,47 +1171,47 @@ fieldset .legend {
   color: #999;
 }
 
-/* line 167, ../../scss/global/_forms.scss */
+/* line 161, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label:hover {
   color: #666;
 }
 
-/* line 170, ../../scss/global/_forms.scss */
+/* line 164, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label input.checked ~ span {
   color: #000;
 }
 
-/* line 173, ../../scss/global/_forms.scss */
+/* line 167, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label input:checked ~ span {
   color: #000;
 }
 
-/* line 176, ../../scss/global/_forms.scss */
+/* line 170, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label > span {
   display: block;
   margin: 0 15px 5px 20px;
   cursor: default;
 }
 
-/* line 181, ../../scss/global/_forms.scss */
+/* line 175, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label input[type="checkbox"],
 .formrow .formitem .ticks label input[type="radio"] {
   float: left;
   margin: 1px -9px 0 0;
 }
 
-/* line 186, ../../scss/global/_forms.scss */
+/* line 180, ../../scss/global/_forms.scss */
 .formrow .formitem .ticks label input[type="checkbox"].error ~ span,
 .formrow .formitem .ticks label input[type="radio"].error ~ span {
   color: #d23;
 }
 
-/* line 190, ../../scss/global/_forms.scss */
+/* line 184, ../../scss/global/_forms.scss */
 .formrow .formitem .rating {
   padding: 5px 0 0;
 }
 
-/* line 193, ../../scss/global/_forms.scss */
+/* line 187, ../../scss/global/_forms.scss */
 .formrow .formitem .rating label {
   float: right;
   width: 42px;
@@ -1213,18 +1221,18 @@ fieldset .legend {
   cursor: pointer;
 }
 
-/* line 201, ../../scss/global/_forms.scss */
+/* line 195, ../../scss/global/_forms.scss */
 .formrow .formitem .rating label:before {
   font-family: "FontAwesome";
   content: "\f006";
 }
 
-/* line 205, ../../scss/global/_forms.scss */
+/* line 199, ../../scss/global/_forms.scss */
 .formrow .formitem .rating label span {
   display: none;
 }
 
-/* line 208, ../../scss/global/_forms.scss */
+/* line 202, ../../scss/global/_forms.scss */
 .formrow .formitem .rating input {
   position: absolute;
   z-index: -1;
@@ -1238,7 +1246,7 @@ fieldset .legend {
   overflow: hidden;
 }
 
-/* line 220, ../../scss/global/_forms.scss */
+/* line 214, ../../scss/global/_forms.scss */
 .formrow .formitem .rating label:hover:before,
 .formrow .formitem .rating label:hover ~ label:before,
 .formrow .formitem .rating input.checked ~ label:before {
@@ -1246,37 +1254,37 @@ fieldset .legend {
   content: "\f005";
 }
 
-/* line 226, ../../scss/global/_forms.scss */
+/* line 220, ../../scss/global/_forms.scss */
 .formrow .formitem .rating input:checked ~ label:before {
   font-family: "FontAwesome";
   content: "\f005";
 }
 
-/* line 230, ../../scss/global/_forms.scss */
+/* line 224, ../../scss/global/_forms.scss */
 .formrow .formitem .rating:hover input ~ label:before {
   font-family: "FontAwesome";
   content: "\f006";
 }
 
-/* line 234, ../../scss/global/_forms.scss */
+/* line 228, ../../scss/global/_forms.scss */
 .formrow .formitem .rating:hover label:hover:before,
 .formrow .formitem .rating:hover label:hover ~ label:before {
   font-family: "FontAwesome";
   content: "\f005";
 }
 
-/* line 239, ../../scss/global/_forms.scss */
+/* line 233, ../../scss/global/_forms.scss */
 .gt480 body {
   padding: 40px;
 }
 
-/* line 242, ../../scss/global/_forms.scss */
+/* line 236, ../../scss/global/_forms.scss */
 .gt480 fieldset {
   margin: 40px 0;
   padding: 30px 40px;
 }
 
-/* line 246, ../../scss/global/_forms.scss */
+/* line 240, ../../scss/global/_forms.scss */
 .gt480 .formrow {
   font-size: .1%;
   line-height: 0;
@@ -1284,7 +1292,7 @@ fieldset .legend {
   margin-right: -10px;
 }
 
-/* line 252, ../../scss/global/_forms.scss */
+/* line 246, ../../scss/global/_forms.scss */
 .gt480 .formrow .formitem {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1294,12 +1302,12 @@ fieldset .legend {
   padding-right: 10px;
 }
 
-/* line 260, ../../scss/global/_forms.scss */
+/* line 254, ../../scss/global/_forms.scss */
 .gt480 .formrow .formitem:last-child {
   margin-right: -99px;
 }
 
-/* line 263, ../../scss/global/_forms.scss */
+/* line 257, ../../scss/global/_forms.scss */
 .gt480 .formrow .formitem:before {
   content: "\00a0";
   display: block;
@@ -1310,74 +1318,74 @@ fieldset .legend {
   margin-top: -15px;
 }
 
-/* line 272, ../../scss/global/_forms.scss */
+/* line 266, ../../scss/global/_forms.scss */
 .gt480 .formrow .formitem .rating label {
   width: 24px;
   height: 24px;
   font-size: 24px;
 }
 
-/* line 277, ../../scss/global/_forms.scss */
+/* line 271, ../../scss/global/_forms.scss */
 .gt480 .formrow .col1of1 {
   width: 100%;
 }
 
-/* line 280, ../../scss/global/_forms.scss */
+/* line 274, ../../scss/global/_forms.scss */
 .gt480 .formrow .col1of2 {
   width: 50%;
 }
 
-/* line 283, ../../scss/global/_forms.scss */
+/* line 277, ../../scss/global/_forms.scss */
 .gt480 .formrow .col1of3 {
   width: 33.33%;
 }
 
-/* line 286, ../../scss/global/_forms.scss */
+/* line 280, ../../scss/global/_forms.scss */
 .gt480 .formrow .col2of3 {
   width: 66.66%;
 }
 
-/* line 289, ../../scss/global/_forms.scss */
+/* line 283, ../../scss/global/_forms.scss */
 .gt480 .formrow .col1of4 {
   width: 25%;
 }
 
-/* line 292, ../../scss/global/_forms.scss */
+/* line 286, ../../scss/global/_forms.scss */
 .gt480 .formrow .col3of4 {
   width: 75%;
 }
 
-/* line 295, ../../scss/global/_forms.scss */
+/* line 289, ../../scss/global/_forms.scss */
 .gt480 .formrow .col1of5 {
   width: 20%;
 }
 
-/* line 298, ../../scss/global/_forms.scss */
+/* line 292, ../../scss/global/_forms.scss */
 .gt480 .formrow .col2of5 {
   width: 40%;
 }
 
-/* line 301, ../../scss/global/_forms.scss */
+/* line 295, ../../scss/global/_forms.scss */
 .gt480 .formrow .col3of5 {
   width: 60%;
 }
 
-/* line 304, ../../scss/global/_forms.scss */
+/* line 298, ../../scss/global/_forms.scss */
 .gt480 .formrow .col4of5 {
   width: 80%;
 }
 
-/* line 307, ../../scss/global/_forms.scss */
+/* line 301, ../../scss/global/_forms.scss */
 .gt800 body {
   padding: 80px;
 }
 
-/* line 310, ../../scss/global/_forms.scss */
+/* line 304, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow {
   padding-left: 25%;
 }
 
-/* line 313, ../../scss/global/_forms.scss */
+/* line 307, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow > .label {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1392,35 +1400,35 @@ fieldset .legend {
   width: 33.33333333%;
 }
 
-/* line 326, ../../scss/global/_forms.scss */
+/* line 320, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow .formitem {
   vertical-align: top;
 }
 
-/* line 329, ../../scss/global/_forms.scss */
+/* line 323, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow .formitem:before {
   content: none;
 }
 
-/* line 332, ../../scss/global/_forms.scss */
+/* line 326, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow .formitem > .label {
   display: none;
 }
 
-/* line 335, ../../scss/global/_forms.scss */
+/* line 329, ../../scss/global/_forms.scss */
 .gt800 .wideform .formrow .formitem .ticks,
 .gt800 .wideform .formrow .formitem .rating {
   padding-top: 10px;
 }
 
 @media screen and (min-width: 481px) {
-  /* line 341, ../../scss/global/_forms.scss */
+  /* line 335, ../../scss/global/_forms.scss */
   fieldset {
     margin: 40px 0;
     padding: 30px 40px;
   }
 
-  /* line 345, ../../scss/global/_forms.scss */
+  /* line 339, ../../scss/global/_forms.scss */
   .formrow {
     font-size: .1%;
     line-height: 0;
@@ -1428,7 +1436,7 @@ fieldset .legend {
     margin-right: -10px;
   }
 
-  /* line 351, ../../scss/global/_forms.scss */
+  /* line 345, ../../scss/global/_forms.scss */
   .formrow .formitem {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1438,12 +1446,12 @@ fieldset .legend {
     padding-right: 10px;
   }
 
-  /* line 359, ../../scss/global/_forms.scss */
+  /* line 353, ../../scss/global/_forms.scss */
   .formrow .formitem:last-child {
     margin-right: -99px;
   }
 
-  /* line 362, ../../scss/global/_forms.scss */
+  /* line 356, ../../scss/global/_forms.scss */
   .formrow .formitem:before {
     content: "\00a0";
     display: block;
@@ -1454,70 +1462,70 @@ fieldset .legend {
     margin-top: -15px;
   }
 
-  /* line 371, ../../scss/global/_forms.scss */
+  /* line 365, ../../scss/global/_forms.scss */
   .formrow .formitem .rating label {
     width: 24px;
     height: 24px;
     font-size: 24px;
   }
 
-  /* line 376, ../../scss/global/_forms.scss */
+  /* line 370, ../../scss/global/_forms.scss */
   .formrow .col1of1 {
     width: 100%;
   }
 
-  /* line 379, ../../scss/global/_forms.scss */
+  /* line 373, ../../scss/global/_forms.scss */
   .formrow .col1of2 {
     width: 50%;
   }
 
-  /* line 382, ../../scss/global/_forms.scss */
+  /* line 376, ../../scss/global/_forms.scss */
   .formrow .col1of3 {
     width: 33.33%;
   }
 
-  /* line 385, ../../scss/global/_forms.scss */
+  /* line 379, ../../scss/global/_forms.scss */
   .formrow .col2of3 {
     width: 66.66%;
   }
 
-  /* line 388, ../../scss/global/_forms.scss */
+  /* line 382, ../../scss/global/_forms.scss */
   .formrow .col1of4 {
     width: 25%;
   }
 
-  /* line 391, ../../scss/global/_forms.scss */
+  /* line 385, ../../scss/global/_forms.scss */
   .formrow .col3of4 {
     width: 75%;
   }
 
-  /* line 394, ../../scss/global/_forms.scss */
+  /* line 388, ../../scss/global/_forms.scss */
   .formrow .col1of5 {
     width: 20%;
   }
 
-  /* line 397, ../../scss/global/_forms.scss */
+  /* line 391, ../../scss/global/_forms.scss */
   .formrow .col2of5 {
     width: 40%;
   }
 
-  /* line 400, ../../scss/global/_forms.scss */
+  /* line 394, ../../scss/global/_forms.scss */
   .formrow .col3of5 {
     width: 60%;
   }
 
-  /* line 403, ../../scss/global/_forms.scss */
+  /* line 397, ../../scss/global/_forms.scss */
   .formrow .col4of5 {
     width: 80%;
   }
 }
 @media screen and (min-width: 801px) {
-  /* line 409, ../../scss/global/_forms.scss */
+  /* line 403, ../../scss/global/_forms.scss */
   .wideform .formrow {
     padding-left: 25%;
   }
 
-  /* line 412, ../../scss/global/_forms.scss */
+  /* line 406, ../../scss/global/_forms.scss */
   .wideform .formrow > .label {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1532,28 +1540,28 @@ fieldset .legend {
     width: 33.33333333%;
   }
 
-  /* line 425, ../../scss/global/_forms.scss */
+  /* line 419, ../../scss/global/_forms.scss */
   .wideform .formrow .formitem {
     vertical-align: top;
   }
 
-  /* line 428, ../../scss/global/_forms.scss */
+  /* line 422, ../../scss/global/_forms.scss */
   .wideform .formrow .formitem:before {
     content: none;
   }
 
-  /* line 431, ../../scss/global/_forms.scss */
+  /* line 425, ../../scss/global/_forms.scss */
   .wideform .formrow .formitem > .label {
     display: none;
   }
 
-  /* line 434, ../../scss/global/_forms.scss */
+  /* line 428, ../../scss/global/_forms.scss */
   .wideform .formrow .formitem .ticks,
   .wideform .formrow .formitem .rating {
     padding-top: 10px;
   }
 }
-/* line 439, ../../scss/global/_forms.scss */
+/* line 433, ../../scss/global/_forms.scss */
 .button {
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -1574,19 +1582,19 @@ fieldset .legend {
   outline: none;
 }
 
-/* line 458, ../../scss/global/_forms.scss */
+/* line 452, ../../scss/global/_forms.scss */
 .button:hover {
   background: #e5e5e5;
   border-color: rgba(0, 0, 0, 0.25);
   color: #000;
 }
 
-/* line 463, ../../scss/global/_forms.scss */
+/* line 457, ../../scss/global/_forms.scss */
 .button:focus {
   box-shadow: inset 0 0 0 1px #fff;
 }
 
-/* line 466, ../../scss/global/_forms.scss */
+/* line 460, ../../scss/global/_forms.scss */
 .button:active {
   -moz-transition: none;
   -webkit-transition: none;
@@ -1595,7 +1603,7 @@ fieldset .legend {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 473, ../../scss/global/_forms.scss */
+/* line 467, ../../scss/global/_forms.scss */
 .button.disabled {
   background: #f2f2f2;
   border-color: rgba(0, 0, 0, 0.1);
@@ -1604,41 +1612,41 @@ fieldset .legend {
   cursor: not-allowed;
 }
 
-/* line 480, ../../scss/global/_forms.scss */
+/* line 474, ../../scss/global/_forms.scss */
 .button.primary {
   background: #59d;
   color: #fff;
 }
 
-/* line 484, ../../scss/global/_forms.scss */
+/* line 478, ../../scss/global/_forms.scss */
 .button.primary:hover {
   background: #66a3e0;
   color: #fff;
 }
 
-/* line 488, ../../scss/global/_forms.scss */
+/* line 482, ../../scss/global/_forms.scss */
 .button.primary:active {
   background: #59d;
 }
 
-/* line 491, ../../scss/global/_forms.scss */
+/* line 485, ../../scss/global/_forms.scss */
 .buttons .button,
 .formitem .button {
   margin-right: 10px;
 }
 
-/* line 495, ../../scss/global/_forms.scss */
+/* line 489, ../../scss/global/_forms.scss */
 .buttons {
   text-align: right;
   margin-right: -10px;
 }
 
-/* line 499, ../../scss/global/_forms.scss */
+/* line 493, ../../scss/global/_forms.scss */
 .buttons .forth {
   float: right;
 }
 
-/* line 502, ../../scss/global/_forms.scss */
+/* line 496, ../../scss/global/_forms.scss */
 .buttons .back {
   text-align: left;
 }
@@ -2723,35 +2731,36 @@ h1.card-title {
 
 /* line 5, ../../scss/modules/_forms.scss */
 form fieldset {
+  max-width: 750px;
   border: none;
 }
 
-/* line 8, ../../scss/modules/_forms.scss */
+/* line 9, ../../scss/modules/_forms.scss */
 form legend {
   font-size: 18px;
   font-size: 1.05882rem;
 }
 @media (min-width: 360px) {
-  /* line 8, ../../scss/modules/_forms.scss */
+  /* line 9, ../../scss/modules/_forms.scss */
   form legend {
     font-size: 23px;
     font-size: calc(1.39082vw + 18px - 0.01391 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 8, ../../scss/modules/_forms.scss */
+  /* line 9, ../../scss/modules/_forms.scss */
   form legend {
     font-size: 28px;
     font-size: 1.64706rem;
   }
 }
 
-/* line 11, ../../scss/modules/_forms.scss */
+/* line 12, ../../scss/modules/_forms.scss */
 form p {
   margin-bottom: 10px;
 }
 
-/* line 14, ../../scss/modules/_forms.scss */
+/* line 15, ../../scss/modules/_forms.scss */
 form button {
   background-color: #3a79ff;
   text-transform: uppercase;
@@ -2766,12 +2775,12 @@ form button {
   transition: all 0.5s ease;
   border-radius: 0.4rem;
 }
-/* line 28, ../../scss/modules/_forms.scss */
+/* line 29, ../../scss/modules/_forms.scss */
 form button:hover {
   background-color: #0043d3;
 }
 
-/* line 37, ../../scss/modules/_forms.scss */
+/* line 38, ../../scss/modules/_forms.scss */
 form input {
   display: block;
   padding: .5rem 1rem;
@@ -2786,21 +2795,21 @@ form input {
   transition: border 0.5s ease 0.125s;
 }
 @media (min-width: 360px) {
-  /* line 37, ../../scss/modules/_forms.scss */
+  /* line 38, ../../scss/modules/_forms.scss */
   form input {
     font-size: 21px;
     font-size: calc(0.83449vw + 18px - 0.00834 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 37, ../../scss/modules/_forms.scss */
+  /* line 38, ../../scss/modules/_forms.scss */
   form input {
     font-size: 24px;
     font-size: 1.41176rem;
   }
 }
 
-/* line 49, ../../scss/modules/_forms.scss */
+/* line 50, ../../scss/modules/_forms.scss */
 form input[type=checkbox] {
   width: auto;
   display: inline-block;
@@ -2808,7 +2817,7 @@ form input[type=checkbox] {
   margin-top: 1.4rem;
 }
 
-/* line 55, ../../scss/modules/_forms.scss */
+/* line 56, ../../scss/modules/_forms.scss */
 form input::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2818,7 +2827,7 @@ form input::-webkit-input-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 63, ../../scss/modules/_forms.scss */
+/* line 64, ../../scss/modules/_forms.scss */
 form input:-moz-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2828,7 +2837,7 @@ form input:-moz-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 71, ../../scss/modules/_forms.scss */
+/* line 72, ../../scss/modules/_forms.scss */
 form input::-moz-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2838,7 +2847,7 @@ form input::-moz-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 79, ../../scss/modules/_forms.scss */
+/* line 80, ../../scss/modules/_forms.scss */
 form input:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2848,7 +2857,7 @@ form input:-ms-input-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 87, ../../scss/modules/_forms.scss */
+/* line 88, ../../scss/modules/_forms.scss */
 form input:focus::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2858,7 +2867,7 @@ form input:focus::-webkit-input-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 95, ../../scss/modules/_forms.scss */
+/* line 96, ../../scss/modules/_forms.scss */
 form input:focus:-moz-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2868,7 +2877,7 @@ form input:focus:-moz-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 103, ../../scss/modules/_forms.scss */
+/* line 104, ../../scss/modules/_forms.scss */
 form input:focus::-moz-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2878,7 +2887,7 @@ form input:focus::-moz-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 111, ../../scss/modules/_forms.scss */
+/* line 112, ../../scss/modules/_forms.scss */
 form input:focus:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
@@ -2888,17 +2897,17 @@ form input:focus:-ms-input-placeholder {
   transition: opacity 0.25s ease 0.125s;
 }
 
-/* line 119, ../../scss/modules/_forms.scss */
+/* line 120, ../../scss/modules/_forms.scss */
 form input:required:focus:invalid {
   border: 1px solid #FF4136;
 }
 
-/* line 122, ../../scss/modules/_forms.scss */
+/* line 123, ../../scss/modules/_forms.scss */
 form input:required:invalid {
   border: 1px solid #F5F5F5;
 }
 
-/* line 125, ../../scss/modules/_forms.scss */
+/* line 126, ../../scss/modules/_forms.scss */
 form input:required:valid {
   border: 1px solid #2ECC40;
 }
@@ -3140,7 +3149,7 @@ button.md-close {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 80%;
+  background-position: center center;
   min-height: 300px;
   height: 350px;
 }
@@ -3171,6 +3180,16 @@ button.md-close {
 /* line 26, ../../scss/modules/_inner-hero.scss */
 #history-hero {
   background-image: url("../img/hero/rb-history.jpg");
+}
+
+/* line 29, ../../scss/modules/_inner-hero.scss */
+#contact-hero {
+  background-image: url("../img/hero/contact-us.jpg");
+}
+
+/* line 32, ../../scss/modules/_inner-hero.scss */
+#submital-hero {
+  background-image: url("../img/hero/Submittals.png");
 }
 
 /* line 1, ../../scss/layout/_slide.scss */

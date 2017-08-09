@@ -19,6 +19,10 @@ body, html {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  li {
+    margin-bottom: 2%;
+  }
  }
    a {
     color: $link;
@@ -49,22 +53,15 @@ body, html {
   max-width: 1280px;
   margin:0 auto;
   clear: both;
-
-  // article {
-  //   max-width: 800px;
-  //   float: left;
-  // }
 }
-
 .lead-in-text {
+  margin-bottom: 1.25%;
+}
+.history.lead-in-text {
    max-width: 800px;
-   margin-bottom: 1.25%;
    float: left;
 }
-// .body-text {
-//   margin: 1.5% 5%;
-//   // margin-bottom: 0;
-// }
+
 aside {
   video {
     margin-left: 1.25%;

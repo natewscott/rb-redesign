@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="nav-no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>R & B Company | Submitals</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        include "head.html"
+        <body class="submitals">
+            <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <!-- Add your site or application content here -->
+            <div class="page-wrap">
+                include "header.html"
+                <section class="main-content">
+                    include "sub.html"
+                </section>
+                
+            </div>
+            include "footer.html"
+            include "foot.html"
+            <script>
+            (function($) {
+            $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+            $('.accordion a').click(function(j) {
+            var dropDown = $(this).closest('li').find('p');
+            $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+            if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+            }
+            dropDown.stop(false, true).slideToggle();
+            j.preventDefault();
+            });
+            })(jQuery);
+            </script>
+        </body>
+    </html>

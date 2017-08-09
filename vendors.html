@@ -19,24 +19,30 @@
                 </section>
                 
             </div>
-            <!-- include "footer.html" -->
+            include "footer.html"
             include "foot.html"
             <script>
-            (function($) {
-            $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-            $('.accordion a').click(function(j) {
-            var dropDown = $(this).closest('li').find('p');
-            $(this).closest('.accordion').find('p').not(dropDown).slideUp();
-            if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-            } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
-            $(this).addClass('active');
-            }
-            dropDown.stop(false, true).slideToggle();
-            j.preventDefault();
+            document.addEventListener('DOMContentLoaded', function(){
+            Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 250,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
             });
-            })(jQuery);
+            var resetElement = document.querySelector('.reset');
+            if(resetElement) {
+            resetElement.addEventListener('click', function() {
+            document.getElementById('typed')._typed.reset();
+            });
+            }
+            });
+            function newTyped(){ /* A new typed object */ }
+            function foo(){ console.log("Callback"); }
             </script>
         </body>
     </html>
