@@ -1,24 +1,26 @@
 // Colors
-$primary: rgb(0,51,160);
-$secondary: #082053;
-$action: #AD2B11;
-$black: #111820;
-$lb: rgb(34,34,34);
+
+$primary: #0033a0;
+$secondary: #FF530D;
+$tertiary: #AD2B11;
 $accent: #4B6D0B;
-$lg: #9FEC0C;
-$link: $action;
-$hover: lighten($action,10);
+$accent-2: #9FEC0C;
+$black: #111820;
+$link: $tertiary;
+// $hover: $tertiary;
+
 
 // // Typefaces
 
-$sans-serif: 'Open Sans', sans-serif;
-$sans-thin: 'Open Sans 300', sans-serif;
-$sans-bold: 'Open Sans 600', sans-serif;
+$sans-serif: 'Lato', sans-serif;
+$sans-thin: 'Lato 100', sans-serif;
+$sans-regular: 'Lato 400', sans-serif;
+$sans-bold: 'Lato 600', sans-serif;
 
 
-$serif: 'Roboto slab', serif;
-$serif-regular: 'Roboto slab 400', serif;
-$serif-bold: 'Roboto slab 700', serif;
+$serif: 'Roboto Slab', serif;
+$serif-thin: 'Roboto Slab 300', serif;
+$serif-bold: 'Roboto Slab 600', serif;
 
 $li-padding: 5px;
 

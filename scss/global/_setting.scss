@@ -30,10 +30,6 @@ body, html {
 
   }
 
-  p {
-    margin: 0;
-  }
-
 .page-wrap {
    @include full;
 }
@@ -48,12 +44,26 @@ body, html {
   margin-bottom: 5%;  
 }
 
+.content-aside {
+  max-width:1280px;
+  margin: 0 auto;
+  @include display-flex;
+}
+
 #lead-in {
   // @include full;
   max-width: 1280px;
   margin:0 auto;
   clear: both;
 }
+.lead-in-aside {
+    max-width: 800px;
+  }
+  .aside-content {
+    max-width: 400px;
+    margin: 0 auto;
+    clear: both
+  }
 .lead-in-text {
   margin-bottom: 1.25%;
 }
@@ -63,8 +73,24 @@ body, html {
 }
 
 aside {
+  // max-width: 1280px;
+  // margin:0 auto;
+  // clear: both;
   video {
     margin-left: 1.25%;
+  }
+}
+#mob-app {
+  .content-aside {
+    img {
+      max-width: 180px;
+    }
+  }
+}
+.app-items {
+  li {
+    margin: 1.5%;
+    display: inline-block;
   }
 }
 

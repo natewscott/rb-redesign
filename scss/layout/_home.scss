@@ -1,4 +1,66 @@
-.home {
+#home {
+.logo {
+  background: rgba($black, 0.83);
+  @include full;
+  z-index: 100;
+  @include display-flex;
+  @include justify-content(space-between);
+  @include flex-direction(column);
+  @include breakpoint($medium) {
+    @include align-items(center);
+  }
+
+  span {
+    margin-left: -9999px;
+  }
+  img {
+
+    width:15em;
+    @include breakpoint($medium) {
+      width: 25em;
+    }
+    padding:2% 0 0 2%;
+  }
+}
+
+.hero {
+	@include full;
+	background-color: $black;
+	position:relative;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	min-height:300px;
+	height:350px;
+	@include breakpoint($large) {
+		height: 500px;
+	}
+  background-image: url("../img/hero/home-banner.jpg");
+  padding: 200px 40px;
+  margin: 0;
+  text-align: center;
+  font-size: 7.0rem;
+  // color: darken($color--secondary-light, 10%);
+}
+
+.nav {
+  margin: 0; 
+  padding: 20px 0;
+  // background: white;
+  list-style: none;
+  text-align: center;
+  float: none;
+  transition: all .15s ease;
+  &.nav-fixed-top {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background: white;
+    padding: 0;
+  }
+
+}
 	.cards {
 		max-width: 1380px;
 		margin: 0 auto;

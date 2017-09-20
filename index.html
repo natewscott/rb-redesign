@@ -1,52 +1,57 @@
 <!doctype html>
 <html class="nav-no-js" lang="en" >
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>R & B Company</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    include "head.html"
-    <body class="home">
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Add your site or application content here -->
-        <div class="page-wrap">
-            include "header.html"
-            <section class="main-content">
-                include "slide.html"
-                include "home-products.html"
-                include "clients.html"
-                <!-- include "skills.html" -->
-                <!-- include "contact.html" -->
-            </section>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>R & B Company</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        include "head.html"
+        <body id="home" >
+            <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <!-- Add your site or application content here -->
+            <div class="page-wrap">
+                include "header-home.html"
+                <section class="main-content">
+                    include "slide.html"
+                    include "home-products.html"
+                    include "clients.html"
+                    <!-- include "skills.html" -->
+                    <!-- include "contact.html" -->
+                </section>
+                
+            </div>
+            include "footer.html"
+            include "foot.html"
+            <script>
+            $(document).ready(function() {
+            //change the integers below to match the height of your upper div, which I called
+            //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+            //to figure out what the scroll position is when exactly you want to fix the nav
+            //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+            //you know the position.
+            var headerHeight = $("header.hero").outerHeight();
+            var $nav = $("nav.nav");
             
-        </div>
-        include "footer.html"
-        include "foot.html"
-        <script>
-        document.addEventListener('DOMContentLoaded', function(){
-        Typed.new("#typed", {
-        stringsElement: document.getElementById('typed-strings'),
-        typeSpeed: 250,
-        backDelay: 500,
-        loop: true,
-        contentType: 'html', // or text
-        // defaults to null for infinite loop
-        loopCount: null,
-        callback: function(){ foo(); },
-        resetCallback: function() { newTyped(); }
-        });
-        var resetElement = document.querySelector('.reset');
-        if(resetElement) {
-        resetElement.addEventListener('click', function() {
-        document.getElementById('typed')._typed.reset();
-        });
-        }
-        });
-        function newTyped(){ /* A new typed object */ }
-        function foo(){ console.log("Callback"); }
-        </script>
-    </body>
-</html>
+            $('body').click($nav, function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+            });
+            
+            $(window).scroll(function () {
+            console.log("scrollTop: " + $(window).scrollTop());
+            console.log("headerHeight: " + headerHeight);
+            if ($(window).scrollTop() > headerHeight) {
+            $("body").addClass('nav-fixed-top');
+            $nav.addClass('nav-fixed-top');
+            } else {
+            $("body").removeClass('nav-fixed-top');
+            $nav.removeClass('nav-fixed-top');
+            }
+            });
+            });
+            </script>
+        </body>
+    </html>

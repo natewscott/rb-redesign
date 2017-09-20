@@ -250,7 +250,7 @@ body {
 
 /* line 67, ../../scss/base/_type.scss */
 h1, h2, h3, h4 {
-  font-family: "Roboto slab", serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
 }
 
@@ -419,7 +419,7 @@ body, html {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   background-color: #eee;
   box-sizing: border-box;
@@ -454,11 +454,6 @@ a {
 }
 
 /* line 33, ../../scss/global/_setting.scss */
-p {
-  margin: 0;
-}
-
-/* line 37, ../../scss/global/_setting.scss */
 .page-wrap {
   clear: both;
   width: 100%;
@@ -467,7 +462,7 @@ p {
   margin-right: 0;
 }
 
-/* line 41, ../../scss/global/_setting.scss */
+/* line 37, ../../scss/global/_setting.scss */
 .main-content {
   clear: both;
   width: 100%;
@@ -476,7 +471,7 @@ p {
   margin-right: 0;
 }
 
-/* line 45, ../../scss/global/_setting.scss */
+/* line 41, ../../scss/global/_setting.scss */
 .content {
   clear: both;
   width: 100%;
@@ -487,27 +482,58 @@ p {
   margin-bottom: 5%;
 }
 
-/* line 51, ../../scss/global/_setting.scss */
+/* line 47, ../../scss/global/_setting.scss */
+.content-aside {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 53, ../../scss/global/_setting.scss */
 #lead-in {
   max-width: 1280px;
   margin: 0 auto;
   clear: both;
 }
 
-/* line 57, ../../scss/global/_setting.scss */
+/* line 59, ../../scss/global/_setting.scss */
+.lead-in-aside {
+  max-width: 800px;
+}
+
+/* line 62, ../../scss/global/_setting.scss */
+.aside-content {
+  max-width: 400px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* line 67, ../../scss/global/_setting.scss */
 .lead-in-text {
   margin-bottom: 1.25%;
 }
 
-/* line 60, ../../scss/global/_setting.scss */
+/* line 70, ../../scss/global/_setting.scss */
 .history.lead-in-text {
   max-width: 800px;
   float: left;
 }
 
-/* line 66, ../../scss/global/_setting.scss */
+/* line 79, ../../scss/global/_setting.scss */
 aside video {
   margin-left: 1.25%;
+}
+
+/* line 85, ../../scss/global/_setting.scss */
+#mob-app .content-aside img {
+  max-width: 180px;
+}
+
+/* line 91, ../../scss/global/_setting.scss */
+.app-items li {
+  margin: 1.5%;
+  display: inline-block;
 }
 
 /* line 1, ../../scss/global/_header.scss */
@@ -585,8 +611,8 @@ header img {
 .nav a:hover,
 .nav a:active,
 .nav a:visited {
-  font-family: "Open Sans", sans-serif;
-  font-weight: "Open Sans 300", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   display: block;
   position: relative;
 }
@@ -2819,9 +2845,9 @@ form input[type=checkbox] {
 
 /* line 56, ../../scss/modules/_forms.scss */
 form input::-webkit-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2829,9 +2855,9 @@ form input::-webkit-input-placeholder {
 
 /* line 64, ../../scss/modules/_forms.scss */
 form input:-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2839,9 +2865,9 @@ form input:-moz-placeholder {
 
 /* line 72, ../../scss/modules/_forms.scss */
 form input::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2849,9 +2875,9 @@ form input::-moz-placeholder {
 
 /* line 80, ../../scss/modules/_forms.scss */
 form input:-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 1;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2859,9 +2885,9 @@ form input:-ms-input-placeholder {
 
 /* line 88, ../../scss/modules/_forms.scss */
 form input:focus::-webkit-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2869,9 +2895,9 @@ form input:focus::-webkit-input-placeholder {
 
 /* line 96, ../../scss/modules/_forms.scss */
 form input:focus:-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2879,9 +2905,9 @@ form input:focus:-moz-placeholder {
 
 /* line 104, ../../scss/modules/_forms.scss */
 form input:focus::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -2889,9 +2915,9 @@ form input:focus::-moz-placeholder {
 
 /* line 112, ../../scss/modules/_forms.scss */
 form input:focus:-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #CCCCCC;
-  font-weight: "Open Sans 300", sans-serif;
+  font-weight: "Lato 100", sans-serif;
   opacity: 0.25;
   -webkit-transition: opacity 0.25s ease 0.125s;
   transition: opacity 0.25s ease 0.125s;
@@ -3041,101 +3067,55 @@ form input:required:valid {
 }
 
 /* line 1, ../../scss/modules/_modal-window.scss */
-button {
+.popup-trigger {
   display: block;
-  color: white;
-  font-size: 36px;
-  font-weight: 300;
-  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 20px;
   background: #AD2B11;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  border-radius: 5%;
-  border: none;
-  padding: 1% 2%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 11, ../../scss/modules/_modal-window.scss */
+.popup-trigger:hover {
+  background: #db3716;
 }
 
-/* line 12, ../../scss/modules/_modal-window.scss */
-button.md-close {
-  margin-top: 40px;
-  background: #0033a0;
-}
-
-/* line 17, ../../scss/modules/_modal-window.scss */
-.md-modal {
-  margin: auto;
-  position: fixed;
+/* line 15, ../../scss/modules/_modal-window.scss */
+.popup {
+  display: none;
+  position: absolute;
   top: 100px;
-  left: 0;
-  right: 0;
-  width: 50%;
-  max-width: 630px;
-  min-width: 320px;
-  height: auto;
-  z-index: 2000;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
+  left: 50%;
+  width: 700px;
+  margin-left: -350px;
+  padding: 50px 30px;
+  background: white;
+  color: #333;
+  z-index: 9999;
+  -moz-box-shadow: rgba(0, 51, 160, 0.6) 0 50px 50px;
+  -webkit-box-shadow: rgba(0, 51, 160, 0.6) 0 50px 50px;
+  box-shadow: rgba(0, 51, 160, 0.6) 0 50px 50px;
 }
 
-/* line 34, ../../scss/modules/_modal-window.scss */
-.md-show {
-  visibility: visible;
-}
-
-/* line 38, ../../scss/modules/_modal-window.scss */
-.md-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
+/* line 29, ../../scss/modules/_modal-window.scss */
+.popup-mobile {
+  position: relative;
   top: 0;
   left: 0;
-  z-index: 1000;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  margin: 30px 0 0;
+  width: 100%;
 }
 
-/* line 53, ../../scss/modules/_modal-window.scss */
-.md-show ~ .md-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* line 58, ../../scss/modules/_modal-window.scss */
-.md-effect-12 .md-content {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 69, ../../scss/modules/_modal-window.scss */
-.md-show.md-effect-12 ~ .md-overlay {
-  background-color: #bad0ff;
-}
-
-/* line 73, ../../scss/modules/_modal-window.scss */
-.md-effect-12 .md-content h3,
-.md-effect-12 .md-content {
-  background: transparent;
-}
-
-/* line 78, ../../scss/modules/_modal-window.scss */
-.md-show.md-effect-12 .md-content {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
+/* line 36, ../../scss/modules/_modal-window.scss */
+.popup-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  color: #AD2B11;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* line 1, ../../scss/modules/_inner-hero.scss */
@@ -3167,29 +3147,34 @@ button.md-close {
   color: #fefefe;
 }
 
-/* line 20, ../../scss/modules/_inner-hero.scss */
+/* line 23, ../../scss/modules/_inner-hero.scss */
 #locations-hero {
   background-image: url("../img/hero/map.svg");
 }
 
-/* line 23, ../../scss/modules/_inner-hero.scss */
+/* line 26, ../../scss/modules/_inner-hero.scss */
 #staff-hero {
   background-image: url("../img/hero/Nicholas Construction - Drought Relief.jpg");
 }
 
-/* line 26, ../../scss/modules/_inner-hero.scss */
+/* line 29, ../../scss/modules/_inner-hero.scss */
 #history-hero {
   background-image: url("../img/hero/rb-history.jpg");
 }
 
-/* line 29, ../../scss/modules/_inner-hero.scss */
+/* line 32, ../../scss/modules/_inner-hero.scss */
 #contact-hero {
   background-image: url("../img/hero/contact-us.jpg");
 }
 
-/* line 32, ../../scss/modules/_inner-hero.scss */
+/* line 35, ../../scss/modules/_inner-hero.scss */
 #submital-hero {
   background-image: url("../img/hero/Submittals.png");
+}
+
+/* line 38, ../../scss/modules/_inner-hero.scss */
+#app-hero {
+  background-image: url("../img/hero/mobile-app.jpg");
 }
 
 /* line 1, ../../scss/layout/_slide.scss */
@@ -3206,16 +3191,16 @@ button.md-close {
   max-width: 980px;
   height: 100vh;
   margin: 0 auto;
-  color: #AD2B11;
+  color: white;
   text-align: center;
   padding-top: 10%;
 }
 /* line 14, ../../scss/layout/_slide.scss */
 .home .hero h1 {
-  font-weight: 100;
   margin-bottom: 0;
   font-size: 31px;
   font-size: 1.82353rem;
+  font-family: "Lato", sans-serif;
   line-height: .95;
 }
 @media (min-width: 360px) {
@@ -3232,19 +3217,20 @@ button.md-close {
     font-size: 3.41176rem;
   }
 }
-/* line 21, ../../scss/layout/_slide.scss */
+/* line 20, ../../scss/layout/_slide.scss */
 .home .hero h1:nth-of-type(2) {
   padding-top: 5%;
 }
-/* line 25, ../../scss/layout/_slide.scss */
+/* line 24, ../../scss/layout/_slide.scss */
 .home .hero h2 {
   margin-bottom: 0;
   font-size: 28px;
   font-size: 1.64706rem;
   line-height: 2.63529rem;
+  font-family: "Lato", sans-serif;
 }
 @media (min-width: 360px) {
-  /* line 25, ../../scss/layout/_slide.scss */
+  /* line 24, ../../scss/layout/_slide.scss */
   .home .hero h2 {
     font-size: 33.5px;
     font-size: calc(1.5299vw + 28px - 0.0153 * 360px);
@@ -3253,7 +3239,7 @@ button.md-close {
   }
 }
 @media (min-width: 1080px) {
-  /* line 25, ../../scss/layout/_slide.scss */
+  /* line 24, ../../scss/layout/_slide.scss */
   .home .hero h2 {
     font-size: 39px;
     font-size: 2.29412rem;
@@ -3297,30 +3283,112 @@ button.md-close {
 }
 
 /* line 2, ../../scss/layout/_home.scss */
-.home .cards {
+#home .logo {
+  background: rgba(17, 24, 32, 0.83);
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 100;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 47em) {
+  /* line 2, ../../scss/layout/_home.scss */
+  #home .logo {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+/* line 13, ../../scss/layout/_home.scss */
+#home .logo span {
+  margin-left: -9999px;
+}
+/* line 16, ../../scss/layout/_home.scss */
+#home .logo img {
+  width: 15em;
+  padding: 2% 0 0 2%;
+}
+@media (min-width: 47em) {
+  /* line 16, ../../scss/layout/_home.scss */
+  #home .logo img {
+    width: 25em;
+  }
+}
+/* line 26, ../../scss/layout/_home.scss */
+#home .hero {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #111820;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 300px;
+  height: 350px;
+  background-image: url("../img/hero/home-banner.jpg");
+  padding: 200px 40px;
+  margin: 0;
+  text-align: center;
+  font-size: 7.0rem;
+}
+@media (min-width: 75em) {
+  /* line 26, ../../scss/layout/_home.scss */
+  #home .hero {
+    height: 500px;
+  }
+}
+/* line 46, ../../scss/layout/_home.scss */
+#home .nav {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  text-align: center;
+  float: none;
+  transition: all .15s ease;
+}
+/* line 54, ../../scss/layout/_home.scss */
+#home .nav.nav-fixed-top {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 0;
+}
+/* line 64, ../../scss/layout/_home.scss */
+#home .cards {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 6, ../../scss/layout/_home.scss */
-.home .client-logos {
+/* line 68, ../../scss/layout/_home.scss */
+#home .client-logos {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 10, ../../scss/layout/_home.scss */
-.home .client-logos ul {
+/* line 72, ../../scss/layout/_home.scss */
+#home .client-logos ul {
   display: -webkit-flex;
   display: flex;
 }
-/* line 12, ../../scss/layout/_home.scss */
-.home .client-logos ul li {
+/* line 74, ../../scss/layout/_home.scss */
+#home .client-logos ul li {
   -webkit-flex-direction: row;
   flex-direction: row;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 2% 0 2%;
 }
-/* line 19, ../../scss/layout/_home.scss */
-.home h1 {
+/* line 81, ../../scss/layout/_home.scss */
+#home h1 {
   text-align: center;
 }
 
@@ -3330,7 +3398,7 @@ button.md-close {
 }
 /* line 6, ../../scss/layout/_reg-training.scss */
 .small-training .hero h1, .small-training .hero h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -3441,7 +3509,7 @@ button.md-close {
 }
 /* line 62, ../../scss/layout/_reg-training.scss */
 .small-training .benifits h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 21px;
   font-size: 1.23529rem;
@@ -3520,7 +3588,7 @@ button.md-close {
 }
 /* line 20, ../../scss/layout/_staff.scss */
 .staff h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.25rem !important;
   color: #111820;
   margin-bottom: 0;

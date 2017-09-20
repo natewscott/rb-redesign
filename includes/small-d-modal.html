@@ -1,56 +1,48 @@
-<!--Introduction-->
-<div class="intro">
-  <button class="btn btn--intro" data-toggle="true">Sign Up</button>
-</div>
-<!--Modal Window-->
-<div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-  <div class="modal__window">
-    <button class="modal__close" data-toggle="true">Close</button>
-    <form action="https://formspree.io/nate@natescottdesign.com" method="POST">
+<div class="popup">
+  <h3>Small Diameter Classes</h3>
+  <form action="https://formspree.io/nate@natescottdesign.com" method="POST">
+    
+    <div class="formrow">
+      <div class="formitem col1">
+        <label class="label req" for="firstname">First name</label>
+        <input type="text" name="firstname" id="firstname"  required="required" x-autocompletetype="given-name"/>
+      </div>
+      <div class="formitem col1">
+        <label class="label req" for="firstname">Last name</label>
+        <input type="text" name="lastname" id="lastname"  required="required" x-autocompletetype="family-name"/>
+      </div>
+    </div>
+    <div class="formrow">
+      <div class="formitem col1of2">
+        <label class="label req" for="class-Date">Course Date</label>
+        <select name="class-Date" id="class-Date" required="required">
+          <option value="">Select a Date</option>
+          <option value="march13-15">March 13 - 15</option>
+          <option value="may1-5">May 1 - 5</option>
+          <option value="sept25-27">September 25 - 27</option>
+        </select>
+      </div>
+    </div>
+    <div class="formrow">
+      <div class="formitem col1">
+        <label class="label req" for="phone">Phone</label>
+        <input type="phone" name="phone" id="phone" required="required"  x-autocompletetype="phone"/>
+      </div>
+      <div class="formitem col1">
+        <label class="label req" for="email">Email</label>
+        <input type="email" name="_replyto" id="email" required="required" x-autocompletetype="email"/>
+      </div>
+      <input type="hidden" name="_subject" value="Small Diameter Sign Up" />
+    </div>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="thank-you-small.html" />
+    <div class="buttons">
+      <div class="forth">
+        <button class="primary button" type="submit" value="send">Submit</button>
+      </div>
       
-      <div class="formrow">
-        <div class="formitem col1">
-          <label class="label req" for="firstname">First name</label>
-          <input type="text" name="firstname" id="firstname"  required="required" x-autocompletetype="given-name"/>
-        </div>
-        <div class="formitem col1">
-          <label class="label req" for="firstname">Last name</label>
-          <input type="text" name="lastname" id="lastname"  required="required" x-autocompletetype="family-name"/>
-        </div>
-      </div>
-      <div class="formrow">
-        <div class="formitem col1of2">
-          <label class="label req" for="class-Date">Course Date</label>
-          <select name="class-Date" id="class-Date" required="required">
-            <option value="">Select a Date</option>
-            <option value="march13-15">March 13 - 15</option>
-            <option value="may1-5">May 1 - 5</option>
-            <option value="sept25-27">September 25 - 27</option>
-          </select>
-        </div>
-      </div>
-      <div class="formrow">
-        <div class="formitem col1">
-          <label class="label req" for="phone">Phone</label>
-          <input type="phone" name="phone" id="phone" required="required"  x-autocompletetype="phone"/>
-        </div>
-        <div class="formitem col1">
-          <label class="label req" for="email">Email</label>
-          <input type="email" name="_replyto" id="email" required="required" x-autocompletetype="email"/>
-        </div>
-        <input type="hidden" name="_subject" value="Small Diameter Sign Up" />
-      </div>
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <div class="buttons">
-        <div class="forth">
-          <button class="primary button" type="submit" value="send">Submit</button>
-        </div>
-        
-      </div>
-    </form>
-    <p style="margin-top: 15%;">Need a custom class? Give us an <a href="mailto:">email</a> and we can set one up at our facilities or come to you.</p>
-  </div>
+    </div>
+  </form>
+  <p style="margin-top: 15%;">Need a custom class? Give us an <a href="mailto:">email</a> and we can set one up at our facilities or come to you.</p>
+  <span class="popup-btn-close">close</span>
 </div>
-<!--Semi-transparent Cover-->
-<div class="cover"></div>
