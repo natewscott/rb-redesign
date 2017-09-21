@@ -3147,11 +3147,6 @@ form input:required:valid {
   color: #fefefe;
 }
 
-/* line 23, ../../scss/modules/_inner-hero.scss */
-#locations-hero {
-  background-image: url("../img/hero/map.svg");
-}
-
 /* line 26, ../../scss/modules/_inner-hero.scss */
 #staff-hero {
   background-image: url("../img/hero/Nicholas Construction - Drought Relief.jpg");

@@ -18,6 +18,27 @@
     	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Lato:100,300,400,700" rel="stylesheet">
     	<link rel="stylesheet" href="css/main.css">
     </head>
+        <style>
+      .map-control {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        font-family: 'Roboto','sans-serif';
+        margin: 10px;
+        /* Hide the control initially, to prevent it from appearing
+           before the map loads. */
+        display: none;
+      }
+      /* Display the control once it is inside the map. */
+      #map .map-control { display: block; }
+
+      .selector-control {
+        font-size: 14px;
+        line-height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    </style>
     <body class="locations">
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -75,6 +96,15 @@
             <a href="#" class="nav-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>
             </header>
             <section class="main-content">
+                <div id="style-selector-control"  class="map-control">
+                  <select id="style-selector" class="selector-control">
+                    <option value="default">Default</option>
+                    <option value="silver">Silver</option>
+                    <option value="night">Night mode</option>
+                    <option value="retro" selected="selected">Retro</option>
+                    <option value="hiding">Hide features</option>
+                  </select>
+                </div>
                 <section class="inner-hero" id="locations-hero">
                 	<article>
                 		<h1 class="page-title">Locations</h1>
@@ -489,22 +519,8 @@
         ga('create', 'UA-49054366-1', 'auto');
         ga('send', 'pageview');
         </script> -->
-        <script>
-        (function($) {
-        $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-        $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
-        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
-        if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        } else {
-        $(this).closest('.accordion').find('a.active').removeClass('active');
-        $(this).addClass('active');
-        }
-        dropDown.stop(false, true).slideToggle();
-        j.preventDefault();
-        });
-        })(jQuery);
-        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1cLGYUpQX-bw4Qp5QY7Xsw7hLc1vuQF4&callback=initMap"
+        async defer></script>
     </body>
 </html>
