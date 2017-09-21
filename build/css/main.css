@@ -3321,6 +3321,18 @@ form input:required:valid {
   }
 }
 /* line 26, ../../scss/layout/_home.scss */
+#home #second-logo {
+  background-color: #eee;
+  display: none;
+}
+/* line 29, ../../scss/layout/_home.scss */
+#home #second-logo.nav-fixed-top {
+  background: white;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+/* line 36, ../../scss/layout/_home.scss */
 #home .hero {
   clear: both;
   width: 100%;
@@ -3341,21 +3353,23 @@ form input:required:valid {
   font-size: 7.0rem;
 }
 @media (min-width: 75em) {
-  /* line 26, ../../scss/layout/_home.scss */
+  /* line 36, ../../scss/layout/_home.scss */
   #home .hero {
     height: 500px;
   }
 }
-/* line 46, ../../scss/layout/_home.scss */
+/* line 56, ../../scss/layout/_home.scss */
 #home .nav {
   margin: 0;
   padding: 20px 0;
   list-style: none;
-  text-align: center;
-  float: none;
-  transition: all .15s ease;
+  transition: all .45s ease;
 }
-/* line 54, ../../scss/layout/_home.scss */
+/* line 64, ../../scss/layout/_home.scss */
+#home .nav ul {
+  text-align: center;
+}
+/* line 67, ../../scss/layout/_home.scss */
 #home .nav.nav-fixed-top {
   top: 0;
   z-index: 100;
@@ -3364,22 +3378,22 @@ form input:required:valid {
   background: white;
   padding: 0;
 }
-/* line 64, ../../scss/layout/_home.scss */
+/* line 77, ../../scss/layout/_home.scss */
 #home .cards {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 68, ../../scss/layout/_home.scss */
+/* line 81, ../../scss/layout/_home.scss */
 #home .client-logos {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 72, ../../scss/layout/_home.scss */
+/* line 85, ../../scss/layout/_home.scss */
 #home .client-logos ul {
   display: -webkit-flex;
   display: flex;
 }
-/* line 74, ../../scss/layout/_home.scss */
+/* line 87, ../../scss/layout/_home.scss */
 #home .client-logos ul li {
   -webkit-flex-direction: row;
   flex-direction: row;
@@ -3387,7 +3401,7 @@ form input:required:valid {
   justify-content: space-between;
   padding: 0 2% 0 2%;
 }
-/* line 81, ../../scss/layout/_home.scss */
+/* line 94, ../../scss/layout/_home.scss */
 #home h1 {
   text-align: center;
 }

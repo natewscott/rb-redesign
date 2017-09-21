@@ -23,6 +23,16 @@
   }
 }
 
+#second-logo {
+	background-color: #eee;
+	display:none;
+	&.nav-fixed-top {
+		background:white;
+		@include display-flex;
+		align-items:center;
+	}
+}
+
 .hero {
 	@include full;
 	background-color: $black;
@@ -43,14 +53,17 @@
   // color: darken($color--secondary-light, 10%);
 }
 
-.nav {
+.nav  {
   margin: 0; 
   padding: 20px 0;
   // background: white;
   list-style: none;
-  text-align: center;
-  float: none;
-  transition: all .15s ease;
+  // text-align: center;
+  // float: right;
+  transition: all .45s ease;
+  ul {
+  	text-align: center;
+  }
   &.nav-fixed-top {
     top: 0;
     z-index: 100;

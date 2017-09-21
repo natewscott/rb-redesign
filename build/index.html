@@ -34,6 +34,9 @@
                 </header>
                 <a href="#" class="nav-button"><i class="fa fa-align-justify fa-md" aria-hidden="true"></i></a>
                 <nav class="nav" role="navigation" id="main-nav">
+                  <div class="logo" id="second-logo">
+                    <a href="index.html"><img src="img/logos/rb-logo-sideways-web.svg" alt=""><span>R&amp;B Company</span></a>
+                  </div>
                   <ul>
                     <li class="nav-submenu"><a href="products.html">Products<i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
                     <ul>
@@ -292,30 +295,38 @@
             ga('create', 'UA-49054366-1', 'auto');
             ga('send', 'pageview');
             </script> -->
-            <script>
+             <script>
             $(document).ready(function() {
-            //change the integers below to match the height of your upper div, which I called
-            //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-            //to figure out what the scroll position is when exactly you want to fix the nav
-            //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-            //you know the position.
             var headerHeight = $("header.hero").outerHeight();
-            var $nav = $("nav.nav");
-            
-            $('body').click($nav, function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-            });
+            var $logo = $("div#second-logo");
             
             $(window).scroll(function () {
             console.log("scrollTop: " + $(window).scrollTop());
             console.log("headerHeight: " + headerHeight);
             if ($(window).scrollTop() > headerHeight) {
             $("body").addClass('nav-fixed-top');
-            $nav.addClass('nav-fixed-top');
+            $logo.addClass('nav-fixed-top');
             } else {
             $("body").removeClass('nav-fixed-top');
-            $nav.removeClass('nav-fixed-top');
+            $logo.removeClass('nav-fixed-top');
+            }
+            });
+            });
+            </script>
+            <script>
+            $(document).ready(function() {
+            var headerHeight = $("header.hero").outerHeight();
+            var $nav = $("nav.nav");
+            
+            $(window).scroll(function () {
+            console.log("scrollTop: " + $(window).scrollTop());
+            console.log("headerHeight: " + headerHeight);
+            if ($(window).scrollTop() > headerHeight) {
+            $("body").addClass('nav-fixed-top');
+            $nav.addClass('nav-fixed-top', 'fixed-logo');
+            } else {
+            $("body").removeClass('nav-fixed-top', 'fixed-logo');
+            $nav.removeClass('nav-fixed-top', 'fixed-logo');
             }
             });
             });
