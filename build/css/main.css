@@ -1917,12 +1917,6 @@ input:checked + section.box .box-title:before {
   overflow: hidden;
 }
 
-/* line 60, ../../scss/modules/_card-grid.scss */
-.card:hover .card-image {
-  -webkit-filter: contrast(100%);
-  filter: contrast(100%);
-}
-
 /* line 64, ../../scss/modules/_card-grid.scss */
 .card-content {
   display: -webkit-box;
@@ -1943,16 +1937,14 @@ input:checked + section.box .box-title:before {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: contrast(70%);
-  filter: contrast(70%);
-  position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 
 /* line 89, ../../scss/modules/_card-grid.scss */
+#rentals .card-image {
+  background-size: contain;
+}
+
+/* line 92, ../../scss/modules/_card-grid.scss */
 .card-image::before {
   content: "";
   display: block;
@@ -1960,12 +1952,12 @@ input:checked + section.box .box-title:before {
 }
 
 @media (min-width: 40rem) {
-  /* line 95, ../../scss/modules/_card-grid.scss */
+  /* line 98, ../../scss/modules/_card-grid.scss */
   .card-image::before {
     padding-top: 66.6%;
   }
 }
-/* line 99, ../../scss/modules/_card-grid.scss */
+/* line 102, ../../scss/modules/_card-grid.scss */
 .card-title {
   color: #696969;
   font-size: 2rem;
@@ -1975,13 +1967,13 @@ input:checked + section.box .box-title:before {
   text-transform: uppercase;
 }
 
-/* line 107, ../../scss/modules/_card-grid.scss */
+/* line 110, ../../scss/modules/_card-grid.scss */
 h1.card-title {
   margin-bottom: 0;
   line-height: 1.25;
 }
 
-/* line 115, ../../scss/modules/_card-grid.scss */
+/* line 118, ../../scss/modules/_card-grid.scss */
 .card-subtitle {
   color: #696969;
   font-size: 1.5rem;
@@ -1990,7 +1982,7 @@ h1.card-title {
   letter-spacing: 2px;
 }
 
-/* line 123, ../../scss/modules/_card-grid.scss */
+/* line 126, ../../scss/modules/_card-grid.scss */
 .card-text {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -2100,6 +2092,137 @@ h1.card-title {
 /* line 64, ../../scss/modules/_card-images.scss */
 .card-image-meters {
   background-image: url("../img/product/backflow.jpg");
+}
+
+/* Rentals Page */
+/* line 70, ../../scss/modules/_card-images.scss */
+.card-image-2lc {
+  background-image: url("../img/rentals/2lc-fusion-machine.jpg");
+}
+
+/* line 73, ../../scss/modules/_card-images.scss */
+.card-image-14-pitbull {
+  background-image: url("../img/rentals/14 Pitbull.jpg");
+}
+
+/* line 76, ../../scss/modules/_card-images.scss */
+.card-image-28-rolling {
+  background-image: url("../img/rentals/28 rolling.jpg");
+}
+
+/* line 79, ../../scss/modules/_card-images.scss */
+.card-image-412-rolling {
+  background-image: url("../img/rentals/412 rolling.jpg");
+}
+
+/* line 82, ../../scss/modules/_card-images.scss */
+.card-image-618-rolling {
+  background-image: url("../img/rentals/618 rolling.jpg");
+}
+
+/* line 85, ../../scss/modules/_card-images.scss */
+.card-image-500-tracstar {
+  background-image: url("../img/rentals/tracstar 500.jpg");
+}
+
+/* line 88, ../../scss/modules/_card-images.scss */
+.card-image-900-tracstar {
+  background-image: url("../img/rentals/tracstar 900.jpg");
+}
+
+/* line 91, ../../scss/modules/_card-images.scss */
+.card-image-datalogger {
+  background-image: url("../img/rentals/datalogger6_wet.jpg");
+}
+
+/* line 94, ../../scss/modules/_card-images.scss */
+.card-image-pyrometer {
+  background-image: url("../img/rentals/Digital Pyrometer.jpg");
+}
+
+/* line 97, ../../scss/modules/_card-images.scss */
+.card-image-4-deabing {
+  background-image: url("../img/rentals/R&L 4 Inch Trimmer Head.jpg");
+}
+
+/* line 100, ../../scss/modules/_card-images.scss */
+.card-image-6-deabing {
+  background-image: url("../img/rentals/R&L 6 Inch Trimmer Head.jpg");
+}
+
+/* line 103, ../../scss/modules/_card-images.scss */
+.card-image-8-deabing {
+  background-image: url("../img/rentals/R&L 8 Inch Trimmer Head.jpg");
+}
+
+/* line 106, ../../scss/modules/_card-images.scss */
+.card-image-10-deabing {
+  background-image: url("../img/rentals/R&L 10 Inch Trimmer Head.jpg");
+}
+
+/* line 109, ../../scss/modules/_card-images.scss */
+.card-image-12-deabing {
+  background-image: url("../img/rentals/R&L 12 Inch Trimmer Head.jpg");
+}
+
+/* line 112, ../../scss/modules/_card-images.scss */
+.card-image-16-deabing {
+  background-image: url("../img/rentals/R&L 16 - 24 Trimmer Head.jpg");
+}
+
+/* line 115, ../../scss/modules/_card-images.scss */
+.card-image-24-deabing {
+  background-image: url("../img/rentals/R&L 24 Inch Trimmer Head.jpg");
+}
+
+/* line 118, ../../scss/modules/_card-images.scss */
+.card-image-diffuser {
+  background-image: url("../img/rentals/Diffuser.jpg");
+}
+
+/* line 121, ../../scss/modules/_card-images.scss */
+.card-image-super-dechlor {
+  background-image: url("../img/rentals/Superdechlorinator Kit.png");
+}
+
+/* line 124, ../../scss/modules/_card-images.scss */
+.card-image-scraper {
+  background-image: url("../img/rentals/Ipex FWSG 710 Scraper Tool.jpeg");
+}
+
+/* line 127, ../../scss/modules/_card-images.scss */
+.card-image-top-loader {
+  background-image: url("../img/rentals/Ipex 228053 Top Loading Tool.jpg");
+}
+
+/* line 130, ../../scss/modules/_card-images.scss */
+.card-image-ef-machine {
+  background-image: url("../img/rentals/Ipex Genesis F3 EF Machine.png");
+}
+
+/* line 133, ../../scss/modules/_card-images.scss */
+.card-image-gens {
+  background-image: url("../img/rentals/Portable Generator.png");
+}
+
+/* line 136, ../../scss/modules/_card-images.scss */
+.card-image-4-hole-saw {
+  background-image: url("../img/rentals/hole saws.jpg");
+}
+
+/* line 139, ../../scss/modules/_card-images.scss */
+.card-image-6-hole-saw {
+  background-image: url("../img/rentals/hole saws.jpg");
+}
+
+/* line 142, ../../scss/modules/_card-images.scss */
+.card-image-8-hole-saw {
+  background-image: url("../img/rentals/hole saws.jpg");
+}
+
+/* line 145, ../../scss/modules/_card-images.scss */
+.card-image-testpump {
+  background-image: url("../img/rentals/Hydrostatic Test Pump RHTP.jpg");
 }
 
 /* line 1, ../../scss/modules/_image-grid.scss */
@@ -3170,6 +3293,11 @@ form input:required:valid {
 /* line 38, ../../scss/modules/_inner-hero.scss */
 #app-hero {
   background-image: url("../img/hero/mobile-app.jpg");
+}
+
+/* line 41, ../../scss/modules/_inner-hero.scss */
+#rental-hero {
+  background-image: url("../img/hero/t900-fusion-machine.jpg");
 }
 
 /* line 1, ../../scss/layout/_slide.scss */
