@@ -2136,37 +2136,22 @@ h1.card-title {
 
 /* line 19, ../../scss/modules/_card-images.scss */
 .card-image-cathodic {
-  background-image: url("../img/product/lid-water.jpg");
+  background-image: url("../img/product/cathodic.jpg");
 }
 
 /* line 22, ../../scss/modules/_card-images.scss */
 .card-image-clamps-couplings {
-  background-image: url("../img/product/backflow.jpg");
-}
-
-/* line 25, ../../scss/modules/_card-images.scss */
-.card-image-drains {
-  background-image: url("../img/product/custom-fab.jpg");
+  background-image: url("../img/product/couplings.jpg");
 }
 
 /* line 28, ../../scss/modules/_card-images.scss */
 .card-image-enclosures {
-  background-image: url("../img/product/backflow.jpg");
+  background-image: url("../img/product/enclosure.jpg");
 }
 
 /* line 31, ../../scss/modules/_card-images.scss */
 .card-image-fire-protection {
   background-image: url("../img/product/fire-protection.jpg");
-}
-
-/* line 34, ../../scss/modules/_card-images.scss */
-.card-image-fittings {
-  background-image: url("../img/product/backflow.jpg");
-}
-
-/* line 37, ../../scss/modules/_card-images.scss */
-.card-image-pe-pipe-fittings {
-  background-image: url("../img/product/backflow.jpg");
 }
 
 /* line 40, ../../scss/modules/_card-images.scss */
@@ -2176,12 +2161,7 @@ h1.card-title {
 
 /* line 43, ../../scss/modules/_card-images.scss */
 .card-image-manholes {
-  background-image: url("../img/product/backflow.jpg");
-}
-
-/* line 46, ../../scss/modules/_card-images.scss */
-.card-image-meters {
-  background-image: url("../img/product/backflow.jpg");
+  background-image: url("../img/product/manhole.jpg");
 }
 
 /* line 49, ../../scss/modules/_card-images.scss */
@@ -2189,39 +2169,29 @@ h1.card-title {
   background-image: url("../img/product/blue-pipe.jpg");
 }
 
-/* line 52, ../../scss/modules/_card-images.scss */
-.card-image-pumps {
-  background-image: url("../img/product/backflow.jpg");
-}
-
 /* line 55, ../../scss/modules/_card-images.scss */
 .card-image-service-brass {
-  background-image: url("../img/product/rentals.jpg");
+  background-image: url("../img/product/service-saddle.jpg");
 }
 
 /* line 58, ../../scss/modules/_card-images.scss */
 .card-image-tools {
-  background-image: url("../img/product/service-saddle.jpg");
+  background-image: url("../img/product/tools.jpg");
 }
 
 /* line 61, ../../scss/modules/_card-images.scss */
 .card-image-boxes {
-  background-image: url("../img/product/valves.jpg");
+  background-image: url("../img/product/meter-box.jpg");
 }
 
 /* line 64, ../../scss/modules/_card-images.scss */
 .card-image-valves {
-  background-image: url("../img/product/backflow.jpg");
-}
-
-/* line 67, ../../scss/modules/_card-images.scss */
-.card-image-wt {
-  background-image: url("../img/product/backflow.jpg");
+  background-image: url("../img/product/valves.jpg");
 }
 
 /* line 70, ../../scss/modules/_card-images.scss */
 .card-image-misc {
-  background-image: url("../img/product/backflow.jpg");
+  background-image: url("../img/product/misc.jpg");
 }
 
 /* Rentals Page */
