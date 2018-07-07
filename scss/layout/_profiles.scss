@@ -1,0 +1,164 @@
+#profiles {
+	.hero {
+		article {
+      		// max-width: 900px;
+      			padding: 45% 0 0 5%;
+      			@include breakpoint($large) {
+					padding: 10% 0 0 5%;
+				}
+		}
+		h1,h2 {
+			font-family: $sans-regular;
+			font-weight: 700;
+			color: white;
+			text-transform: uppercase;
+		}
+		h1 {
+			@include responsive-typography(40px, 80px, false);
+			line-height: .85;
+			margin-bottom: 0;
+		}
+		h2 {
+			@include responsive-typography(26px, 50px, false);
+		}
+	}
+	.width-layout {
+	max-width:1280px;
+	padding-right: 1.5%;
+	padding-left: 1.5%;
+
+	@include breakpoint($medium) {
+		margin:0 auto;
+	}
+}
+#job-info {
+	@include full;
+	margin:2% 10%;
+}
+#job-details {
+	color: $primary;
+	float:none;
+	// width:100%;
+	@include breakpoint($large) {
+		float: left;
+	}
+	
+	h1 {
+    // @include responsive-typography(41px, 48px, false);
+    // line-height: 1.4;
+	}
+	#small {
+		display: block;
+		text-align: center;
+			@include breakpoint($large) {
+				display: none;
+			}
+	}
+	#large {
+		display: none;
+			@include breakpoint($large) {
+				display: block;
+			}
+	}
+	ul {
+		text-align: center;
+			@include breakpoint($large) {
+				text-align: left;
+			}
+	}
+	p {
+		// @include responsive-typography(38px, 24px);
+		margin: 0;
+	}
+}
+// #img-grid {
+// 	clear:none;
+// 		@include breakpoint($medium) {
+// 			clear:right;
+// 		}
+// }
+#fusion-logo {
+	@include display-flex;
+	max-width:30%;
+	margin:0 auto;
+}
+	#fusion-branch {
+		h1, h2 {
+			color:white;
+		}
+		h1 {
+			@include responsive-typography(38px, 120px, false);
+			line-height: .85;
+			margin-bottom: 0;
+		}
+		h2 {
+			@include responsive-typography(26px, 48px, false);
+		}
+	}
+	#branch-locations {
+
+  
+  h1 {
+  	color: $primary;
+    text-align: center;
+  }
+
+  article {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+
+  .branch-map {
+    @include display-flex;
+    @include flex-direction(column-reverse);
+    @include breakpoint($medium) {
+      @include flex-direction(row);
+    };
+  }
+  .branches-info {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    @include breakpoint($medium) {
+      text-align: left;
+      margin: 0 10%;
+    }
+  }
+}
+
+  .location {
+    @include display-flex;
+    @include flex-direction(column-reverse);
+    @include breakpoint($medium) {
+      @include flex-direction(row);
+    }
+    color: $primary;
+    .map {
+      padding-right:0;
+      @include breakpoint($medium) {
+        padding-right: 10%;
+      }
+    }
+    h1 {
+      @include responsive-typography(40px, 80px, false);
+      text-align: center;
+    }
+    h2 {
+      @include responsive-typography(40px, 48px, false);
+      margin-bottom: 0;
+    }
+    address {
+      @include responsive-typography(35px, 41px, false);
+      line-height: 1;
+      text-align: center;
+      @include breakpoint($medium) {
+        text-align: left;
+      }
+    }
+    .course-logos {
+      @include display-flex;
+      @include flex-direction(row);
+      margin-bottom: 10%;
+    }
+  }
+}

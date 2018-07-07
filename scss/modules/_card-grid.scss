@@ -57,10 +57,10 @@
           flex-direction: column;
   overflow: hidden;
 }
-.card:hover .card-image {
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
-}
+// .card:hover .card-image {
+//   -webkit-filter: contrast(100%);
+//           filter: contrast(100%);
+// }
 .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,13 +78,16 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: contrast(70%);
-          filter: contrast(70%);
-  position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  // -webkit-filter: contrast(70%);
+  //         filter: contrast(70%);
+  // position: relative;
+  // -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  // transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  // transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  // transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+#rentals .card-image {
+  background-size:contain;
 }
 .card-image::before {
   content: "";

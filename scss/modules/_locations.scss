@@ -1,0 +1,65 @@
+#branch-locations {
+
+  
+  h1 {
+    text-align: center;
+  }
+
+  article {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+
+  .branch-map {
+    @include display-flex;
+    @include flex-direction(column-reverse);
+    @include breakpoint($medium) {
+      @include flex-direction(row);
+    };
+  }
+  .branches-info {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    @include breakpoint($medium) {
+      text-align: left;
+      margin: 0 10%;
+    }
+  }
+}
+
+  .location {
+    @include display-flex;
+    @include flex-direction(column-reverse);
+    @include breakpoint($medium) {
+      @include flex-direction(row);
+    }
+    color: $primary;
+    .map {
+      padding-right:0;
+      @include breakpoint($medium) {
+        padding-right: 10%;
+      }
+    }
+    h1 {
+      @include responsive-typography(40px, 80px, false);
+      text-align: center;
+    }
+    h2 {
+      @include responsive-typography(40px, 48px, false);
+      margin-bottom: 0;
+    }
+    address {
+      @include responsive-typography(35px, 41px, false);
+      line-height: 1;
+      text-align: center;
+      @include breakpoint($medium) {
+        text-align: left;
+      }
+    }
+    .course-logos {
+      @include display-flex;
+      @include flex-direction(row);
+      margin-bottom: 10%;
+    }
+  }

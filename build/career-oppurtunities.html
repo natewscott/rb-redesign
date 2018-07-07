@@ -45,6 +45,7 @@
                 </li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="staff.html">Staff</a></li>
+                <li><a href="job-profiles.html">Job Profiles</a></li>
                 <li class="nav-submenu"><a href="rentals.html">Rentals &amp; Services<i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
                 <ul>
                   <li><a href="training.html">Training</a></li>
@@ -67,9 +68,9 @@
               <li><a href="pipe-fitters-handbook.html">Pipe Fitters Handbook</a></li>
             </ul>
             </li>
-            <li class="nav-submenu"><a href="about.html">About Us<i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
+            <li class="nav-submenu"><a href="about-us.html">About Us<i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
             <ul>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            <!-- <li><a href="contact-us.html">Contact Us</a></li> -->
             <!-- <li><a href="career-oppurtunities.html">Career Oppurtunities</a></li> -->
             <li><a href="company-history.html">Copmpany History</a></li>
             </ul>
@@ -184,7 +185,7 @@
         				</li>
         			</ul>
         		</article>
-        		<article>
+        <!-- 		<article>
         			<h2>Join Our Mailing list:</h2>
         			<form action="sign-up.php" method="post">
         				
@@ -200,7 +201,7 @@
         				</fieldset>
         				
         			</form>
-        		</article>
+        		</article> -->
         		<article>
         			<h2>Follow Us</h2>
         			<section class="social">
@@ -259,22 +260,5 @@
         ga('create', 'UA-49054366-1', 'auto');
         ga('send', 'pageview');
         </script> -->
-        <script>
-        (function($) {
-        $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-        $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
-        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
-        if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        } else {
-        $(this).closest('.accordion').find('a.active').removeClass('active');
-        $(this).addClass('active');
-        }
-        dropDown.stop(false, true).slideToggle();
-        j.preventDefault();
-        });
-        })(jQuery);
-        </script>
     </body>
 </html>

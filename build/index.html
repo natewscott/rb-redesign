@@ -47,6 +47,7 @@
                   </li>
                   <li><a href="locations.html">Locations</a></li>
                   <li><a href="staff.html">Staff</a></li>
+                  <li><a href="job-profiles.html">Job Profiles</a></li>
                   <li class="nav-submenu"><a href="rentals.html">Rentals &amp; Services<i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
                   <ul>
                     <li><a href="training.html">Training</a></li>
@@ -109,7 +110,7 @@
                     				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptate in corporis nostrum quod, nam assumenda excepturi eaque ducimus quisquam totam libero? Omnis ab consectetur reiciendis quia veritatis, unde eius?
                     			</p>
                     			</figcaption>
-                    			<a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a>
+                    			<!-- <a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a> -->
                     		</figure>
                     	</article>
                     	<article class="cards-item">
@@ -122,7 +123,7 @@
                     				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptate in corporis nostrum quod, nam assumenda excepturi eaque ducimus quisquam totam libero? Omnis ab consectetur reiciendis quia veritatis, unde eius?
                     			</p>
                     			</figcaption>
-                    			<a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a>
+                    			<!-- <a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a> -->
                     		</figure>
                     	</article>
                     	<article class="cards-item">
@@ -135,7 +136,7 @@
                     				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptate in corporis nostrum quod, nam assumenda excepturi eaque ducimus quisquam totam libero? Omnis ab consectetur reiciendis quia veritatis, unde eius?
                     			</p>
                     			</figcaption>
-                    			<a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a>
+                    			<!-- <a href="staff.html"><button class="btn btn-block card-btn">Get a Quote</button></a> -->
                     		</figure>
                     	</article>
                     </section>
@@ -220,7 +221,7 @@
             				</li>
             			</ul>
             		</article>
-            		<article>
+            <!-- 		<article>
             			<h2>Join Our Mailing list:</h2>
             			<form action="sign-up.php" method="post">
             				
@@ -236,7 +237,7 @@
             				</fieldset>
             				
             			</form>
-            		</article>
+            		</article> -->
             		<article>
             			<h2>Follow Us</h2>
             			<section class="social">
@@ -295,41 +296,5 @@
             ga('create', 'UA-49054366-1', 'auto');
             ga('send', 'pageview');
             </script> -->
-             <script>
-            $(document).ready(function() {
-            var headerHeight = $("header.hero").outerHeight();
-            var $logo = $("div#second-logo");
-            
-            $(window).scroll(function () {
-            console.log("scrollTop: " + $(window).scrollTop());
-            console.log("headerHeight: " + headerHeight);
-            if ($(window).scrollTop() > headerHeight) {
-            $("body").addClass('nav-fixed-top');
-            $logo.addClass('nav-fixed-top');
-            } else {
-            $("body").removeClass('nav-fixed-top');
-            $logo.removeClass('nav-fixed-top');
-            }
-            });
-            });
-            </script>
-            <script>
-            $(document).ready(function() {
-            var headerHeight = $("header.hero").outerHeight();
-            var $nav = $("nav.nav");
-            
-            $(window).scroll(function () {
-            console.log("scrollTop: " + $(window).scrollTop());
-            console.log("headerHeight: " + headerHeight);
-            if ($(window).scrollTop() > headerHeight) {
-            $("body").addClass('nav-fixed-top');
-            $nav.addClass('nav-fixed-top', 'fixed-logo');
-            } else {
-            $("body").removeClass('nav-fixed-top', 'fixed-logo');
-            $nav.removeClass('nav-fixed-top', 'fixed-logo');
-            }
-            });
-            });
-            </script>
         </body>
     </html>
