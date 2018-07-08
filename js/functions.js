@@ -48,8 +48,6 @@
   });
 })(jQuery);
 
-<<<<<<< HEAD
-=======
 function initMap() {
  // Create a map object and specify the DOM element for display.
         var bakersfield = {lat: 35.309836, lng: -119.061677};
@@ -150,4 +148,3 @@ function initMap() {
  var styles = {
   default: null,
 };
->>>>>>> 3b0e7b3db9cf5659d99381b3dc5abcb22da760a0

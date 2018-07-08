@@ -52,8 +52,10 @@ footer {
       @include display-flex;
       @include flex-direction(column);
       @include align-items(center);
+      margin-bottom: 10%;
       @include breakpoint($medium) {
         @include align-items(flex-start);
+        margin-bottom: 0;
       }
       
     }

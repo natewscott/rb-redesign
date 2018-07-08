@@ -914,15 +914,17 @@ footer .site-footer article {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
+  margin-bottom: 10%;
 }
 @media (min-width: 47em) {
   /* line 51, ../../scss/global/_footer.scss */
   footer .site-footer article {
     -webkit-align-items: flex-start;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 }
-/* line 60, ../../scss/global/_footer.scss */
+/* line 62, ../../scss/global/_footer.scss */
 footer .site-footer h2 {
   text-align: center;
   font-size: 24px;
@@ -931,26 +933,26 @@ footer .site-footer h2 {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 60, ../../scss/global/_footer.scss */
+  /* line 62, ../../scss/global/_footer.scss */
   footer .site-footer h2 {
     font-size: 26px;
     font-size: calc(0.55633vw + 24px - 0.00556 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 60, ../../scss/global/_footer.scss */
+  /* line 62, ../../scss/global/_footer.scss */
   footer .site-footer h2 {
     font-size: 28px;
     font-size: 1.64706rem;
   }
 }
 @media (min-width: 47em) {
-  /* line 60, ../../scss/global/_footer.scss */
+  /* line 62, ../../scss/global/_footer.scss */
   footer .site-footer h2 {
     text-align: left;
   }
 }
-/* line 69, ../../scss/global/_footer.scss */
+/* line 71, ../../scss/global/_footer.scss */
 footer .site-footer p,
 footer .site-footer li {
   font-size: 18px;
@@ -959,7 +961,7 @@ footer .site-footer li {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 69, ../../scss/global/_footer.scss */
+  /* line 71, ../../scss/global/_footer.scss */
   footer .site-footer p,
   footer .site-footer li {
     font-size: 19.5px;
@@ -967,28 +969,28 @@ footer .site-footer li {
   }
 }
 @media (min-width: 1080px) {
-  /* line 69, ../../scss/global/_footer.scss */
+  /* line 71, ../../scss/global/_footer.scss */
   footer .site-footer p,
   footer .site-footer li {
     font-size: 21px;
     font-size: 1.23529rem;
   }
 }
-/* line 77, ../../scss/global/_footer.scss */
+/* line 79, ../../scss/global/_footer.scss */
 footer img {
   width: 50%;
 }
 @media (min-width: 47em) {
-  /* line 77, ../../scss/global/_footer.scss */
+  /* line 79, ../../scss/global/_footer.scss */
   footer img {
     width: 100%;
   }
 }
-/* line 84, ../../scss/global/_footer.scss */
+/* line 86, ../../scss/global/_footer.scss */
 footer .footer-link {
   letter-spacing: .065em;
 }
-/* line 88, ../../scss/global/_footer.scss */
+/* line 90, ../../scss/global/_footer.scss */
 footer #copyright {
   display: -webkit-flex;
   display: flex;
@@ -2187,6 +2189,11 @@ h1.card-title {
 /* line 64, ../../scss/modules/_card-images.scss */
 .card-image-valves {
   background-image: url("../img/product/valves.jpg");
+}
+
+/* line 67, ../../scss/modules/_card-images.scss */
+.card-image-wt {
+  background-image: url("../img/product/water-treatment.jpg");
 }
 
 /* line 70, ../../scss/modules/_card-images.scss */
@@ -3483,51 +3490,61 @@ form input:required:valid {
 }
 
 /* line 26, ../../scss/modules/_inner-hero.scss */
-#staff-hero {
-  background-image: url("../img/hero/Nicholas Construction - Drought Relief.jpg");
+#profiles-hero {
+  background-image: url("../img/hero/profiles.jpg");
 }
 
 /* line 29, ../../scss/modules/_inner-hero.scss */
+#staff-hero {
+  background-image: url("../img/hero/staff-hero.jpg");
+}
+
+/* line 32, ../../scss/modules/_inner-hero.scss */
+#c-accounts-hero {
+  background-image: url("../img/hero/customer-accounts.jpg");
+}
+
+/* line 35, ../../scss/modules/_inner-hero.scss */
 #history-hero {
   background-image: url("../img/hero/rb-history.jpg");
 }
 
-/* line 32, ../../scss/modules/_inner-hero.scss */
+/* line 38, ../../scss/modules/_inner-hero.scss */
 #contact-hero {
   background-image: url("../img/hero/contact-us.jpg");
 }
 
-/* line 35, ../../scss/modules/_inner-hero.scss */
+/* line 41, ../../scss/modules/_inner-hero.scss */
 #submital-hero {
   background-image: url("../img/hero/Submittals.png");
 }
 
-/* line 38, ../../scss/modules/_inner-hero.scss */
+/* line 44, ../../scss/modules/_inner-hero.scss */
 #app-hero {
   background-image: url("../img/hero/mobile-app.jpg");
 }
 
-/* line 41, ../../scss/modules/_inner-hero.scss */
+/* line 47, ../../scss/modules/_inner-hero.scss */
 #rental-hero {
   background-image: url("../img/hero/t900-fusion-machine.jpg");
 }
 
-/* line 44, ../../scss/modules/_inner-hero.scss */
+/* line 50, ../../scss/modules/_inner-hero.scss */
 #vendors-hero {
   background-image: url("../img/hero/sf-arteries.jpg");
 }
 
-/* line 47, ../../scss/modules/_inner-hero.scss */
+/* line 53, ../../scss/modules/_inner-hero.scss */
 #videos-hero {
   background-image: url("../img/hero/blue-pipe.jpg");
 }
 
-/* line 50, ../../scss/modules/_inner-hero.scss */
+/* line 56, ../../scss/modules/_inner-hero.scss */
 #a-links-hero {
   background-image: url("../img/hero/yellow-hydrants.jpg");
 }
 
-/* line 53, ../../scss/modules/_inner-hero.scss */
+/* line 59, ../../scss/modules/_inner-hero.scss */
 #user-agreement-hero {
   background-image: url("../img/hero/dixon-irrigation-bypass.jpg");
 }
@@ -3829,16 +3846,22 @@ form input:required:valid {
 /* line 26, ../../scss/layout/_home.scss */
 #home #second-logo {
   background-color: #eee;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0s, opacity 1s linear;
 }
-/* line 29, ../../scss/layout/_home.scss */
+/* line 32, ../../scss/layout/_home.scss */
 #home #second-logo.nav-fixed-top {
   background: white;
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
 }
-/* line 36, ../../scss/layout/_home.scss */
+/* line 42, ../../scss/layout/_home.scss */
 #home .hero {
   clear: both;
   width: 100%;
@@ -3859,23 +3882,23 @@ form input:required:valid {
   font-size: 7.0rem;
 }
 @media (min-width: 75em) {
-  /* line 36, ../../scss/layout/_home.scss */
+  /* line 42, ../../scss/layout/_home.scss */
   #home .hero {
     height: 500px;
   }
 }
-/* line 56, ../../scss/layout/_home.scss */
+/* line 62, ../../scss/layout/_home.scss */
 #home .nav {
   margin: 0;
   padding: 20px 0;
   list-style: none;
-  transition: all .45s ease;
+  transition: all 1s ease;
 }
-/* line 64, ../../scss/layout/_home.scss */
+/* line 70, ../../scss/layout/_home.scss */
 #home .nav ul {
   text-align: center;
 }
-/* line 67, ../../scss/layout/_home.scss */
+/* line 73, ../../scss/layout/_home.scss */
 #home .nav.nav-fixed-top {
   top: 0;
   z-index: 100;
@@ -3884,30 +3907,35 @@ form input:required:valid {
   background: white;
   padding: 0;
 }
-/* line 77, ../../scss/layout/_home.scss */
+/* line 83, ../../scss/layout/_home.scss */
 #home .cards {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 81, ../../scss/layout/_home.scss */
+/* line 87, ../../scss/layout/_home.scss */
 #home .client-logos {
-  max-width: 1380px;
+  max-width: 1080px;
   margin: 0 auto;
 }
-/* line 85, ../../scss/layout/_home.scss */
+/* line 91, ../../scss/layout/_home.scss */
 #home .client-logos ul {
   display: -webkit-flex;
   display: flex;
 }
-/* line 87, ../../scss/layout/_home.scss */
+/* line 93, ../../scss/layout/_home.scss */
 #home .client-logos ul li {
-  -webkit-flex-direction: row;
-  flex-direction: row;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 2% 0 2%;
 }
-/* line 94, ../../scss/layout/_home.scss */
+@media (min-width: 47em) {
+  /* line 93, ../../scss/layout/_home.scss */
+  #home .client-logos ul li {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+/* line 103, ../../scss/layout/_home.scss */
 #home h1 {
   text-align: center;
 }
