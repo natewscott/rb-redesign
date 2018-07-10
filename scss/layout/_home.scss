@@ -60,6 +60,10 @@
 }
 
 .nav  {
+  display: block;
+    @include breakpoint($medium) {
+      display: none;
+    }
   margin: 0; 
   padding: 20px 0;
   // background: white;
@@ -79,6 +83,10 @@
     padding: 0;
   }
 
+}
+.menu {
+  height: auto;
+  background: none;
 }
 	.cards {
 		max-width: 1380px;
@@ -100,7 +108,7 @@
 			}
 		}
 	}
-	h1 {
-		text-align: center;
-	}
 }
+  h1 {
+    text-align: center;
+  }

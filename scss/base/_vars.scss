@@ -6,7 +6,7 @@ $tertiary: #AD2B11;
 $accent: #4B6D0B;
 $accent-2: #9FEC0C;
 $black: #111820;
-$link: $tertiary;
+$link: lighten( $tertiary,10%);
 // $hover: $tertiary;
 
 
