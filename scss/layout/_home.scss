@@ -1,6 +1,9 @@
 #home {
+  header {
+    background: rgba($black, 0.83);
+  }
 .logo {
-  background: rgba($black, 0.83);
+  // background: rgba($black, 0.83);
   @include full;
   z-index: 100;
   @include display-flex;
@@ -61,9 +64,9 @@
 
 .nav  {
   display: block;
-    @include breakpoint($medium) {
-      display: none;
-    }
+    // @include breakpoint($medium) {
+    //   display: none;
+    // }
   margin: 0; 
   padding: 20px 0;
   // background: white;
@@ -84,9 +87,8 @@
   }
 
 }
-.menu {
-  height: auto;
-  background: none;
+.menu a {
+  color: white;
 }
 	.cards {
 		max-width: 1380px;
