@@ -289,17 +289,15 @@ header {
   display:inline;
   position:relative;
 }
-.menu a{/*main menu*/
+.menu a {/*main menu*/
   display: block;
   // font-size:120%;
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: white;
-    @include breakpoint($medium) {
-    color: $primary;
-  }
+  color: $primary;
 }
+
 .menu li a:hover{
   // color:#fff;
 -webkit-transition: all .3s ease-in-out;

@@ -623,16 +623,10 @@ header img {
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: white;
-}
-@media (min-width: 47em) {
-  /* line 292, ../../scss/global/_header.scss */
-  .menu a {
-    color: #0033a0;
-  }
+  color: #0033a0;
 }
 
-/* line 303, ../../scss/global/_header.scss */
+/* line 301, ../../scss/global/_header.scss */
 .menu li a:hover {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -641,7 +635,7 @@ header img {
   transition: all .3s ease-in-out;
 }
 
-/* line 312, ../../scss/global/_header.scss */
+/* line 310, ../../scss/global/_header.scss */
 .menu input {
   display: none;
   margin: 0 0;
@@ -652,7 +646,7 @@ header img {
   cursor: pointer;
 }
 
-/* line 314, ../../scss/global/_header.scss */
+/* line 312, ../../scss/global/_header.scss */
 .menu label {
   font: normal 20px Arial;
   display: none;
@@ -664,14 +658,14 @@ header img {
 }
 
 /*BRAND*/
-/* line 326, ../../scss/global/_header.scss */
+/* line 324, ../../scss/global/_header.scss */
 .menu label span {
   font-size: 80%;
   position: absolute;
   left: 35px;
 }
 
-/* line 327, ../../scss/global/_header.scss */
+/* line 325, ../../scss/global/_header.scss */
 .menu ul.menus {
   /*SUBMENUS*/
   height: auto;
@@ -683,7 +677,7 @@ header img {
   display: none;
 }
 
-/* line 336, ../../scss/global/_header.scss */
+/* line 334, ../../scss/global/_header.scss */
 .menu ul.menus li {
   display: block;
   width: 100%;
@@ -691,7 +685,7 @@ header img {
   text-shadow: none;
 }
 
-/* line 343, ../../scss/global/_header.scss */
+/* line 341, ../../scss/global/_header.scss */
 .menu ul.menus a {
   line-height: 40px;
   /*REV*/
@@ -702,12 +696,12 @@ header img {
   transition: all .6s ease-in-out;
 }
 
-/* line 353, ../../scss/global/_header.scss */
+/* line 351, ../../scss/global/_header.scss */
 .menu li:hover ul.menus {
   display: block;
 }
 
-/* line 354, ../../scss/global/_header.scss */
+/* line 352, ../../scss/global/_header.scss */
 .menu ul.menus a:hover {
   background: #004bed;
   color: white;
@@ -723,7 +717,7 @@ header img {
 /**/
 /*MOBIL VERSION, 0 > 600px*/
 @media screen and (max-width: 600px) {
-  /* line 369, ../../scss/global/_header.scss */
+  /* line 367, ../../scss/global/_header.scss */
   .menu {
     position: relative;
     color: #fff;
@@ -731,7 +725,7 @@ header img {
     border-bottom: 0px solid #222;
   }
 
-  /* line 376, ../../scss/global/_header.scss */
+  /* line 374, ../../scss/global/_header.scss */
   .menu ul {
     top: 100%;
     left: 0;
@@ -742,21 +736,21 @@ header img {
     background: #555;
   }
 
-  /* line 385, ../../scss/global/_header.scss */
+  /* line 383, ../../scss/global/_header.scss */
   .menu ul.menus {
     width: 100%;
     position: static;
     padding-left: 0px;
   }
 
-  /* line 390, ../../scss/global/_header.scss */
+  /* line 388, ../../scss/global/_header.scss */
   .menu li {
     width: auto;
     display: block;
     float: none;
   }
 
-  /* line 395, ../../scss/global/_header.scss */
+  /* line 393, ../../scss/global/_header.scss */
   .menu input, .menu label {
     margin: 0  2%;
     float: right;
@@ -764,17 +758,17 @@ header img {
     position: absolute;
   }
 
-  /* line 401, ../../scss/global/_header.scss */
+  /* line 399, ../../scss/global/_header.scss */
   .menu input {
     z-index: 4;
   }
 
-  /* line 402, ../../scss/global/_header.scss */
+  /* line 400, ../../scss/global/_header.scss */
   .menu input:checked + label {
     color: #fff;
   }
 
-  /* line 403, ../../scss/global/_header.scss */
+  /* line 401, ../../scss/global/_header.scss */
   .menu input:checked ~ ul {
     display: block;
   }
