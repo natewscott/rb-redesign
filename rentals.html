@@ -1,25 +1,64 @@
 <!doctype html>
 <html lang="en" class="nav-no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>R & B Company | Rentals</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    include "head.html"
-    <body class="staff" id="rentals">
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Add your site or application content here -->
-        <div class="page-wrap">
-            include "header.html"
-            <section class="main-content">
-                include "rentals-content.html"
-            </section>
-            <!-- include "footer.html" -->
-        </div>
-        include "footer.html"
-        include "foot.html"
-    </body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>R & B Company | Rentals</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        include "head.html"
+        <body class="staff" id="rentals">
+            <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <!-- Add your site or application content here -->
+            <div class="page-wrap">
+                include "header.html"
+                <section class="main-content">
+                    include "rentals-content.html"
+                </section>
+                <!-- include "footer.html" -->
+            </div>
+            include "footer.html"
+            include "foot.html"
+            <script>
+            var cartOpen = false;
+            var numberOfProducts = 0;
+            $('body').on('click', '.js-toggle-cart', toggleCart);
+            $('body').on('click', '.js-add-product', addProduct);
+            $('body').on('click', '.js-remove-product', removeProduct);
+            function toggleCart(e) {
+            e.preventDefault();
+            if(cartOpen) {
+            closeCart();
+            return;
+            }
+            openCart();
+            }
+            function openCart() {
+            cartOpen = true;
+            $('body').addClass('open');
+            }
+            function closeCart() {
+            cartOpen = false;
+            $('body').removeClass('open');
+            }
+            function addProduct(e) {
+            e.preventDefault();
+            openCart();
+            $('.js-cart-empty').addClass('hide');
+            var product = $('.js-cart-product-template').html();
+            $('.js-cart-products').prepend(product);
+            numberOfProducts++;
+            }
+            function removeProduct(e) {
+            e.preventDefault();
+            numberOfProducts--;
+            $(this).closest('.js-cart-product').hide(250);
+            if(numberOfProducts == 0) {
+            $('.js-cart-empty').removeClass('hide');
+            }
+            }
+            </script>
+        </body>
+    </html>
