@@ -350,9 +350,9 @@ fieldset .legend {
     word-spacing: 0;
     padding-right: 10px;
   }
-  .formrow .formitem:last-child {
-    margin-right: -99px;
-  }
+  // .formrow .formitem:last-child {
+  //   margin-right: -99px;
+  // }
   .formrow .formitem:before {
     content: "\00a0";
     display: block;

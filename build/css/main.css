@@ -229,6 +229,7 @@ body {
   font-size: 1.05882rem;
   line-height: 1.69412rem;
   padding: 48px;
+  font-weight: 100;
 }
 @media (min-width: 360px) {
   /* line 62, ../../scss/base/_type.scss */
@@ -248,13 +249,13 @@ body {
   }
 }
 
-/* line 67, ../../scss/base/_type.scss */
+/* line 68, ../../scss/base/_type.scss */
 h1, h2, h3, h4 {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
 }
 
-/* line 72, ../../scss/base/_type.scss */
+/* line 73, ../../scss/base/_type.scss */
 h1 {
   font-size: 24px;
   font-size: 1.41176rem;
@@ -262,7 +263,7 @@ h1 {
   margin: 0 0 24px;
 }
 @media (min-width: 360px) {
-  /* line 72, ../../scss/base/_type.scss */
+  /* line 73, ../../scss/base/_type.scss */
   h1 {
     font-size: 37px;
     font-size: calc(3.61613vw + 24px - 0.03616 * 360px);
@@ -271,21 +272,21 @@ h1 {
   }
 }
 @media (min-width: 1080px) {
-  /* line 72, ../../scss/base/_type.scss */
+  /* line 73, ../../scss/base/_type.scss */
   h1 {
     font-size: 50px;
     font-size: 2.94118rem;
     line-height: 5.14706rem;
   }
 }
-/* line 76, ../../scss/base/_type.scss */
+/* line 77, ../../scss/base/_type.scss */
 h1 small {
   font-size: 16px;
   font-size: 0.94118rem;
   line-height: 1.50588rem;
 }
 @media (min-width: 360px) {
-  /* line 76, ../../scss/base/_type.scss */
+  /* line 77, ../../scss/base/_type.scss */
   h1 small {
     font-size: 20px;
     font-size: calc(1.11266vw + 16px - 0.01113 * 360px);
@@ -294,7 +295,7 @@ h1 small {
   }
 }
 @media (min-width: 1080px) {
-  /* line 76, ../../scss/base/_type.scss */
+  /* line 77, ../../scss/base/_type.scss */
   h1 small {
     font-size: 24px;
     font-size: 1.41176rem;
@@ -302,7 +303,7 @@ h1 small {
   }
 }
 
-/* line 82, ../../scss/base/_type.scss */
+/* line 83, ../../scss/base/_type.scss */
 h2 {
   font-size: 20px;
   font-size: 1.17647rem;
@@ -311,21 +312,21 @@ h2 {
   margin: 0 0 24px;
 }
 @media (min-width: 360px) {
-  /* line 82, ../../scss/base/_type.scss */
+  /* line 83, ../../scss/base/_type.scss */
   h2 {
     font-size: 29px;
     font-size: calc(2.50348vw + 20px - 0.02503 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 82, ../../scss/base/_type.scss */
+  /* line 83, ../../scss/base/_type.scss */
   h2 {
     font-size: 38px;
     font-size: 2.23529rem;
   }
 }
 
-/* line 89, ../../scss/base/_type.scss */
+/* line 90, ../../scss/base/_type.scss */
 h3 {
   font-size: 18px;
   font-size: 1.05882rem;
@@ -333,7 +334,7 @@ h3 {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 89, ../../scss/base/_type.scss */
+  /* line 90, ../../scss/base/_type.scss */
   h3 {
     font-size: 23px;
     font-size: calc(1.39082vw + 18px - 0.01391 * 360px);
@@ -342,7 +343,7 @@ h3 {
   }
 }
 @media (min-width: 1080px) {
-  /* line 89, ../../scss/base/_type.scss */
+  /* line 90, ../../scss/base/_type.scss */
   h3 {
     font-size: 28px;
     font-size: 1.64706rem;
@@ -350,7 +351,7 @@ h3 {
   }
 }
 
-/* line 94, ../../scss/base/_type.scss */
+/* line 95, ../../scss/base/_type.scss */
 h4 {
   font-size: 19px;
   font-size: 1.11765rem;
@@ -358,7 +359,7 @@ h4 {
   margin: 0;
 }
 @media (min-width: 360px) {
-  /* line 94, ../../scss/base/_type.scss */
+  /* line 95, ../../scss/base/_type.scss */
   h4 {
     font-size: 21.5px;
     font-size: calc(0.69541vw + 19px - 0.00695 * 360px);
@@ -367,7 +368,7 @@ h4 {
   }
 }
 @media (min-width: 1080px) {
-  /* line 94, ../../scss/base/_type.scss */
+  /* line 95, ../../scss/base/_type.scss */
   h4 {
     font-size: 24px;
     font-size: 1.41176rem;
@@ -375,13 +376,13 @@ h4 {
   }
 }
 
-/* line 99, ../../scss/base/_type.scss */
+/* line 100, ../../scss/base/_type.scss */
 p {
   font-weight: 300;
   margin-bottom: 24px;
 }
 
-/* line 105, ../../scss/base/_type.scss */
+/* line 106, ../../scss/base/_type.scss */
 pre {
   text-align: left;
   margin: 24px 0 48px;
@@ -391,7 +392,7 @@ pre {
   display: inline-block;
 }
 
-/* line 114, ../../scss/base/_type.scss */
+/* line 115, ../../scss/base/_type.scss */
 code {
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -421,7 +422,6 @@ body, html {
   padding: 0;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  background-color: #eee;
   box-sizing: border-box;
 }
 
@@ -1410,11 +1410,6 @@ fieldset .legend {
     line-height: 1.333;
     word-spacing: 0;
     padding-right: 10px;
-  }
-
-  /* line 353, ../../scss/global/_forms.scss */
-  .formrow .formitem:last-child {
-    margin-right: -99px;
   }
 
   /* line 356, ../../scss/global/_forms.scss */
@@ -3545,7 +3540,7 @@ form input:required:valid {
 
 /* line 53, ../../scss/modules/_inner-hero.scss */
 #rental-hero {
-  background-image: url("../img/hero/t900-fusion-machine.jpg");
+  background-image: url("../img/hero/t630.jpg");
 }
 
 /* line 56, ../../scss/modules/_inner-hero.scss */
@@ -4488,32 +4483,22 @@ h1 {
   margin-bottom: 10%;
 }
 
-/* line 3, ../../scss/layout/_cart.scss */
-body {
-  background: #F3F3F3;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-/* line 14, ../../scss/layout/_cart.scss */
+/* line 4, ../../scss/layout/_cart.scss */
 body.open {
   overflow-y: hidden;
 }
 
-/* line 18, ../../scss/layout/_cart.scss */
+/* line 8, ../../scss/layout/_cart.scss */
 .shop {
   position: relative;
   z-index: 5;
 }
 
-/* line 23, ../../scss/layout/_cart.scss */
+/* line 13, ../../scss/layout/_cart.scss */
 .shop__header {
   box-sizing: border-box;
   position: fixed;
+  bottom: 0;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 15px;
@@ -4521,12 +4506,12 @@ body.open {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* line 33, ../../scss/layout/_cart.scss */
+/* line 24, ../../scss/layout/_cart.scss */
 .shop__products {
   padding-top: 70px;
 }
 
-/* line 37, ../../scss/layout/_cart.scss */
+/* line 28, ../../scss/layout/_cart.scss */
 .shop__title {
   display: block;
   margin: 0;
@@ -4535,19 +4520,19 @@ body.open {
   line-height: 40px;
 }
 
-/* line 46, ../../scss/layout/_cart.scss */
+/* line 37, ../../scss/layout/_cart.scss */
 .shop__text {
   display: block;
   padding: 0;
   margin: 0;
   float: right;
 }
-/* line 52, ../../scss/layout/_cart.scss */
+/* line 43, ../../scss/layout/_cart.scss */
 .shop__text .button {
   padding: 10px 15px;
 }
 
-/* line 57, ../../scss/layout/_cart.scss */
+/* line 48, ../../scss/layout/_cart.scss */
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -4555,12 +4540,12 @@ body.open {
   padding: 20px 0 20px 20px;
 }
 
-/* line 64, ../../scss/layout/_cart.scss */
+/* line 55, ../../scss/layout/_cart.scss */
 .products__item {
   width: 290px;
 }
 
-/* line 68, ../../scss/layout/_cart.scss */
+/* line 59, ../../scss/layout/_cart.scss */
 .product {
   background: #FFF;
   padding: 30px 15px;
@@ -4569,19 +4554,19 @@ body.open {
   text-align: center;
 }
 
-/* line 76, ../../scss/layout/_cart.scss */
+/* line 67, ../../scss/layout/_cart.scss */
 .product__title {
   font-weight: bold;
   font-size: 20px;
   margin: 0 0 15px 0;
 }
 
-/* line 82, ../../scss/layout/_cart.scss */
+/* line 73, ../../scss/layout/_cart.scss */
 .product__text {
   margin: 0;
 }
 
-/* line 86, ../../scss/layout/_cart.scss */
+/* line 77, ../../scss/layout/_cart.scss */
 .button {
   display: inline-block;
   background: #39C;
@@ -4593,13 +4578,13 @@ body.open {
   color: #FFF;
 }
 
-/* line 98, ../../scss/layout/_cart.scss */
+/* line 89, ../../scss/layout/_cart.scss */
 .button--light {
   background: #FFF;
   color: #F00;
 }
 
-/* line 103, ../../scss/layout/_cart.scss */
+/* line 94, ../../scss/layout/_cart.scss */
 .cart {
   position: fixed;
   background: #F3F3F3;
@@ -4615,12 +4600,12 @@ body.open {
   z-index: 20;
 }
 
-/* line 118, ../../scss/layout/_cart.scss */
+/* line 109, ../../scss/layout/_cart.scss */
 body.open .cart {
   transform: translate(0, 0);
 }
 
-/* line 122, ../../scss/layout/_cart.scss */
+/* line 113, ../../scss/layout/_cart.scss */
 .cart__header {
   box-sizing: border-box;
   position: absolute;
@@ -4633,12 +4618,12 @@ body.open .cart {
   z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 134, ../../scss/layout/_cart.scss */
+/* line 125, ../../scss/layout/_cart.scss */
 .cart__header .cart__text {
   float: right;
 }
 
-/* line 139, ../../scss/layout/_cart.scss */
+/* line 130, ../../scss/layout/_cart.scss */
 .cart__title {
   font-size: 20px;
   line-height: 40px;
@@ -4646,7 +4631,7 @@ body.open .cart {
   float: left;
 }
 
-/* line 146, ../../scss/layout/_cart.scss */
+/* line 137, ../../scss/layout/_cart.scss */
 .cart__products {
   box-sizing: border-box;
   position: absolute;
@@ -4658,45 +4643,45 @@ body.open .cart {
   -webkit-overflow-scrolling: touch;
   z-index: 1;
 }
-/* line 157, ../../scss/layout/_cart.scss */
+/* line 148, ../../scss/layout/_cart.scss */
 .cart__products article {
   padding: 15px;
   border-bottom: 1px dotted #CCC;
 }
-/* line 161, ../../scss/layout/_cart.scss */
+/* line 152, ../../scss/layout/_cart.scss */
 .cart__products article h1 {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
 }
-/* line 167, ../../scss/layout/_cart.scss */
+/* line 158, ../../scss/layout/_cart.scss */
 .cart__products article p {
   font-size: 14px;
   margin: 0;
 }
-/* line 171, ../../scss/layout/_cart.scss */
+/* line 162, ../../scss/layout/_cart.scss */
 .cart__products article p a {
   color: #F00;
 }
 
-/* line 178, ../../scss/layout/_cart.scss */
+/* line 169, ../../scss/layout/_cart.scss */
 .cart__product {
   display: none;
 }
 
-/* line 182, ../../scss/layout/_cart.scss */
+/* line 173, ../../scss/layout/_cart.scss */
 .cart__empty {
   padding: 30px 15px;
   margin: 0;
   font-style: italic;
   text-align: center;
 }
-/* line 188, ../../scss/layout/_cart.scss */
+/* line 179, ../../scss/layout/_cart.scss */
 .cart__empty.hide {
   display: none;
 }
 
-/* line 193, ../../scss/layout/_cart.scss */
+/* line 184, ../../scss/layout/_cart.scss */
 .cart__footer {
   box-sizing: border-box;
   position: absolute;
@@ -4710,16 +4695,16 @@ body.open .cart {
   text-align: right;
 }
 
-/* line 206, ../../scss/layout/_cart.scss */
+/* line 197, ../../scss/layout/_cart.scss */
 .cart__text {
   margin: 0;
 }
-/* line 209, ../../scss/layout/_cart.scss */
+/* line 200, ../../scss/layout/_cart.scss */
 .cart__text .button {
   padding: 10px 15px;
 }
 
-/* line 214, ../../scss/layout/_cart.scss */
+/* line 205, ../../scss/layout/_cart.scss */
 .lightbox {
   position: fixed;
   background: #000;
@@ -4732,7 +4717,7 @@ body.open .cart {
   transition: opacity 250ms ease-in-out, width 0ms ease-in-out 250ms;
 }
 
-/* line 226, ../../scss/layout/_cart.scss */
+/* line 217, ../../scss/layout/_cart.scss */
 body.open .lightbox {
   width: 100%;
   opacity: 0.8;

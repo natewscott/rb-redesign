@@ -48,7 +48,15 @@
             openCart();
             $('.js-cart-empty').addClass('hide');
             var product = $('.js-cart-product-template').html();
+            var productTitle = $('.product_title').text();
+            var productPickUp = $('.pick-up').val();
+            var productPickReturn = $('.return').val();
+            var productLocation = $('.location option:selected').text();
             $('.js-cart-products').prepend(product);
+            $(".prod-title").text(productTitle);
+            $(".pu-date").text(productPickUp);
+            $(".rtn-date").text(productPickReturn);
+            $(".loc").text(productLocation);
             numberOfProducts++;
             }
             function removeProduct(e) {
