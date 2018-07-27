@@ -3951,9 +3951,10 @@ form input:required:valid {
 }
 /* line 103, ../../scss/layout/_home.scss */
 #home .client-logos ul li {
+  -webkit-flex-grow: 0.5;
+  flex-grow: 0.5;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 0 2% 0 2%;
 }
 @media (min-width: 47em) {
   /* line 103, ../../scss/layout/_home.scss */
@@ -3963,7 +3964,7 @@ form input:required:valid {
   }
 }
 
-/* line 114, ../../scss/layout/_home.scss */
+/* line 116, ../../scss/layout/_home.scss */
 h1 {
   text-align: center;
 }

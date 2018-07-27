@@ -102,11 +102,13 @@
 			@include display-flex;
 			li {
         // @include flex-direction(column);
+        @include flex-grow(.5);
         @include justify-content(space-between);
-        padding: 0 2% 0 2%;
+        // padding: 0 2% 0 2%;
           @include breakpoint($medium) {
             @include flex-direction(row);
           }
+
 			}
 		}
 	}
