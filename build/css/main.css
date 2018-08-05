@@ -2201,147 +2201,182 @@ h1.card-title {
 }
 
 /* line 100, ../../scss/modules/_card-images.scss */
+.card-image-socket {
+  background-image: url("../img/rentals/socket_largeheaterkit.jpg");
+}
+
+/* line 103, ../../scss/modules/_card-images.scss */
+.card-image-spider {
+  background-image: url("../img/rentals/125spider-s2.jpg");
+}
+
+/* line 106, ../../scss/modules/_card-images.scss */
+.card-image-hornet {
+  background-image: url("../img/rentals/54525scr_fe14e3164137f5e.jpg");
+}
+
+/* line 109, ../../scss/modules/_card-images.scss */
+.card-image-smartfab {
+  background-image: url("../img/rentals/125smartfab.jpg");
+}
+
+/* line 112, ../../scss/modules/_card-images.scss */
+.card-image-acrobat-160 {
+  background-image: url("../img/rentals/160acrobatpremium.jpg");
+}
+
+/* line 115, ../../scss/modules/_card-images.scss */
+.card-image-acrobat-250 {
+  background-image: url("../img/rentals/250acrobat_premium.jpg");
+}
+
+/* line 118, ../../scss/modules/_card-images.scss */
+.card-image-618-tracstar {
+  background-image: url("../img/rentals/618 TracStar.jpg");
+}
+
+/* line 121, ../../scss/modules/_card-images.scss */
 .card-image-datalogger {
   background-image: url("../img/rentals/datalogger6_wet.jpg");
 }
 
-/* line 103, ../../scss/modules/_card-images.scss */
+/* line 124, ../../scss/modules/_card-images.scss */
 .card-image-pyrometer {
   background-image: url("../img/rentals/Digital Pyrometer.jpg");
 }
 
-/* line 106, ../../scss/modules/_card-images.scss */
+/* line 127, ../../scss/modules/_card-images.scss */
 .card-image-4-deabing {
   background-image: url("../img/rentals/R&L 4 Inch Trimmer Head.jpg");
 }
 
-/* line 109, ../../scss/modules/_card-images.scss */
+/* line 130, ../../scss/modules/_card-images.scss */
 .card-image-6-deabing {
   background-image: url("../img/rentals/R&L 6 Inch Trimmer Head.jpg");
 }
 
-/* line 112, ../../scss/modules/_card-images.scss */
+/* line 133, ../../scss/modules/_card-images.scss */
 .card-image-8-deabing {
   background-image: url("../img/rentals/R&L 8 Inch Trimmer Head.jpg");
 }
 
-/* line 115, ../../scss/modules/_card-images.scss */
+/* line 136, ../../scss/modules/_card-images.scss */
 .card-image-10-deabing {
   background-image: url("../img/rentals/R&L 10 Inch Trimmer Head.jpg");
 }
 
-/* line 118, ../../scss/modules/_card-images.scss */
+/* line 139, ../../scss/modules/_card-images.scss */
 .card-image-12-deabing {
   background-image: url("../img/rentals/R&L 12 Inch Trimmer Head.jpg");
 }
 
-/* line 121, ../../scss/modules/_card-images.scss */
+/* line 142, ../../scss/modules/_card-images.scss */
 .card-image-16-deabing {
   background-image: url("../img/rentals/R&L 16 - 24 Trimmer Head.jpg");
 }
 
-/* line 124, ../../scss/modules/_card-images.scss */
+/* line 145, ../../scss/modules/_card-images.scss */
 .card-image-24-deabing {
   background-image: url("../img/rentals/R&L 24 Inch Trimmer Head.jpg");
 }
 
-/* line 127, ../../scss/modules/_card-images.scss */
+/* line 148, ../../scss/modules/_card-images.scss */
 .card-image-diffuser {
   background-image: url("../img/rentals/Diffuser.jpg");
 }
 
-/* line 130, ../../scss/modules/_card-images.scss */
+/* line 151, ../../scss/modules/_card-images.scss */
 .card-image-super-dechlor {
   background-image: url("../img/rentals/Superdechlorinator Kit.png");
 }
 
-/* line 133, ../../scss/modules/_card-images.scss */
+/* line 154, ../../scss/modules/_card-images.scss */
 .card-image-scraper {
   background-image: url("../img/rentals/Ipex FWSG 710 Scraper Tool.jpeg");
 }
 
-/* line 136, ../../scss/modules/_card-images.scss */
+/* line 157, ../../scss/modules/_card-images.scss */
 .card-image-top-loader {
   background-image: url("../img/rentals/Ipex 228053 Top Loading Tool.jpg");
 }
 
-/* line 139, ../../scss/modules/_card-images.scss */
+/* line 160, ../../scss/modules/_card-images.scss */
 .card-image-ef-machine {
   background-image: url("../img/rentals/Ipex Genesis F3 EF Machine.png");
 }
 
-/* line 142, ../../scss/modules/_card-images.scss */
+/* line 163, ../../scss/modules/_card-images.scss */
 .card-image-gens {
   background-image: url("../img/rentals/Portable Generator.png");
 }
 
-/* line 145, ../../scss/modules/_card-images.scss */
+/* line 166, ../../scss/modules/_card-images.scss */
 .card-image-4-hole-saw {
   background-image: url("../img/rentals/hole saws.jpg");
 }
 
-/* line 148, ../../scss/modules/_card-images.scss */
+/* line 169, ../../scss/modules/_card-images.scss */
 .card-image-6-hole-saw {
   background-image: url("../img/rentals/hole saws.jpg");
 }
 
-/* line 151, ../../scss/modules/_card-images.scss */
+/* line 172, ../../scss/modules/_card-images.scss */
 .card-image-8-hole-saw {
   background-image: url("../img/rentals/hole saws.jpg");
 }
 
-/* line 154, ../../scss/modules/_card-images.scss */
+/* line 175, ../../scss/modules/_card-images.scss */
 .card-image-testpump {
   background-image: url("../img/rentals/Hydrostatic Test Pump RHTP.jpg");
 }
 
 /* Card Images */
-/* line 160, ../../scss/modules/_card-images.scss */
+/* line 181, ../../scss/modules/_card-images.scss */
 .card-image-hdpe-pipe {
   background-image: url("../img/product/hdpe-pipe.jpg");
 }
 
-/* line 163, ../../scss/modules/_card-images.scss */
+/* line 184, ../../scss/modules/_card-images.scss */
 .card-image-mdpe {
   background-image: url("../img/product/mdpe-pipe.jpg");
 }
 
-/* line 166, ../../scss/modules/_card-images.scss */
+/* line 187, ../../scss/modules/_card-images.scss */
 .card-image-equip {
   background-image: url("../img/product/BeadTrimmer_8-24inch.png");
 }
 
-/* line 169, ../../scss/modules/_card-images.scss */
+/* line 190, ../../scss/modules/_card-images.scss */
 .card-image-fusion {
   background-image: url("../img/product/rentals.jpg");
 }
 
-/* line 172, ../../scss/modules/_card-images.scss */
+/* line 193, ../../scss/modules/_card-images.scss */
 .card-image-training {
   background-image: url("../img/training/Medium Diameter Training-2.jpg");
 }
 
-/* line 175, ../../scss/modules/_card-images.scss */
+/* line 196, ../../scss/modules/_card-images.scss */
 .card-image-service {
   background-image: url("../img/product/tech.jpg");
 }
 
-/* line 178, ../../scss/modules/_card-images.scss */
+/* line 199, ../../scss/modules/_card-images.scss */
 .card-image-small-diameter {
   background-image: url("../img/training/small diameter training-3.jpg");
 }
 
-/* line 181, ../../scss/modules/_card-images.scss */
+/* line 202, ../../scss/modules/_card-images.scss */
 .card-image-medium-diameter {
   background-image: url("../img/training/Medium Diameter Training-10.jpg");
 }
 
-/* line 184, ../../scss/modules/_card-images.scss */
+/* line 205, ../../scss/modules/_card-images.scss */
 .card-image-large-diameter {
   background-image: url("../img/training/large-diameter.jpg");
 }
 
-/* line 187, ../../scss/modules/_card-images.scss */
+/* line 208, ../../scss/modules/_card-images.scss */
 .card-image-fusion-inspection {
   background-image: url("../img/training/Medium Diameter Training-5.jpg");
 }
