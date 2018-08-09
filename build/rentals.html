@@ -77,6 +77,13 @@
                 </div>
                 </header>
                 <section class="main-content">
+                    <div class="shop__header">
+                    	<p class="shop__text">
+                    		<a class="button js-toggle-cart" href="#" title="View cart">
+                    			View cart
+                    		</a>
+                    	</p>
+                    </div>
                     <section class="inner-hero" id="rental-hero">
                     	<article>
                     		<h1 class="page-title">Rentals</h1>
@@ -89,14 +96,7 @@
                     		</p>
                     	</article>
                     	<article>
-                    		<div class="shop__header">
-                    			<p class="shop__text">
-                    				<a class="button js-toggle-cart" href="#" title="View cart">
-                    					View cart
-                    				</a>
-                    			</p>
-                    		</div>
-                    		<section class="cards" id="">
+                    		<section class="cards">
                     			<article class="cards-item">
                     				<figure class="card product">
                     					<div class="card-image card-image-2lc"></div>
@@ -1322,6 +1322,57 @@
                     			</article>
                     			<article class="cards-item">
                     				<figure class="card">
+                    					<div class="card-image card-image-squeeze-tool"></div>
+                    					<figcaption class="card-content">
+                    					<h1 class="card-title">Squeeze Off Tool</h1>
+                    					<p class="card-text">Squeeze Off Tools are used to clamp down a pipeline so rempairs can be done to the damaged section with out shutting off the flow upstream and with out damage to the pipe.</p>
+                    					<form  action="" method="">
+                    						<fieldset>
+                    							<div class="formrow" >
+                    								<div class="formitem col1">
+                    									<label class="label req" for="sq-2lc">Pick Up Date</label>
+                    									<input type="date" name="sq-2lc" id="sq-2lc" class="pick-up" required="required"/>
+                    								</div>
+                    							</div>
+                    							<div class="formrow">
+                    								<div class="formitem col1">
+                    									<label class="label req" for="sq-2lc">Return Date</label>
+                    									<input type="date" name="sq-2lc" id="sq-2lc" class="return" required="required"/>
+                    								</div>
+                    							</div>
+                    							<div class="formrow">
+                    								<div class="formitem col1of2" >
+                    									<label class="label" for="sq-location">Pick Up Location</label>
+                    									<select name="sq-location" id="sq-location" class="location">
+                    										<option>please choose</option>
+                    										<option value="bkf">Bakersfield</option>
+                    										<option value="ch">Chico</option>
+                    										<option value="fsn">Fresno</option>
+                    										<option value="hyw">Hayward</option>
+                    										<option value="mtc">Manteca</option>
+                    										<option value="oak">Oakley</option>
+                    										<option value="rwc">Redwood City</option>
+                    										<option value="sac">Sacramento</option>
+                    										<option value="sal">Salinas</option>
+                    										<option value="sj">San Jose</option>
+                    										<option value="sjf">San Jose Fusion</option>
+                    										<option value="sr">Santa Rosa</option>
+                    									</select>
+                    								</div>
+                    							</div>
+                    						</fieldset>
+                    						<div class="buttons">
+                    							<div class="back">
+                    								<button class="primary button js-add-product" >Add to Cart</button>
+                    							</div>
+                    						</div>
+                    					</form>
+
+                    					</figcaption>
+                    				</figure>
+                    			</article>
+                    			<article class="cards-item">
+                    				<figure class="card">
                     					<div class="card-image card-image-4-hole-saw"></div>
                     					<figcaption class="card-content">
                     					<h1 class="card-title">Hole Saws</h1>
@@ -1382,93 +1433,92 @@
                     				</figure>
                     			</article>
                     			<article class="cards-item">
-                    				<article class="cards-item">
-                    					<figure class="card">
-                    						<div class="card-image card-image-testpump"></div>
-                    						<figcaption class="card-content">
-                    						<h1 class="card-title">Hydrostatic Test Pumps</h1>
-                    						<p class="card-text">These test pumps are used for pressure testing water systems.</p>
-                    						<form action="#" method="get">
-                    							<fieldset>
-                    								<div class="formrow">
-                    									<div class="formitem col1">
-                    										<label class="label req" for="pu-testpump">Pick Up Date</label>
-                    										<input type="date" name="pu-testpump" id="pu-testpump" required="required"/>
-                    									</div>
+                    				<figure class="card">
+                    					<div class="card-image card-image-testpump"></div>
+                    					<figcaption class="card-content">
+                    					<h1 class="card-title">Hydrostatic Test Pumps</h1>
+                    					<p class="card-text">These test pumps are used for pressure testing water systems.</p>
+                    					<form action="#" method="get">
+                    						<fieldset>
+                    							<div class="formrow">
+                    								<div class="formitem col1">
+                    									<label class="label req" for="pu-testpump">Pick Up Date</label>
+                    									<input type="date" name="pu-testpump" id="pu-testpump" required="required"/>
                     								</div>
-                    								<div class="formrow">
-                    									<div class="formitem col1">
-                    										<label class="label req" for="rd-testpump">Return Date</label>
-                    										<input type="date" name="rd-testpump" id="rd-testpump"  required="required"/>
-                    									</div>
-                    								</div>
-                    								<div class="formrow">
-                    									<div class="formitem col1of2">
-                    										<label class="label" for="testpump-location">Pick Up Location</label>
-                    										<select name="testpump-location" id="testpump-location">
-                    											<option selected="selected">please choose</option>
-                    											<option value="bkf">Bakersfield</option>
-                    											<option value="ch">Chico</option>
-                    											<option value="fsn">Fresno</option>
-                    											<option value="hyw">Hayward</option>
-                    											<option value="mtc">Manteca</option>
-                    											<option value="oak">Oakley</option>
-                    											<option value="rwc">Redwood City</option>
-                    											<option value="sac">Sacramento</option>
-                    											<option value="sal">Salinas</option>
-                    											<option value="sj">San Jose</option>
-                    											<option value="sjf">San Jose Fusion</option>
-                    											<option value="sr">Santa Rosa</option>
-                    										</select>
-                    									</div>
-                    								</div>
-                    							</fieldset>
-                    						</fieldset>
-                    						<div class="buttons">
-                    							<div class="back">
-                    								<button class="primary button">Add to Cart</button>
                     							</div>
+                    							<div class="formrow">
+                    								<div class="formitem col1">
+                    									<label class="label req" for="rd-testpump">Return Date</label>
+                    									<input type="date" name="rd-testpump" id="rd-testpump"  required="required"/>
+                    								</div>
+                    							</div>
+                    							<div class="formrow">
+                    								<div class="formitem col1of2">
+                    									<label class="label" for="testpump-location">Pick Up Location</label>
+                    									<select name="testpump-location" id="testpump-location">
+                    										<option selected="selected">please choose</option>
+                    										<option value="bkf">Bakersfield</option>
+                    										<option value="ch">Chico</option>
+                    										<option value="fsn">Fresno</option>
+                    										<option value="hyw">Hayward</option>
+                    										<option value="mtc">Manteca</option>
+                    										<option value="oak">Oakley</option>
+                    										<option value="rwc">Redwood City</option>
+                    										<option value="sac">Sacramento</option>
+                    										<option value="sal">Salinas</option>
+                    										<option value="sj">San Jose</option>
+                    										<option value="sjf">San Jose Fusion</option>
+                    										<option value="sr">Santa Rosa</option>
+                    									</select>
+                    								</div>
+                    							</div>
+                    						</fieldset>
+                    					</fieldset>
+                    					<div class="buttons">
+                    						<div class="back">
+                    							<button class="primary button">Add to Cart</button>
                     						</div>
-                    						</form>
-                    						</figcaption>
-                    					</figure>
-                    				</article>
-                    			</section>
-                    			<aside class="cart js-cart">
-                    				<div class="cart__header">
-                    					<h1 class="cart__title">Shopping cart</h1>
-                    					<p class="cart__text">
-                    						<a class="button button--light js-toggle-cart" href="#" title="Close cart">
-                    							Close cart
-                    						</a>
-                    					</p>
-                    				</div>
-                    				<div class="cart__products js-cart-products">
-                    					<p class="cart__empty js-cart-empty">
-                    						Add a product to your cart
-                    					</p>
-                    					<div class="cart__product js-cart-product-template">
-                    						<article class="js-cart-product">
-                    							<h1 class="prod-title"></h1>
-                    							<p class="pu-date"></p>
-                    							<p class="rtn-date"></p>
-                    							<p class="loc"></p>
-                    							<p>
-                    								<a class="js-remove-product" href="#" title="Delete product">
-                    									Delete product
-                    								</a>
-                    							</p>
-                    						</article>
                     					</div>
+                    					</form>
+                    					</figcaption>
+                    				</figure>
+                    			</article>
+                    		</section>
+                    		<aside class="cart js-cart">
+                    			<div class="cart__header">
+                    				<h1 class="cart__title">Shopping cart</h1>
+                    				<p class="cart__text">
+                    					<a class="button button--light js-toggle-cart" href="#" title="Close cart">
+                    						Close cart
+                    					</a>
+                    				</p>
+                    			</div>
+                    			<div class="cart__products js-cart-products">
+                    				<p class="cart__empty js-cart-empty">
+                    					Add a product to your cart
+                    				</p>
+                    				<div class="cart__product js-cart-product-template">
+                    					<article class="js-cart-product">
+                    						<h1 class="prod-title"></h1>
+                    						<p class="pu-date"></p>
+                    						<p class="rtn-date"></p>
+                    						<p class="loc"></p>
+                    						<p>
+                    							<a class="js-remove-product" href="#" title="Delete product">
+                    								Delete product
+                    							</a>
+                    						</p>
+                    					</article>
                     				</div>
-                    				<div class="cart__footer">
-                    					<p class="cart__text">
-                    						<a class="button" href="#" title="Buy products">
-                    							Buy products
-                    						</a>
-                    					</p>
-                    				</div>
-                    			</aside>
+                    			</div>
+                    			<div class="cart__footer">
+                    				<p class="cart__text">
+                    					<a class="button" href="#" title="Buy products">
+                    						Buy products
+                    					</a>
+                    				</p>
+                    			</div>
+                    		</aside>
                     	</article>
                     </section>
                 </section>

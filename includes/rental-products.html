@@ -1,11 +1,4 @@
-<div class="shop__header">
-	<p class="shop__text">
-		<a class="button js-toggle-cart" href="#" title="View cart">
-			View cart
-		</a>
-	</p>
-</div>
-<section class="cards" id="">
+<section class="cards">
 	<article class="cards-item">
 		<figure class="card product">
 			<div class="card-image card-image-2lc"></div>
@@ -269,6 +262,16 @@
 	</article>
 	<article class="cards-item">
 		<figure class="card">
+			<div class="card-image card-image-squeeze-tool"></div>
+			<figcaption class="card-content">
+			<h1 class="card-title">Squeeze Off Tool</h1>
+			<p class="card-text">Squeeze Off Tools are used to clamp down a pipeline so rempairs can be done to the damaged section with out shutting off the flow upstream and with out damage to the pipe.</p>
+			include "squeeze.html"
+			</figcaption>
+		</figure>
+	</article>
+	<article class="cards-item">
+		<figure class="card">
 			<div class="card-image card-image-4-hole-saw"></div>
 			<figcaption class="card-content">
 			<h1 class="card-title">Hole Saws</h1>
@@ -278,49 +281,48 @@
 		</figure>
 	</article>
 	<article class="cards-item">
-		<article class="cards-item">
-			<figure class="card">
-				<div class="card-image card-image-testpump"></div>
-				<figcaption class="card-content">
-				<h1 class="card-title">Hydrostatic Test Pumps</h1>
-				<p class="card-text">These test pumps are used for pressure testing water systems.</p>
-				include "testp-rental.html"
-				</figcaption>
-			</figure>
-		</article>
-	</section>
-	<aside class="cart js-cart">
-		<div class="cart__header">
-			<h1 class="cart__title">Shopping cart</h1>
-			<p class="cart__text">
-				<a class="button button--light js-toggle-cart" href="#" title="Close cart">
-					Close cart
-				</a>
-			</p>
+		<figure class="card">
+			<div class="card-image card-image-testpump"></div>
+			<figcaption class="card-content">
+			<h1 class="card-title">Hydrostatic Test Pumps</h1>
+			<p class="card-text">These test pumps are used for pressure testing water systems.</p>
+			include "testp-rental.html"
+			</figcaption>
+		</figure>
+	</article>
+</section>
+<aside class="cart js-cart">
+	<div class="cart__header">
+		<h1 class="cart__title">Shopping cart</h1>
+		<p class="cart__text">
+			<a class="button button--light js-toggle-cart" href="#" title="Close cart">
+				Close cart
+			</a>
+		</p>
+	</div>
+	<div class="cart__products js-cart-products">
+		<p class="cart__empty js-cart-empty">
+			Add a product to your cart
+		</p>
+		<div class="cart__product js-cart-product-template">
+			<article class="js-cart-product">
+				<h1 class="prod-title"></h1>
+				<p class="pu-date"></p>
+				<p class="rtn-date"></p>
+				<p class="loc"></p>
+				<p>
+					<a class="js-remove-product" href="#" title="Delete product">
+						Delete product
+					</a>
+				</p>
+			</article>
 		</div>
-		<div class="cart__products js-cart-products">
-			<p class="cart__empty js-cart-empty">
-				Add a product to your cart
-			</p>
-			<div class="cart__product js-cart-product-template">
-				<article class="js-cart-product">
-					<h1 class="prod-title"></h1>
-					<p class="pu-date"></p>
-					<p class="rtn-date"></p>
-					<p class="loc"></p>
-					<p>
-						<a class="js-remove-product" href="#" title="Delete product">
-							Delete product
-						</a>
-					</p>
-				</article>
-			</div>
-		</div>
-		<div class="cart__footer">
-			<p class="cart__text">
-				<a class="button" href="#" title="Buy products">
-					Buy products
-				</a>
-			</p>
-		</div>
-	</aside>
+	</div>
+	<div class="cart__footer">
+		<p class="cart__text">
+			<a class="button" href="#" title="Buy products">
+				Buy products
+			</a>
+		</p>
+	</div>
+</aside>
