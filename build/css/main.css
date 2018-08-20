@@ -559,6 +559,12 @@ aside video {
   display: inline-block;
 }
 
+/* line 108, ../../scss/global/_setting.scss */
+.admin-links {
+  display: inline-block;
+  padding: 2%;
+}
+
 /* line 1, ../../scss/global/_header.scss */
 header {
   background: rgba(255, 255, 255, 0.45);
@@ -606,7 +612,7 @@ header img {
 
 /*BASE CSS STYLE FOR RESPONSIVE MENU*/
 /*START*/
-/* line 266, ../../scss/global/_header.scss */
+/* line 36, ../../scss/global/_header.scss */
 .menu {
   /*Rev 140508*/
   width: auto;
@@ -619,27 +625,27 @@ header img {
   color: #0033a0;
 }
 
-/* line 279, ../../scss/global/_header.scss */
+/* line 49, ../../scss/global/_header.scss */
 .menu ul, .menu li {
   margin: 0 auto;
   padding: 0 0;
   list-style: none;
 }
 
-/* line 284, ../../scss/global/_header.scss */
+/* line 54, ../../scss/global/_header.scss */
 .menu ul {
   height: 45px;
   width: 100%;
 }
 
-/* line 287, ../../scss/global/_header.scss */
+/* line 57, ../../scss/global/_header.scss */
 .menu li {
   float: left;
   display: inline;
   position: relative;
 }
 
-/* line 292, ../../scss/global/_header.scss */
+/* line 62, ../../scss/global/_header.scss */
 .menu a {
   /*main menu*/
   display: block;
@@ -649,7 +655,7 @@ header img {
   color: #0033a0;
 }
 
-/* line 301, ../../scss/global/_header.scss */
+/* line 71, ../../scss/global/_header.scss */
 .menu li a:hover {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -658,7 +664,7 @@ header img {
   transition: all .3s ease-in-out;
 }
 
-/* line 310, ../../scss/global/_header.scss */
+/* line 80, ../../scss/global/_header.scss */
 .menu input {
   display: none;
   margin: 0 0;
@@ -669,7 +675,7 @@ header img {
   cursor: pointer;
 }
 
-/* line 312, ../../scss/global/_header.scss */
+/* line 82, ../../scss/global/_header.scss */
 .menu label {
   font: normal 20px Arial;
   display: none;
@@ -681,14 +687,14 @@ header img {
 }
 
 /*BRAND*/
-/* line 324, ../../scss/global/_header.scss */
+/* line 94, ../../scss/global/_header.scss */
 .menu label span {
   font-size: 80%;
   position: absolute;
   left: 35px;
 }
 
-/* line 325, ../../scss/global/_header.scss */
+/* line 95, ../../scss/global/_header.scss */
 .menu ul.menus {
   /*SUBMENUS*/
   height: auto;
@@ -700,7 +706,7 @@ header img {
   display: none;
 }
 
-/* line 334, ../../scss/global/_header.scss */
+/* line 104, ../../scss/global/_header.scss */
 .menu ul.menus li {
   display: block;
   width: 100%;
@@ -708,7 +714,7 @@ header img {
   text-shadow: none;
 }
 
-/* line 341, ../../scss/global/_header.scss */
+/* line 111, ../../scss/global/_header.scss */
 .menu ul.menus a {
   line-height: 40px;
   /*REV*/
@@ -719,12 +725,12 @@ header img {
   transition: all .6s ease-in-out;
 }
 
-/* line 351, ../../scss/global/_header.scss */
+/* line 121, ../../scss/global/_header.scss */
 .menu li:hover ul.menus {
   display: block;
 }
 
-/* line 352, ../../scss/global/_header.scss */
+/* line 122, ../../scss/global/_header.scss */
 .menu ul.menus a:hover {
   background: #004bed;
   color: white;
@@ -740,7 +746,7 @@ header img {
 /**/
 /*MOBIL VERSION, 0 > 600px*/
 @media screen and (max-width: 600px) {
-  /* line 367, ../../scss/global/_header.scss */
+  /* line 137, ../../scss/global/_header.scss */
   .menu {
     position: relative;
     color: #fff;
@@ -748,7 +754,7 @@ header img {
     border-bottom: 0px solid #222;
   }
 
-  /* line 374, ../../scss/global/_header.scss */
+  /* line 144, ../../scss/global/_header.scss */
   .menu ul {
     top: 100%;
     left: 0;
@@ -759,21 +765,21 @@ header img {
     background: #555;
   }
 
-  /* line 383, ../../scss/global/_header.scss */
+  /* line 153, ../../scss/global/_header.scss */
   .menu ul.menus {
     width: 100%;
     position: static;
     padding-left: 0px;
   }
 
-  /* line 388, ../../scss/global/_header.scss */
+  /* line 158, ../../scss/global/_header.scss */
   .menu li {
     width: auto;
     display: block;
     float: none;
   }
 
-  /* line 393, ../../scss/global/_header.scss */
+  /* line 163, ../../scss/global/_header.scss */
   .menu input, .menu label {
     margin: 0  2%;
     float: right;
@@ -781,17 +787,17 @@ header img {
     position: absolute;
   }
 
-  /* line 399, ../../scss/global/_header.scss */
+  /* line 169, ../../scss/global/_header.scss */
   .menu input {
     z-index: 4;
   }
 
-  /* line 400, ../../scss/global/_header.scss */
+  /* line 170, ../../scss/global/_header.scss */
   .menu input:checked + label {
     color: #fff;
   }
 
-  /* line 401, ../../scss/global/_header.scss */
+  /* line 171, ../../scss/global/_header.scss */
   .menu input:checked ~ ul {
     display: block;
   }
@@ -2036,6 +2042,12 @@ input:checked + section.box .box-title:before {
   }
 }
 /* line 102, ../../scss/modules/_card-grid.scss */
+.card-images {
+  width: 50%;
+  margin: 0 25%;
+}
+
+/* line 106, ../../scss/modules/_card-grid.scss */
 .card-title {
   color: #696969;
   font-size: 2rem;
@@ -2045,13 +2057,13 @@ input:checked + section.box .box-title:before {
   text-transform: uppercase;
 }
 
-/* line 110, ../../scss/modules/_card-grid.scss */
+/* line 114, ../../scss/modules/_card-grid.scss */
 h1.card-title {
   margin-bottom: 0;
   line-height: 1.25;
 }
 
-/* line 118, ../../scss/modules/_card-grid.scss */
+/* line 122, ../../scss/modules/_card-grid.scss */
 .card-subtitle {
   color: #696969;
   font-size: 1.5rem;
@@ -2060,7 +2072,7 @@ h1.card-title {
   letter-spacing: 2px;
 }
 
-/* line 126, ../../scss/modules/_card-grid.scss */
+/* line 130, ../../scss/modules/_card-grid.scss */
 .card-text {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -3441,11 +3453,6 @@ h1 {
 }
 
 /* Rentals Page */
-/* line 76, ../../scss/layout/_card-images.scss */
-.card-image-2lc {
-  background-image: url("../img/rentals/2lc-fusion-machine.jpg");
-}
-
 /* line 79, ../../scss/layout/_card-images.scss */
 .card-image-14-pitbull {
   background-image: url("../img/rentals/14 Pitbull.jpg");
