@@ -1,0 +1,101 @@
+<section class="inner-hero" id="checkout-hero">
+	<article>
+		<h1 class="page-title">Rental Equipment Checkout</h1>
+	</article>
+</section>
+<section class="content">
+	<div class="content-aside">
+		<article class="lead-in-aside">
+			<h2>Check Out</h2>
+			<form action="">
+				<fieldset>
+					<div class="formrow">
+						<div class="formitem col1of2">
+							<label class="label req" for="firstname">First Name</label>
+							<input type="text" autofocus name="firstname" id="firstname" placeholder="First Name" required="required" x-autocompletetype="given-name"/>
+						</div>
+						<div class="formitem col1of2">
+							<label class="label req" for="lastname">Last Name</label>
+							<input type="text" name="lastname" id="lastname" placeholder="Last Name" required="required" x-autocompletetype="family-name"/>
+						</div>
+					</div>
+					<div class="formrow">
+						<div class="formitem">
+							<label class="label req" for="companyname">Company Name</label>
+							<input type="text" name="companyname" id="companyname" placeholder="Company Name" required="required" x-autocompletetype="company-name"/>
+						</div>
+						<div class="formitem">
+							<label class="label" for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="name@example.com" required="required" x-autocompletetype="email">
+						</div>
+						<div class="formitem">
+							<label class="label" for="email">Phone Number:</label>
+							<input type="email" name="email" id="email" placeholder="XXX-XXX-XXXX" required="required" x-autocompletetype="phone-number">
+						</div>
+					</div>
+					<div class="formrow">
+						<div class="formitem col1">
+							<label class="label req" for="pickup_date">Pick Up Date</label>
+							<input type="text" data-toggle="datepicker" name="pickup_date" class="datepicker" id="pickup_date" required="required"/>
+						</div>
+					</div>
+					<div class="formrow">
+						<div class="formitem col1">
+							<label class="label req" for="return_date">Return Date</label>
+							<input type="text" data-toggle="datepicker" name="return_date" id="return_date"  required="required"/>
+						</div>
+					</div>
+					<div class="formrow">
+						<div class="formitem col1of2">
+							<label class="label" for="location">Pick Up Location</label>
+							<select name="location" id="location">
+								<option selected="selected">please choose</option>
+								<option value="bkf">Bakersfield</option>
+								<option value="ch">Chico</option>
+								<option value="fsn">Fresno</option>
+								<option value="hyw">Hayward</option>
+								<option value="mtc">Manteca</option>
+								<option value="oak">Oakley</option>
+								<option value="rwc">Redwood City</option>
+								<option value="sac">Sacramento</option>
+								<option value="sal">Salinas</option>
+								<option value="sj">San Jose</option>
+								<option value="sjf">San Jose Fusion</option>
+								<option value="sr">Santa Rosa</option>
+							</select>
+						</div>
+					</div>
+					<div class="formrow">
+						<div class="formitem">
+							<label class="label req" for="message">Additional Comments:</label>
+							<textarea name="message" id="message" cols="40" rows="5" required="required"></textarea>
+						</div>
+					</div>
+				</fieldset>
+				<div class="buttons">
+					<button class="primary button" type="submit">Submit Request</button>
+				</div>
+			</form>
+		</article>
+		<aside class="aside-content">
+			<div class="table-wrapper">
+				<div class="table-inner">
+					<table class="table-content">
+						<tbody>
+							<tr>
+								<th>Title</th>
+								<th>Name</th>
+								<th>Quantity</th>
+							</tr>
+							<tr class="highlight">
+								<td>Title</td>
+								<td>Name</td>
+								<td>Quantity</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</aside>
+	</div>
+</section>
