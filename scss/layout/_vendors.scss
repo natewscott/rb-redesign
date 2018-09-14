@@ -1,0 +1,12 @@
+// .vendors {
+	#vendor-list {
+		@include display-flex;
+		@include justify-content(space-between);
+		ul {
+			@include flex-direction(row);
+			@include breakpoint($medium) {
+				@include flex-direction(column);
+			}
+		}
+	}
+// }
