@@ -71,7 +71,7 @@ footer {
     p, 
     li {
       @include responsive-typography(18px, 21px, false);
-      font-weight: 100;
+      font-weight: 300;
       margin: 0;
     }
 

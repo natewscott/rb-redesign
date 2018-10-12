@@ -1,0 +1,38 @@
+@mixin buttons {
+  background-color: $link;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  padding:.5rem
+}
+
+.btn {
+	@include buttons;
+  // background-color: $link;
+  // border: 1px solid #cccccc;
+  // color: white;
+  // padding: 0.5rem;
+  text-transform: uppercase;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.button {
+ @include buttons;
+  // display: inline-block;
+  // background: #39C;
+  // padding: 5px 10px;
+  // border-radius: 3px;
+  
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  // color: #FFF;
+}
+
+.button--light {
+  background: #FFF;
+  color: #F00;
+}

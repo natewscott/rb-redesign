@@ -1,0 +1,23 @@
+#values {
+	@include display-flex;
+	@include flex-direction(column);
+		@include breakpoint($medium) {
+			@include flex-direction(row);
+			margin: 0 10%;
+		}
+	@include justify-content(space-between);
+	margin:0;
+	ul {
+		li {
+			line-height:1;
+			&:nth-child(3n-6) {
+				margin-bottom:10%;
+			}
+		}
+	}
+}
+#careers-page {
+	h1 {
+		text-align: left;
+	}
+}

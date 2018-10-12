@@ -49,9 +49,10 @@ body, html {
 }
 
 .content-aside {
-  max-width: 1280px;
-  marging: 0 auto;
-  padding-left: 5%;
+  @include full;
+  // max-width: 1280px;
+  // marging: 0 auto;
+  // padding-left: 5%;
   @include breakpoint($large) {
     padding-left: 0;
   }
@@ -59,6 +60,7 @@ body, html {
   @include flex-direction(column);
   @include breakpoint($medium) {
     @include flex-direction(row);
+    @include justify-content(space-between);
   }
 }
 
@@ -69,12 +71,12 @@ body, html {
   clear: both;
 }
 .lead-in-aside {
-    max-width: 800px;
+    max-width: 1000px;
   }
   .aside-content {
-    max-width: 400px;
-    margin: 0 auto;
-    clear: both
+    max-width:380px;
+    // margin: 0 auto;
+    // clear: both
   }
 .lead-in-text {
   margin-bottom: 1.25%;

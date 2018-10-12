@@ -71,12 +71,7 @@
 		margin: 0;
 	}
 }
-// #img-grid {
-// 	clear:none;
-// 		@include breakpoint($medium) {
-// 			clear:right;
-// 		}
-// }
+
 #fusion-logo {
 	@include display-flex;
 	max-width:30%;

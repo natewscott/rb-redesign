@@ -1,14 +1,4 @@
-.btn {
-  background-color: $link;
-  border: 1px solid #cccccc;
-  color: white;
-  padding: 0.5rem;
-  text-transform: uppercase;
-}
-.btn-block {
-  display: block;
-  width: 100%;
-}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,10 +47,7 @@
           flex-direction: column;
   overflow: hidden;
 }
-// .card:hover .card-image {
-//   -webkit-filter: contrast(100%);
-//           filter: contrast(100%);
-// }
+
 .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,13 +65,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  // -webkit-filter: contrast(70%);
-  //         filter: contrast(70%);
-  // position: relative;
-  // -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  // transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  // transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  // transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 #rentals .card-image {
   background-size:contain;
@@ -115,23 +95,18 @@
     margin-bottom: 0;
     line-height:1.25;
   }
-// .training.card-title {
-//   margin-bottom: 0;
-//   line-height: 1.25;
-// }
+
 .card-subtitle {
   color: #696969;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
-  // text-transform: uppercase;
 }
 .card-text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  // font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
