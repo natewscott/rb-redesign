@@ -2869,6 +2869,16 @@ form input:required:valid {
   background-image: url("../img/hero/driver.jpg");
 }
 
+/* line 75, ../../scss/modules/_inner-hero.scss */
+#career-admin {
+  background-image: url("../img/hero/admin.png");
+}
+
+/* line 78, ../../scss/modules/_inner-hero.scss */
+#career-sales {
+  background-image: url("../img/careers/inside-sales.jpg");
+}
+
 /* line 2, ../../scss/modules/_lightbox.scss */
 #img-grid {
   clear: none;
@@ -3476,6 +3486,11 @@ h1 {
 /* line 16, ../../scss/layout/_card-images.scss */
 .card-image-driver {
   background-image: url("../img/careers/driver.jpg");
+}
+
+/* line 19, ../../scss/layout/_card-images.scss */
+.card-image-admin {
+  background-image: url("../img/careers/admin.JPG");
 }
 
 /* line 22, ../../scss/layout/_card-images.scss */
