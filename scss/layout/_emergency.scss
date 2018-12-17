@@ -1,0 +1,26 @@
+#emergency {
+    div {
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(space-around);
+        @include flex-direction(column);
+
+        @include breakpoint($medium) {
+            @include flex-direction(row);
+        }
+    }
+
+    ul {
+        float: left;
+    }
+
+    img {
+        padding: 10% 5% 0 5%;
+        width: 70%;
+
+        @include breakpoint($medium) {
+            width: 15%;
+            padding: 0;
+        }
+    }
+}

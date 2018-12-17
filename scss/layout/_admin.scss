@@ -1,0 +1,22 @@
+.admin-nav {
+    background: lighten($black, 10);
+    width: 250px;
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+
+    .admin-links {
+        margin: 5% 5% 5% 0;
+        padding: .5em .75em;
+
+        @include display-flex;
+
+        &:hover {
+            background-color: darken($primary, 15);
+        }
+
+        a {
+            color: lighten($black, 100);
+        }
+    }
+}

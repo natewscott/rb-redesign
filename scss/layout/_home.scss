@@ -1,118 +1,175 @@
 #home {
-  header {
-    background: rgba($black, 0.83);
-  }
-.logo {
-  // background: rgba($black, 0.83);
-  @include full;
-  z-index: 100;
-  @include display-flex;
-  @include justify-content(space-between);
-  @include flex-direction(column);
-  @include breakpoint($medium) {
-    @include align-items(center);
-  }
-
-  span {
-    margin-left: -9999px;
-  }
-  img {
-
-    width:15em;
-    @include breakpoint($medium) {
-      width: 25em;
+    header {
+        background: rgba($black, 0.83);
     }
-    padding:2% 0 0 2%;
-  }
-}
 
-#second-logo {
-	background-color: #eee;
-	visibility: hidden;
-  opacity: 0;
-  height: 0;
-  transition: visibility 0s, opacity 1s linear;
-	&.nav-fixed-top {
-		background:white;
-		@include display-flex;
-		align-items:center;
-     visibility: visible;
-     opacity: 1;
-     height: auto;
-	}
-}
+    .logo {
+        @include full;
 
-.hero {
-	@include full;
-	background-color: $black;
-	position:relative;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center center;
-	min-height:300px;
-	height:350px;
-	@include breakpoint($large) {
-		height: 500px;
-	}
-  background-image: url("../img/hero/home-banner.jpg");
-  padding: 200px 40px;
-  margin: 0;
-  text-align: center;
-  font-size: 7.0rem;
-  // color: darken($color--secondary-light, 10%);
-}
+        z-index: 100;
 
-.nav  {
-  display: block;
-    // @include breakpoint($medium) {
-    //   display: none;
-    // }
-  margin: 0; 
-  padding: 20px 0;
-  // background: white;
-  list-style: none;
-  // text-align: center;
-  // float: right;
-  transition: all 1s ease;
-  ul {
-  	text-align: center;
-  }
-  &.nav-fixed-top {
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    background: white;
-    padding: 0;
-  }
-
-}
-.menu a {
-  color: white;
-}
-	.cards {
-		max-width: 1380px;
-		margin: 0 auto;
-	}
-	.client-logos {
-		max-width: 1080px;
-		margin: 0 auto;
-
-		ul {
-			@include display-flex;
-			li {
-        // @include flex-direction(column);
-        @include flex-grow(.5);
+        @include display-flex;
         @include justify-content(space-between);
-        // padding: 0 2% 0 2%;
-          @include breakpoint($medium) {
-            @include flex-direction(row);
-          }
+        @include flex-direction(column);
 
-			}
-		}
-	}
+        @include breakpoint($medium) {
+            @include align-items(center);
+        }
+
+
+        span {
+            margin-left: -9999px;
+        }
+
+        img {
+            width: 15em;
+
+            @include breakpoint($medium) {
+                width: 25em;
+            }
+
+
+            padding: 2% 0 0 2%;
+        }
+    }
+
+    #second-logo {
+        background-color: #eee;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility 0s, opacity 1s linear;
+
+        &.nav-fixed-top {
+            background: white;
+
+            @include display-flex;
+
+            align-items: center;
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+        }
+    }
+
+    .hero {
+        @include full;
+
+        background-color: $black;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 300px;
+        height: 350px;
+
+        @include breakpoint($large) {
+            height: 500px;
+        }
+
+
+        background-image: url("../img/hero/home-banner-mobile.jpg");
+
+        @include breakpoint($medium) {
+            background-image: url("../img/hero/home-banner.jpg");
+        }
+
+
+        padding: 200px 40px;
+        margin: 0;
+        text-align: center;
+        font-size: 7.0rem;
+    }
+
+    .nav {
+        display: block;
+        margin: 0;
+        padding: 20px 0;
+        list-style: none;
+        transition: all 1s ease;
+
+        ul {
+            text-align: center;
+        }
+
+        &.nav-fixed-top {
+            top: 0;
+            z-index: 100;
+            position: fixed;
+            width: 100%;
+            background: white;
+            padding: 0;
+        }
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    .cards {
+        max-width: 1380px;
+        margin: 0 auto;
+    }
+
+    #medium {
+        display: none;
+
+        @include breakpoint($medium) {
+            display: block;
+        }
+    }
+
+    #small {
+        display: block;
+        margin-bottom: 0;
+
+        @include breakpoint($medium) {
+            display: none;
+        }
+    }
+
+    #video {
+        max-width: 1380px;
+        margin: 0 auto;
+        display: block;
+
+        @include breakpoint($medium) {
+            @include display-flex;
+        }
+
+
+        @include justify-content(center);
+
+        video {
+            width: 100%;
+            max-width: 640px;
+            max-height: 360px;
+            padding: 1rem;
+            margin-bottom: 5%;
+        }
+    }
+
+    .client-logos {
+        max-width: 1080px;
+        margin: 0 auto;
+
+        ul {
+            @include display-flex;
+            @include justify-content(center);
+
+            li {
+                @include flex-grow(0.25);
+
+                // @include justify-content(space-between);
+
+                @include breakpoint($medium) {
+                    @include flex-direction(row);
+                }
+            }
+        }
+    }
 }
-  h1 {
+
+h1 {
     text-align: center;
-  }
+}

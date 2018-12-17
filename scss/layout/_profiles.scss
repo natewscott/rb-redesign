@@ -38,15 +38,11 @@
 #job-details {
 	color: $primary;
 	float:none;
-	// width:100%;
 	@include breakpoint($large) {
 		float: left;
 	}
 	
-	h1 {
-    // @include responsive-typography(41px, 48px, false);
-    // line-height: 1.4;
-	}
+	
 	#small {
 		display: block;
 		text-align: center;
@@ -67,7 +63,6 @@
 			}
 	}
 	p {
-		// @include responsive-typography(38px, 24px);
 		margin: 0;
 	}
 }

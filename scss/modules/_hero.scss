@@ -1,93 +1,136 @@
 #small-diameter {
-	background-image: url("../img/hero/small diameter training-10.jpg");
-	background-repeat: no-repeat;
+    background-image: url("../img/hero/small diameter training-10.jpg");
+    background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 75vh;
 }
+
 #fusion-training {
-    background-image: url("../img/hero/fusion-training.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-	   background-image: url("../img/hero/fusion-training.jpg");
+    background-image: url("../img/hero/training-mobile.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/hero/training.jpg");
     }
-	background-repeat: no-repeat;
+
+
+    background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 75vh;
 }
 
 #gilroy-gardens {
     background-image: url("../img/profiles/hero/gilory/gilroy-heartlands-small.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/gilory/Gilroy Heartlands-123.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/gilory/Gilroy Heartlands-123.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
+
 #moss-land {
     background-image: url("../img/hero/profiles/Moss Landing Power Plant-177-small.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/moss/Moss Landing Power Plant-37.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/moss/Moss Landing Power Plant-37.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
+
 #armona-well {
     background-image: url("../img/profiles/hero/armona/Hanford Well Arsenic Removal-92-sm.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/armona/Hanford Well Arsenic Removal-92.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/armona/Hanford Well Arsenic Removal-92.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
-#landels-school{
+
+#landels-school {
     background-image: url("../img/profiles/hero/landels/Landels School-428-sm.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/landels/Landels School-428.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/landels/Landels School-428.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
-#cv-drought-relief{
+
+#cv-drought-relief {
     background-image: url("../img/profiles/hero/cv-drought-relief/Nicholas Construction-47.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/drought-relief/Nicholas Construction-47.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/drought-relief/Nicholas Construction-47.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
-#dixon-bypass{
+
+#dixon-bypass {
     background-image: url("../img/profiles/hero/dixon/Dixon Irrigation Bypass-sm.jpg");
-    background-position:top;
-    @include breakpoint ($large) {
-       background-image: url("../img/profiles/hero/dixon/Dixon Irrigation Bypass-211.jpg");
+    background-position: top;
+
+    @include breakpoint($large) {
+        background-image: url("../img/profiles/hero/dixon/Dixon Irrigation Bypass-211.jpg");
     }
+
+
     background-repeat: no-repeat;
     background-position: 0;
+
     @include background-size(cover);
+
     width: 100%;
     height: 100vh;
 }
