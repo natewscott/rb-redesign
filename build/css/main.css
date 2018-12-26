@@ -562,12 +562,6 @@ aside video {
 }
 
 /* line 110, ../../scss/global/_setting.scss */
-.admin-links {
-  display: inline-block;
-  padding: 2%;
-}
-
-/* line 114, ../../scss/global/_setting.scss */
 .alert-messages {
   clear: both;
   text-align: center;
@@ -601,30 +595,30 @@ header {
     align-items: center;
   }
 }
-/* line 17, ../../scss/global/_header.scss */
+/* line 21, ../../scss/global/_header.scss */
 header span {
   margin-left: -9999px;
 }
-/* line 20, ../../scss/global/_header.scss */
+/* line 25, ../../scss/global/_header.scss */
 header img {
   width: 15em;
   padding: 2% 0 0 2%;
 }
 @media (min-width: 47em) {
-  /* line 20, ../../scss/global/_header.scss */
+  /* line 25, ../../scss/global/_header.scss */
   header img {
     width: 25em;
   }
 }
 
-/* line 29, ../../scss/global/_header.scss */
+/* line 37, ../../scss/global/_header.scss */
 .landing-page {
   background-color: #00236d;
 }
 
 /*BASE CSS STYLE FOR RESPONSIVE MENU*/
 /*START*/
-/* line 36, ../../scss/global/_header.scss */
+/* line 44, ../../scss/global/_header.scss */
 .menu {
   /*Rev 140508*/
   width: auto;
@@ -637,37 +631,43 @@ header img {
   color: #0033a0;
 }
 
-/* line 49, ../../scss/global/_header.scss */
+/* line 59, ../../scss/global/_header.scss */
 .menu ul, .menu li {
   margin: 0 auto;
   padding: 0 0;
   list-style: none;
 }
 
-/* line 54, ../../scss/global/_header.scss */
+/* line 65, ../../scss/global/_header.scss */
 .menu ul {
   height: 45px;
   width: 100%;
 }
 
-/* line 57, ../../scss/global/_header.scss */
+/* line 70, ../../scss/global/_header.scss */
 .menu li {
   float: left;
   display: inline;
   position: relative;
 }
 
-/* line 62, ../../scss/global/_header.scss */
+/* line 76, ../../scss/global/_header.scss */
 .menu a {
   /*main menu*/
   display: block;
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: #0033a0;
+  color: white;
+}
+@media (min-width: 47em) {
+  /* line 76, ../../scss/global/_header.scss */
+  .menu a {
+    color: #0033a0;
+  }
 }
 
-/* line 71, ../../scss/global/_header.scss */
+/* line 91, ../../scss/global/_header.scss */
 .menu li a:hover {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -676,7 +676,7 @@ header img {
   transition: all .3s ease-in-out;
 }
 
-/* line 80, ../../scss/global/_header.scss */
+/* line 100, ../../scss/global/_header.scss */
 .menu input {
   display: none;
   margin: 0 0;
@@ -687,7 +687,7 @@ header img {
   cursor: pointer;
 }
 
-/* line 82, ../../scss/global/_header.scss */
+/* line 110, ../../scss/global/_header.scss */
 .menu label {
   font: normal 20px Arial;
   display: none;
@@ -699,14 +699,14 @@ header img {
 }
 
 /*BRAND*/
-/* line 94, ../../scss/global/_header.scss */
+/* line 121, ../../scss/global/_header.scss */
 .menu label span {
   font-size: 80%;
   position: absolute;
   left: 35px;
 }
 
-/* line 95, ../../scss/global/_header.scss */
+/* line 127, ../../scss/global/_header.scss */
 .menu ul.menus {
   /*SUBMENUS*/
   height: auto;
@@ -718,7 +718,7 @@ header img {
   display: none;
 }
 
-/* line 104, ../../scss/global/_header.scss */
+/* line 138, ../../scss/global/_header.scss */
 .menu ul.menus li {
   display: block;
   width: 100%;
@@ -726,7 +726,7 @@ header img {
   text-shadow: none;
 }
 
-/* line 111, ../../scss/global/_header.scss */
+/* line 145, ../../scss/global/_header.scss */
 .menu ul.menus a {
   line-height: 40px;
   /*REV*/
@@ -737,12 +737,12 @@ header img {
   transition: all .6s ease-in-out;
 }
 
-/* line 121, ../../scss/global/_header.scss */
+/* line 157, ../../scss/global/_header.scss */
 .menu li:hover ul.menus {
   display: block;
 }
 
-/* line 122, ../../scss/global/_header.scss */
+/* line 161, ../../scss/global/_header.scss */
 .menu ul.menus a:hover {
   background: #004bed;
   color: white;
@@ -758,7 +758,7 @@ header img {
 /**/
 /*MOBIL VERSION, 0 > 600px*/
 @media screen and (max-width: 600px) {
-  /* line 137, ../../scss/global/_header.scss */
+  /* line 176, ../../scss/global/_header.scss */
   .menu {
     position: relative;
     color: #fff;
@@ -766,7 +766,7 @@ header img {
     border-bottom: 0px solid #222;
   }
 
-  /* line 144, ../../scss/global/_header.scss */
+  /* line 183, ../../scss/global/_header.scss */
   .menu ul {
     top: 100%;
     left: 0;
@@ -777,21 +777,21 @@ header img {
     background: #555;
   }
 
-  /* line 153, ../../scss/global/_header.scss */
+  /* line 193, ../../scss/global/_header.scss */
   .menu ul.menus {
     width: 100%;
     position: static;
     padding-left: 0px;
   }
 
-  /* line 158, ../../scss/global/_header.scss */
+  /* line 199, ../../scss/global/_header.scss */
   .menu li {
     width: auto;
     display: block;
     float: none;
   }
 
-  /* line 163, ../../scss/global/_header.scss */
+  /* line 205, ../../scss/global/_header.scss */
   .menu input, .menu label {
     margin: 0  2%;
     float: right;
@@ -799,17 +799,17 @@ header img {
     position: absolute;
   }
 
-  /* line 169, ../../scss/global/_header.scss */
+  /* line 212, ../../scss/global/_header.scss */
   .menu input {
     z-index: 4;
   }
 
-  /* line 170, ../../scss/global/_header.scss */
+  /* line 216, ../../scss/global/_header.scss */
   .menu input:checked + label {
     color: #fff;
   }
 
-  /* line 171, ../../scss/global/_header.scss */
+  /* line 220, ../../scss/global/_header.scss */
   .menu input:checked ~ ul {
     display: block;
   }
@@ -1880,9 +1880,9 @@ fieldset .legend {
   height: 75vh;
 }
 
-/* line 9, ../../scss/modules/_hero.scss */
+/* line 12, ../../scss/modules/_hero.scss */
 #fusion-training {
-  background-image: url("../img/hero/fusion-training.jpg");
+  background-image: url("../img/hero/training-mobile.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-position: 0;
@@ -1894,13 +1894,13 @@ fieldset .legend {
   height: 75vh;
 }
 @media (min-width: 75em) {
-  /* line 9, ../../scss/modules/_hero.scss */
+  /* line 12, ../../scss/modules/_hero.scss */
   #fusion-training {
-    background-image: url("../img/hero/fusion-training.jpg");
+    background-image: url("../img/hero/training.jpg");
   }
 }
 
-/* line 22, ../../scss/modules/_hero.scss */
+/* line 30, ../../scss/modules/_hero.scss */
 #gilroy-gardens {
   background-image: url("../img/profiles/hero/gilory/gilroy-heartlands-small.jpg");
   background-position: top;
@@ -1914,13 +1914,13 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 22, ../../scss/modules/_hero.scss */
+  /* line 30, ../../scss/modules/_hero.scss */
   #gilroy-gardens {
     background-image: url("../img/profiles/hero/gilory/Gilroy Heartlands-123.jpg");
   }
 }
 
-/* line 34, ../../scss/modules/_hero.scss */
+/* line 48, ../../scss/modules/_hero.scss */
 #moss-land {
   background-image: url("../img/hero/profiles/Moss Landing Power Plant-177-small.jpg");
   background-position: top;
@@ -1934,13 +1934,13 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 34, ../../scss/modules/_hero.scss */
+  /* line 48, ../../scss/modules/_hero.scss */
   #moss-land {
     background-image: url("../img/profiles/hero/moss/Moss Landing Power Plant-37.jpg");
   }
 }
 
-/* line 46, ../../scss/modules/_hero.scss */
+/* line 66, ../../scss/modules/_hero.scss */
 #armona-well {
   background-image: url("../img/profiles/hero/armona/Hanford Well Arsenic Removal-92-sm.jpg");
   background-position: top;
@@ -1954,13 +1954,13 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 46, ../../scss/modules/_hero.scss */
+  /* line 66, ../../scss/modules/_hero.scss */
   #armona-well {
     background-image: url("../img/profiles/hero/armona/Hanford Well Arsenic Removal-92.jpg");
   }
 }
 
-/* line 58, ../../scss/modules/_hero.scss */
+/* line 84, ../../scss/modules/_hero.scss */
 #landels-school {
   background-image: url("../img/profiles/hero/landels/Landels School-428-sm.jpg");
   background-position: top;
@@ -1974,13 +1974,13 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 58, ../../scss/modules/_hero.scss */
+  /* line 84, ../../scss/modules/_hero.scss */
   #landels-school {
     background-image: url("../img/profiles/hero/landels/Landels School-428.jpg");
   }
 }
 
-/* line 70, ../../scss/modules/_hero.scss */
+/* line 102, ../../scss/modules/_hero.scss */
 #cv-drought-relief {
   background-image: url("../img/profiles/hero/cv-drought-relief/Nicholas Construction-47.jpg");
   background-position: top;
@@ -1994,13 +1994,13 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 70, ../../scss/modules/_hero.scss */
+  /* line 102, ../../scss/modules/_hero.scss */
   #cv-drought-relief {
     background-image: url("../img/profiles/hero/drought-relief/Nicholas Construction-47.jpg");
   }
 }
 
-/* line 82, ../../scss/modules/_hero.scss */
+/* line 120, ../../scss/modules/_hero.scss */
 #dixon-bypass {
   background-image: url("../img/profiles/hero/dixon/Dixon Irrigation Bypass-sm.jpg");
   background-position: top;
@@ -2014,7 +2014,7 @@ fieldset .legend {
   height: 100vh;
 }
 @media (min-width: 75em) {
-  /* line 82, ../../scss/modules/_hero.scss */
+  /* line 120, ../../scss/modules/_hero.scss */
   #dixon-bypass {
     background-image: url("../img/profiles/hero/dixon/Dixon Irrigation Bypass-211.jpg");
   }
@@ -2771,112 +2771,150 @@ form input:required:valid {
     height: 500px;
   }
 }
-/* line 13, ../../scss/modules/_inner-hero.scss */
+/* line 17, ../../scss/modules/_inner-hero.scss */
 .inner-hero h1 {
   position: absolute;
   bottom: 0;
   left: 5%;
   color: #fefefe;
+  text-align: left;
+}
+@media (min-width: 47em) {
+  /* line 17, ../../scss/modules/_inner-hero.scss */
+  .inner-hero h1 {
+    text-align: center;
+  }
 }
 
-/* line 21, ../../scss/modules/_inner-hero.scss */
+/* line 30, ../../scss/modules/_inner-hero.scss */
 #handbook-hero {
   background-image: url("../img/hero/handbook.jpg");
 }
 
-/* line 24, ../../scss/modules/_inner-hero.scss */
+/* line 34, ../../scss/modules/_inner-hero.scss */
 #resources-hero {
   background-image: url("../img/hero/resources.jpg");
 }
 
-/* line 27, ../../scss/modules/_inner-hero.scss */
+/* line 38, ../../scss/modules/_inner-hero.scss */
 #profiles-hero {
-  background-image: url("../img/hero/profiles.jpg");
+  background-image: url("../img/hero/profiles-mobile.jpg");
+}
+@media (min-width: 47em) {
+  /* line 38, ../../scss/modules/_inner-hero.scss */
+  #profiles-hero {
+    background-image: url("../img/hero/profiles.jpg");
+  }
 }
 
-/* line 30, ../../scss/modules/_inner-hero.scss */
+/* line 46, ../../scss/modules/_inner-hero.scss */
 #staff-hero {
   background-image: url("../img/hero/staff-hero.jpg");
 }
 
-/* line 33, ../../scss/modules/_inner-hero.scss */
+/* line 50, ../../scss/modules/_inner-hero.scss */
 #c-accounts-hero {
-  background-image: url("../img/hero/customer-accounts.jpg");
+  background-image: url("../img/hero/customer-accounts-mobile.jpg");
+}
+@media (min-width: 47em) {
+  /* line 50, ../../scss/modules/_inner-hero.scss */
+  #c-accounts-hero {
+    background-image: url("../img/hero/customer-accounts.jpg");
+  }
 }
 
-/* line 36, ../../scss/modules/_inner-hero.scss */
+/* line 58, ../../scss/modules/_inner-hero.scss */
 #history-hero {
-  background-image: url("../img/hero/rb-history.jpg");
+  background-image: url("../img/hero/rb-history-mobile.jpg");
+}
+@media (min-width: 47em) {
+  /* line 58, ../../scss/modules/_inner-hero.scss */
+  #history-hero {
+    background-image: url("../img/hero/rb-history.jpg");
+  }
 }
 
-/* line 39, ../../scss/modules/_inner-hero.scss */
+/* line 66, ../../scss/modules/_inner-hero.scss */
 #contact-hero {
   background-image: url("../img/hero/contact-us.jpg");
 }
 
-/* line 42, ../../scss/modules/_inner-hero.scss */
+/* line 70, ../../scss/modules/_inner-hero.scss */
 #submital-hero {
-  background-image: url("../img/hero/Submittals.png");
+  background-image: url("../img/hero/submittals-mobile.png");
+}
+@media (min-width: 47em) {
+  /* line 70, ../../scss/modules/_inner-hero.scss */
+  #submital-hero {
+    background-image: url("../img/hero/submittals.png");
+  }
 }
 
-/* line 45, ../../scss/modules/_inner-hero.scss */
+/* line 78, ../../scss/modules/_inner-hero.scss */
 #app-hero {
   background-image: url("../img/hero/mobile-app.jpg");
 }
 
-/* line 48, ../../scss/modules/_inner-hero.scss */
+/* line 82, ../../scss/modules/_inner-hero.scss */
 #rental-hero {
   background-image: url("../img/hero/t630.jpg");
 }
 
-/* line 51, ../../scss/modules/_inner-hero.scss */
+/* line 86, ../../scss/modules/_inner-hero.scss */
 #vendors-hero {
-  background-image: url("../img/hero/sf-arteries.jpg");
+  background-image: url("../img/hero/rb-vendors-mobile.jpg");
+}
+@media (min-width: 47em) {
+  /* line 86, ../../scss/modules/_inner-hero.scss */
+  #vendors-hero {
+    background-image: url("../img/hero/rb-vendors.jpg");
+  }
 }
 
-/* line 54, ../../scss/modules/_inner-hero.scss */
+/* line 94, ../../scss/modules/_inner-hero.scss */
 #videos-hero {
   background-image: url("../img/hero/blue-pipe.jpg");
 }
 
-/* line 57, ../../scss/modules/_inner-hero.scss */
+/* line 98, ../../scss/modules/_inner-hero.scss */
 #a-links-hero {
   background-image: url("../img/hero/yellow-hydrants.jpg");
 }
 
-/* line 60, ../../scss/modules/_inner-hero.scss */
+/* line 102, ../../scss/modules/_inner-hero.scss */
 #user-agreement-hero {
   background-image: url("../img/hero/Gilroy Heartlands-2.jpg");
 }
 
-/* line 63, ../../scss/modules/_inner-hero.scss */
+/* line 106, ../../scss/modules/_inner-hero.scss */
 #associations-hero {
   background-image: url("../img/hero/association.jpg");
 }
 
-/* line 66, ../../scss/modules/_inner-hero.scss */
+/* line 110, ../../scss/modules/_inner-hero.scss */
 #emergency-hero {
   background-image: url("../img/hero/emergency.jpg");
 }
 
-/* line 69, ../../scss/modules/_inner-hero.scss */
+/* line 114, ../../scss/modules/_inner-hero.scss */
 #checkout-hero {
   background-image: url("../img/hero/checkout.jpg");
 }
 
-/* line 72, ../../scss/modules/_inner-hero.scss */
+/* line 118, ../../scss/modules/_inner-hero.scss */
 #class-a-driver {
   background-image: url("../img/hero/driver.jpg");
 }
 
-/* line 75, ../../scss/modules/_inner-hero.scss */
-#career-admin {
-  background-image: url("../img/hero/admin.png");
+/* line 122, ../../scss/modules/_inner-hero.scss */
+#career-hero {
+  background-image: url("../img/hero/rb-careers-mobile.jpg");
 }
-
-/* line 78, ../../scss/modules/_inner-hero.scss */
-#career-sales {
-  background-image: url("../img/careers/inside-sales.jpg");
+@media (min-width: 47em) {
+  /* line 122, ../../scss/modules/_inner-hero.scss */
+  #career-hero {
+    background-image: url("../img/hero/rb-careers.jpg");
+  }
 }
 
 /* line 2, ../../scss/modules/_lightbox.scss */
@@ -3034,8 +3072,9 @@ form input:required:valid {
 .table-wrapper {
   position: relative;
   overflow: hidden;
+  margin-left: 250px;
 }
-/* line 36, ../../scss/modules/_tables.scss */
+/* line 37, ../../scss/modules/_tables.scss */
 .table-wrapper:after {
   content: "";
   position: absolute;
@@ -3044,17 +3083,17 @@ form input:required:valid {
   width: 50px;
   height: 100%;
 }
-/* line 44, ../../scss/modules/_tables.scss */
+/* line 45, ../../scss/modules/_tables.scss */
 .table-wrapper .table-inner {
   overflow-x: auto;
 }
-/* line 46, ../../scss/modules/_tables.scss */
+/* line 47, ../../scss/modules/_tables.scss */
 .table-wrapper .table-inner::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
 }
-/* line 51, ../../scss/modules/_tables.scss */
+/* line 52, ../../scss/modules/_tables.scss */
 .table-wrapper .table-inner::-webkit-scrollbar-thumb {
   border-radius: 5px;
   border: 2px solid #fff;
@@ -3066,63 +3105,118 @@ form input:required:valid {
     overflow: visible;
     box-shadow: none;
   }
-  /* line 60, ../../scss/modules/_tables.scss */
+  /* line 61, ../../scss/modules/_tables.scss */
   .table-wrapper:after {
     content: none;
   }
 }
 
-/* line 70, ../../scss/modules/_tables.scss */
+/* line 71, ../../scss/modules/_tables.scss */
 .table-content {
   margin: 10px 0 20px 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
+  width: 100%;
   overflow: hidden;
 }
-/* line 75, ../../scss/modules/_tables.scss */
+/* line 77, ../../scss/modules/_tables.scss */
 .table-content th, .table-content td {
   padding: 15px 15px;
   min-width: 100px;
-  border: none;
+  border: solid 1px #4f6f95;
   text-align: center;
-  background: #eee;
 }
-/* line 82, ../../scss/modules/_tables.scss */
-.table-content th {
-  background: #0033a0;
-  color: #fff;
-}
-/* line 86, ../../scss/modules/_tables.scss */
-.table-content td:first-child {
-  font-weight: bold;
-  text-align: left;
-}
-/* line 90, ../../scss/modules/_tables.scss */
+/* line 83, ../../scss/modules/_tables.scss */
 .table-content tr:nth-child(even) td {
   background: white;
 }
-/* line 93, ../../scss/modules/_tables.scss */
+/* line 86, ../../scss/modules/_tables.scss */
 .table-content .primary {
   background: #0b2653;
 }
-/* line 95, ../../scss/modules/_tables.scss */
+/* line 88, ../../scss/modules/_tables.scss */
 .table-content .primary:hover {
   background: #113b80;
 }
-/* line 99, ../../scss/modules/_tables.scss */
+/* line 92, ../../scss/modules/_tables.scss */
 .table-content button {
   background: #AD2B11;
 }
-/* line 101, ../../scss/modules/_tables.scss */
+/* line 94, ../../scss/modules/_tables.scss */
 .table-content button:hover {
   background: #c43113;
+}
+
+/* line 1, ../../scss/modules/_v-lightbox.scss */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 12, ../../scss/modules/_v-lightbox.scss */
+#modal.show {
+  display: block;
+}
+
+/* line 16, ../../scss/modules/_v-lightbox.scss */
+.modal-content {
+  height: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 24, ../../scss/modules/_v-lightbox.scss */
+.modal-content img {
+  max-width: 100%;
+}
+
+/* line 28, ../../scss/modules/_v-lightbox.scss */
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* line 34, ../../scss/modules/_v-lightbox.scss */
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 28px 8px;
+  font-size: 4em;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #fff;
+  z-index: 1000;
+  font-weight: 100;
+  line-height: 1;
+}
+
+/* line 52, ../../scss/modules/_v-lightbox.scss */
+.modal-content {
+  width: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* line 2, ../../scss/layout/_home.scss */
 #home header {
   background: rgba(17, 24, 32, 0.83);
 }
-/* line 5, ../../scss/layout/_home.scss */
+/* line 6, ../../scss/layout/_home.scss */
 #home .logo {
   clear: both;
   width: 100%;
@@ -3138,28 +3232,28 @@ form input:required:valid {
   flex-direction: column;
 }
 @media (min-width: 47em) {
-  /* line 5, ../../scss/layout/_home.scss */
+  /* line 6, ../../scss/layout/_home.scss */
   #home .logo {
     -webkit-align-items: center;
     align-items: center;
   }
 }
-/* line 16, ../../scss/layout/_home.scss */
+/* line 20, ../../scss/layout/_home.scss */
 #home .logo span {
   margin-left: -9999px;
 }
-/* line 19, ../../scss/layout/_home.scss */
+/* line 24, ../../scss/layout/_home.scss */
 #home .logo img {
   width: 15em;
   padding: 2% 0 0 2%;
 }
 @media (min-width: 47em) {
-  /* line 19, ../../scss/layout/_home.scss */
+  /* line 24, ../../scss/layout/_home.scss */
   #home .logo img {
     width: 25em;
   }
 }
-/* line 29, ../../scss/layout/_home.scss */
+/* line 36, ../../scss/layout/_home.scss */
 #home #second-logo {
   background-color: #eee;
   visibility: hidden;
@@ -3167,7 +3261,7 @@ form input:required:valid {
   height: 0;
   transition: visibility 0s, opacity 1s linear;
 }
-/* line 35, ../../scss/layout/_home.scss */
+/* line 43, ../../scss/layout/_home.scss */
 #home #second-logo.nav-fixed-top {
   background: white;
   display: -webkit-flex;
@@ -3177,7 +3271,7 @@ form input:required:valid {
   opacity: 1;
   height: auto;
 }
-/* line 45, ../../scss/layout/_home.scss */
+/* line 55, ../../scss/layout/_home.scss */
 #home .hero {
   clear: both;
   width: 100%;
@@ -3191,19 +3285,25 @@ form input:required:valid {
   background-position: center center;
   min-height: 300px;
   height: 350px;
-  background-image: url("../img/hero/home-banner.jpg");
+  background-image: url("../img/hero/home-banner-mobile.jpg");
   padding: 200px 40px;
   margin: 0;
   text-align: center;
   font-size: 7.0rem;
 }
 @media (min-width: 75em) {
-  /* line 45, ../../scss/layout/_home.scss */
+  /* line 55, ../../scss/layout/_home.scss */
   #home .hero {
     height: 500px;
   }
 }
-/* line 65, ../../scss/layout/_home.scss */
+@media (min-width: 47em) {
+  /* line 55, ../../scss/layout/_home.scss */
+  #home .hero {
+    background-image: url("../img/hero/home-banner.jpg");
+  }
+}
+/* line 84, ../../scss/layout/_home.scss */
 #home .nav {
   display: block;
   margin: 0;
@@ -3211,11 +3311,11 @@ form input:required:valid {
   list-style: none;
   transition: all 1s ease;
 }
-/* line 77, ../../scss/layout/_home.scss */
+/* line 91, ../../scss/layout/_home.scss */
 #home .nav ul {
   text-align: center;
 }
-/* line 80, ../../scss/layout/_home.scss */
+/* line 95, ../../scss/layout/_home.scss */
 #home .nav.nav-fixed-top {
   top: 0;
   z-index: 100;
@@ -3224,41 +3324,85 @@ form input:required:valid {
   background: white;
   padding: 0;
 }
-/* line 90, ../../scss/layout/_home.scss */
+/* line 105, ../../scss/layout/_home.scss */
 #home .menu a {
   color: white;
 }
-/* line 93, ../../scss/layout/_home.scss */
+/* line 109, ../../scss/layout/_home.scss */
 #home .cards {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 97, ../../scss/layout/_home.scss */
+/* line 114, ../../scss/layout/_home.scss */
+#home #medium {
+  display: none;
+}
+@media (min-width: 47em) {
+  /* line 114, ../../scss/layout/_home.scss */
+  #home #medium {
+    display: block;
+  }
+}
+/* line 122, ../../scss/layout/_home.scss */
+#home #small {
+  display: block;
+  margin-bottom: 0;
+}
+@media (min-width: 47em) {
+  /* line 122, ../../scss/layout/_home.scss */
+  #home #small {
+    display: none;
+  }
+}
+/* line 131, ../../scss/layout/_home.scss */
+#home #video {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: block;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@media (min-width: 47em) {
+  /* line 131, ../../scss/layout/_home.scss */
+  #home #video {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+/* line 143, ../../scss/layout/_home.scss */
+#home #video video {
+  width: 100%;
+  max-width: 640px;
+  max-height: 360px;
+  padding: 1rem;
+  margin-bottom: 5%;
+}
+/* line 152, ../../scss/layout/_home.scss */
 #home .client-logos {
   max-width: 1080px;
   margin: 0 auto;
 }
-/* line 101, ../../scss/layout/_home.scss */
+/* line 156, ../../scss/layout/_home.scss */
 #home .client-logos ul {
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-/* line 103, ../../scss/layout/_home.scss */
+/* line 160, ../../scss/layout/_home.scss */
 #home .client-logos ul li {
-  -webkit-flex-grow: 0.5;
-  flex-grow: 0.5;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-flex-grow: 0.25;
+  flex-grow: 0.25;
 }
 @media (min-width: 47em) {
-  /* line 103, ../../scss/layout/_home.scss */
+  /* line 160, ../../scss/layout/_home.scss */
   #home .client-logos ul li {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
 
-/* line 116, ../../scss/layout/_home.scss */
+/* line 173, ../../scss/layout/_home.scss */
 h1 {
   text-align: center;
 }
@@ -3829,665 +3973,695 @@ h1 {
   background-image: url("../img/staff/kevin-jr.jpg");
 }
 
-/* line 12, ../../scss/layout/_staff-card-images.scss */
+/* line 13, ../../scss/layout/_staff-card-images.scss */
 .card-image-richard {
   background-image: url("../img/staff/richard.jpg");
 }
 
-/* line 15, ../../scss/layout/_staff-card-images.scss */
+/* line 17, ../../scss/layout/_staff-card-images.scss */
 .card-image-kenny {
   background-image: url("../img/staff/kenny-despot.jpg");
 }
 
-/* line 18, ../../scss/layout/_staff-card-images.scss */
+/* line 21, ../../scss/layout/_staff-card-images.scss */
 .card-image-howard {
   background-image: url("../img/staff/howard.jpg");
 }
 
-/* line 21, ../../scss/layout/_staff-card-images.scss */
+/* line 25, ../../scss/layout/_staff-card-images.scss */
 .card-image-jenny {
   background-image: url("../img/staff/Jenny Ming.jpg");
 }
 
-/* line 24, ../../scss/layout/_staff-card-images.scss */
+/* line 29, ../../scss/layout/_staff-card-images.scss */
 .card-image-taylor {
   background-image: url("../img/staff/taylor.jpg");
 }
 
-/* line 27, ../../scss/layout/_staff-card-images.scss */
+/* line 33, ../../scss/layout/_staff-card-images.scss */
 .card-image-milton {
   background-image: url("../img/staff/new/milton.jpg");
 }
 
-/* line 30, ../../scss/layout/_staff-card-images.scss */
+/* line 37, ../../scss/layout/_staff-card-images.scss */
 .card-image-marco-gamino {
   background-image: url("../img/staff/new/marco-gamino.jpg");
 }
 
 /* Chico */
-/* line 37, ../../scss/layout/_staff-card-images.scss */
+/* line 42, ../../scss/layout/_staff-card-images.scss */
 .card-image-ryan-evans {
   background-image: url("../img/staff/new/ryan-evans.jpg");
 }
 
-/* line 40, ../../scss/layout/_staff-card-images.scss */
+/* line 46, ../../scss/layout/_staff-card-images.scss */
 .card-image-james-dunn {
   background-image: url("../img/staff/new/james-dunn.jpg");
 }
 
 /* Fresno */
-/* line 45, ../../scss/layout/_staff-card-images.scss */
+/* line 51, ../../scss/layout/_staff-card-images.scss */
 .card-image-kevin-chambers {
   background-image: url("../img/staff/kevin-chambers.jpg");
 }
 
-/* line 48, ../../scss/layout/_staff-card-images.scss */
+/* line 55, ../../scss/layout/_staff-card-images.scss */
+.card-image-mandy-magill {
+  background-image: url("../img/staff/new/mandy-magill.jpg");
+}
+
+/* line 59, ../../scss/layout/_staff-card-images.scss */
+.card-image-brad-opitz {
+  background-image: url("../img/staff/brad-opitz.jpg");
+}
+
+/* line 63, ../../scss/layout/_staff-card-images.scss */
 .card-image-brady-g {
   background-image: url("../img/staff/brady-guzman.jpg");
 }
 
-/* line 51, ../../scss/layout/_staff-card-images.scss */
+/* line 67, ../../scss/layout/_staff-card-images.scss */
 .card-image-allyn-s {
   background-image: url("../img/staff/new/allyn-shadowens.jpg");
 }
 
-/* line 54, ../../scss/layout/_staff-card-images.scss */
+/* line 71, ../../scss/layout/_staff-card-images.scss */
 .card-image-hunter-c {
   background-image: url("../img/staff/new/hunter-cabrel.jpg");
 }
 
-/* line 57, ../../scss/layout/_staff-card-images.scss */
+/* line 75, ../../scss/layout/_staff-card-images.scss */
 .card-image-dan-a {
   background-image: url("../img/staff/new/dan-acosta.jpg");
 }
 
-/* line 60, ../../scss/layout/_staff-card-images.scss */
+/* line 79, ../../scss/layout/_staff-card-images.scss */
 .card-image-chris-m {
   background-image: url("../img/staff/new/chris-medrano.jpg");
 }
 
-/* line 63, ../../scss/layout/_staff-card-images.scss */
+/* line 83, ../../scss/layout/_staff-card-images.scss */
 .card-image-rob-petty {
   background-image: url("../img/staff/new/rob-petty.jpg");
 }
 
-/* line 66, ../../scss/layout/_staff-card-images.scss */
+/* line 87, ../../scss/layout/_staff-card-images.scss */
 .card-image-marc-m {
   background-image: url("../img/staff/new/marc-magill.jpg");
 }
 
 /* Hayward */
-/* line 71, ../../scss/layout/_staff-card-images.scss */
+/* line 92, ../../scss/layout/_staff-card-images.scss */
 .card-image-rick-g {
   background-image: url("../img/staff/rick-g.jpg");
 }
 
-/* line 74, ../../scss/layout/_staff-card-images.scss */
+/* line 96, ../../scss/layout/_staff-card-images.scss */
 .card-image-mary-m {
   background-image: url("../img/staff/mary-m.jpg");
 }
 
-/* line 77, ../../scss/layout/_staff-card-images.scss */
+/* line 100, ../../scss/layout/_staff-card-images.scss */
+.card-image-jesse-guadamuz {
+  background-image: url("../img/staff/new/jesse-guadamuz.jpg");
+}
+
+/* line 104, ../../scss/layout/_staff-card-images.scss */
 .card-image-scott-s {
   background-image: url("../img/staff/scott-s.jpg");
 }
 
-/* line 80, ../../scss/layout/_staff-card-images.scss */
+/* line 108, ../../scss/layout/_staff-card-images.scss */
 .card-image-j-sockol {
   background-image: url("../img/staff/Jim Sockol.jpg");
 }
 
-/* line 83, ../../scss/layout/_staff-card-images.scss */
+/* line 112, ../../scss/layout/_staff-card-images.scss */
+.card-image-scott-smith {
+  background-image: url("../img/staff/new/scott-smith.jpg");
+}
+
+/* line 116, ../../scss/layout/_staff-card-images.scss */
 .card-image-bob-alveraz {
   background-image: url("../img/staff/new/robert-alvarez.jpg");
 }
 
 /* Manteca */
-/* line 89, ../../scss/layout/_staff-card-images.scss */
+/* line 122, ../../scss/layout/_staff-card-images.scss */
 .card-image-roger-h {
   background-image: url("../img/staff/new/roger-hamilton.jpg");
 }
 
-/* line 92, ../../scss/layout/_staff-card-images.scss */
+/* line 126, ../../scss/layout/_staff-card-images.scss */
 .card-image-tiffany-m {
   background-image: url("../img/staff/tiffany.jpg");
 }
 
-/* line 95, ../../scss/layout/_staff-card-images.scss */
+/* line 130, ../../scss/layout/_staff-card-images.scss */
 .card-image-romiro-c {
   background-image: url("../img/staff/new/romiro.jpg");
 }
 
-/* line 98, ../../scss/layout/_staff-card-images.scss */
+/* line 134, ../../scss/layout/_staff-card-images.scss */
 .card-image-bart-t {
   background-image: url("../img/staff/bart.jpg");
 }
 
-/* line 101, ../../scss/layout/_staff-card-images.scss */
+/* line 138, ../../scss/layout/_staff-card-images.scss */
 .card-image-dave-m {
   background-image: url("../img/staff/new/dave-moore.jpg");
 }
 
-/* line 104, ../../scss/layout/_staff-card-images.scss */
+/* line 142, ../../scss/layout/_staff-card-images.scss */
 .card-image-mathew-o {
   background-image: url("../img/staff/matthew-ortiz.jpg");
 }
 
-/* line 107, ../../scss/layout/_staff-card-images.scss */
+/* line 146, ../../scss/layout/_staff-card-images.scss */
 .card-image-paul-n {
   background-image: url("../img/staff/new/paul-nehring.jpg");
 }
 
-/* line 110, ../../scss/layout/_staff-card-images.scss */
+/* line 150, ../../scss/layout/_staff-card-images.scss */
 .card-image-david-f {
   background-image: url("../img/staff/Dave Foster.jpg");
 }
 
-/* line 113, ../../scss/layout/_staff-card-images.scss */
+/* line 154, ../../scss/layout/_staff-card-images.scss */
 .card-image-mike-grove {
   background-image: url("../img/staff/new/mike-grove.jpg");
 }
 
 /* Oakley */
-/* line 119, ../../scss/layout/_staff-card-images.scss */
+/* line 160, ../../scss/layout/_staff-card-images.scss */
 .card-image-richie-a {
   background-image: url("../img/staff/new/richie-aliotti.jpg");
 }
 
-/* line 122, ../../scss/layout/_staff-card-images.scss */
+/* line 164, ../../scss/layout/_staff-card-images.scss */
 .card-image-mo-y {
   background-image: url("../img/staff/new/mo-yosuff - 1.jpg");
 }
 
-/* line 125, ../../scss/layout/_staff-card-images.scss */
+/* line 168, ../../scss/layout/_staff-card-images.scss */
 .card-image-jeff-f {
   background-image: url("../img/staff/new/jeff-franks.jpg");
 }
 
-/* line 128, ../../scss/layout/_staff-card-images.scss */
+/* line 172, ../../scss/layout/_staff-card-images.scss */
 .card-image-misty-w {
   background-image: url("../img/staff/misty_w.jpg");
 }
 
-/* line 131, ../../scss/layout/_staff-card-images.scss */
+/* line 176, ../../scss/layout/_staff-card-images.scss */
 .card-image-shannon-g {
   background-image: url("../img/staff/shannon.jpg");
 }
 
-/* line 134, ../../scss/layout/_staff-card-images.scss */
+/* line 180, ../../scss/layout/_staff-card-images.scss */
 .card-image-joe-a {
   background-image: url("../img/staff/new/joe-aliotti.jpg");
 }
 
-/* line 137, ../../scss/layout/_staff-card-images.scss */
+/* line 184, ../../scss/layout/_staff-card-images.scss */
 .card-image-dj {
   background-image: url("../img/staff/DJ.jpg");
 }
 
-/* line 140, ../../scss/layout/_staff-card-images.scss */
+/* line 188, ../../scss/layout/_staff-card-images.scss */
 .card-image-j-burgess {
   background-image: url("../img/staff/new/jim-burgess.jpg");
 }
 
 /* Redwood City */
-/* line 147, ../../scss/layout/_staff-card-images.scss */
+/* line 194, ../../scss/layout/_staff-card-images.scss */
 .card-image-fernando-v {
   background-image: url("../img/staff/new/fernando-valdez.jpg");
 }
 
-/* line 150, ../../scss/layout/_staff-card-images.scss */
+/* line 198, ../../scss/layout/_staff-card-images.scss */
 .card-image-alan-n {
   background-image: url("../img/staff/new/alan-nelson.jpg");
 }
 
-/* line 153, ../../scss/layout/_staff-card-images.scss */
+/* line 202, ../../scss/layout/_staff-card-images.scss */
 .card-image-jake-p {
   background-image: url("../img/staff/jake.jpg");
 }
 
-/* line 156, ../../scss/layout/_staff-card-images.scss */
+/* line 206, ../../scss/layout/_staff-card-images.scss */
 .card-image-jon-d {
   background-image: url("../img/staff/jon-drake.jpg");
 }
 
-/* line 159, ../../scss/layout/_staff-card-images.scss */
+/* line 210, ../../scss/layout/_staff-card-images.scss */
 .card-image-miguel-b {
   background-image: url("../img/staff/new/miguel-barriga.jpg");
 }
 
-/* line 162, ../../scss/layout/_staff-card-images.scss */
+/* line 214, ../../scss/layout/_staff-card-images.scss */
 .card-image-rory-g {
   background-image: url("../img/staff/new/rory-gamblin.jpg");
 }
 
-/* line 165, ../../scss/layout/_staff-card-images.scss */
+/* line 218, ../../scss/layout/_staff-card-images.scss */
 .card-image-bobby-g {
   background-image: url("../img/staff/bobby.jpg");
 }
 
-/* line 168, ../../scss/layout/_staff-card-images.scss */
+/* line 222, ../../scss/layout/_staff-card-images.scss */
 .card-image-boris-c {
   background-image: url("../img/staff/new/boris-mira.jpg");
 }
 
-/* line 171, ../../scss/layout/_staff-card-images.scss */
+/* line 226, ../../scss/layout/_staff-card-images.scss */
 .card-image-les-s {
   background-image: url("../img/staff/les-sharp.jpg");
 }
 
-/* line 174, ../../scss/layout/_staff-card-images.scss */
+/* line 230, ../../scss/layout/_staff-card-images.scss */
 .card-image-tony-nagata {
   background-image: url("../img/staff/Tony Nagata.jpg");
 }
 
-/* line 177, ../../scss/layout/_staff-card-images.scss */
+/* line 234, ../../scss/layout/_staff-card-images.scss */
 .card-image-g-chavez {
   background-image: url("../img/staff/Gabe.jpg");
 }
 
-/* line 180, ../../scss/layout/_staff-card-images.scss */
+/* line 238, ../../scss/layout/_staff-card-images.scss */
 .card-image-nacho {
   background-image: url("../img/staff/Nacho.jpg");
 }
 
-/* line 183, ../../scss/layout/_staff-card-images.scss */
+/* line 242, ../../scss/layout/_staff-card-images.scss */
 .card-image-vanessa-d {
   background-image: url("../img/staff/vanessa-diricco.jpg");
 }
 
-/* line 186, ../../scss/layout/_staff-card-images.scss */
+/* line 246, ../../scss/layout/_staff-card-images.scss */
 .card-image-michael-jordan {
   background-image: url("../img/staff/new/michael-jordan.jpg");
 }
 
-/* line 189, ../../scss/layout/_staff-card-images.scss */
+/* line 250, ../../scss/layout/_staff-card-images.scss */
 .card-image-mike-jones {
   background-image: url("../img/staff/new/mike-jones.jpg");
 }
 
 /* Sacramento */
-/* line 196, ../../scss/layout/_staff-card-images.scss */
+/* line 256, ../../scss/layout/_staff-card-images.scss */
 .card-image-bob-barstad {
   background-image: url("../img/staff/new/bob-barstad.jpg");
 }
 
-/* line 199, ../../scss/layout/_staff-card-images.scss */
+/* line 260, ../../scss/layout/_staff-card-images.scss */
 .card-image-daniel-f {
   background-image: url("../img/staff/daniel-franey.jpg");
 }
 
-/* line 202, ../../scss/layout/_staff-card-images.scss */
+/* line 264, ../../scss/layout/_staff-card-images.scss */
 .card-image-tom-m {
   background-image: url("../img/staff/new/tom-mccloskey - 3.jpg");
 }
 
-/* line 205, ../../scss/layout/_staff-card-images.scss */
+/* line 268, ../../scss/layout/_staff-card-images.scss */
 .card-image-leilana-b {
   background-image: url("../img/staff/leilana-becker.jpg");
 }
 
-/* line 208, ../../scss/layout/_staff-card-images.scss */
+/* line 272, ../../scss/layout/_staff-card-images.scss */
 .card-image-ed-b {
   background-image: url("../img/staff/ed-bearby.JPG");
 }
 
-/* line 211, ../../scss/layout/_staff-card-images.scss */
+/* line 276, ../../scss/layout/_staff-card-images.scss */
 .card-image-daniel-v {
   background-image: url("../img/staff/new/danny-velazquez.jpg");
 }
 
-/* line 214, ../../scss/layout/_staff-card-images.scss */
+/* line 280, ../../scss/layout/_staff-card-images.scss */
 .card-image-jon-denham {
   background-image: url("../img/staff/new/jon-denham.jpg");
 }
 
-/* line 217, ../../scss/layout/_staff-card-images.scss */
+/* line 284, ../../scss/layout/_staff-card-images.scss */
 .card-image-jack-b {
   background-image: url("../img/staff/jack-becker.jpg");
 }
 
-/* line 220, ../../scss/layout/_staff-card-images.scss */
+/* line 288, ../../scss/layout/_staff-card-images.scss */
 .card-image-sandi-w {
   background-image: url("../img/staff/new/sandi-watts.jpg");
 }
 
-/* line 223, ../../scss/layout/_staff-card-images.scss */
+/* line 292, ../../scss/layout/_staff-card-images.scss */
 .card-image-amy-b {
   background-image: url("../img/staff/amy-b.jpg");
 }
 
-/* line 226, ../../scss/layout/_staff-card-images.scss */
+/* line 296, ../../scss/layout/_staff-card-images.scss */
 .card-image-juan-v {
   background-image: url("../img/staff/juan-valdez.jpg");
 }
 
-/* line 229, ../../scss/layout/_staff-card-images.scss */
+/* line 300, ../../scss/layout/_staff-card-images.scss */
 .card-image-curtis-nelson {
   background-image: url("../img/staff/new/curtis-nelson.jpg");
 }
 
 /* Salinas */
-/* line 235, ../../scss/layout/_staff-card-images.scss */
+/* line 306, ../../scss/layout/_staff-card-images.scss */
 .card-image-max-y {
   background-image: url("../img/staff/max.jpg");
 }
 
-/* line 238, ../../scss/layout/_staff-card-images.scss */
+/* line 310, ../../scss/layout/_staff-card-images.scss */
 .card-image-adam-m {
   background-image: url("../img/staff/new/adam-miller.jpg");
 }
 
-/* line 241, ../../scss/layout/_staff-card-images.scss */
+/* line 314, ../../scss/layout/_staff-card-images.scss */
 .card-image-bob-barth {
   background-image: url("../img/staff/new/bob-bartholomew.jpg");
 }
 
-/* line 244, ../../scss/layout/_staff-card-images.scss */
+/* line 318, ../../scss/layout/_staff-card-images.scss */
 .card-image-kristi-g {
   background-image: url("../img/staff/new/kristi-gribbin.jpg");
 }
 
-/* line 247, ../../scss/layout/_staff-card-images.scss */
+/* line 322, ../../scss/layout/_staff-card-images.scss */
 .card-image-andrea-b {
   background-image: url("../img/staff/new/andrea-barela.jpg");
 }
 
 /* San Jose Fusion */
-/* line 253, ../../scss/layout/_staff-card-images.scss */
+/* line 328, ../../scss/layout/_staff-card-images.scss */
 .card-image-paul-h {
   background-image: url("../img/staff/new/paul-harrington.jpg");
 }
 
-/* line 256, ../../scss/layout/_staff-card-images.scss */
+/* line 332, ../../scss/layout/_staff-card-images.scss */
 .card-image-murray-s {
   background-image: url("../img/staff/murray-sullivan.jpg");
 }
 
-/* line 259, ../../scss/layout/_staff-card-images.scss */
+/* line 336, ../../scss/layout/_staff-card-images.scss */
 .card-image-glen-g {
   background-image: url("../img/staff/new/glen-gates.jpg");
 }
 
-/* line 262, ../../scss/layout/_staff-card-images.scss */
+/* line 340, ../../scss/layout/_staff-card-images.scss */
 .card-image-jimmy-l {
   background-image: url("../img/staff/new/jimmy-lamaack.jpg");
 }
 
-/* line 265, ../../scss/layout/_staff-card-images.scss */
+/* line 344, ../../scss/layout/_staff-card-images.scss */
 .card-image-tony-v {
   background-image: url("../img/staff/new/tony-ventura.jpg");
 }
 
-/* line 268, ../../scss/layout/_staff-card-images.scss */
+/* line 348, ../../scss/layout/_staff-card-images.scss */
 .card-image-mario-p {
   background-image: url("../img/staff/new/mario-puente.png");
 }
 
-/* line 271, ../../scss/layout/_staff-card-images.scss */
+/* line 352, ../../scss/layout/_staff-card-images.scss */
 .card-image-hector-s {
   background-image: url("../img/staff/hector.jpeg");
 }
 
-/* line 274, ../../scss/layout/_staff-card-images.scss */
+/* line 356, ../../scss/layout/_staff-card-images.scss */
 .card-image-manuel-g {
   background-image: url("../img/staff/new/manual-garcia.jpg");
 }
 
-/* line 277, ../../scss/layout/_staff-card-images.scss */
+/* line 360, ../../scss/layout/_staff-card-images.scss */
 .card-image-daniel-i {
   background-image: url("../img/staff/daniel-i.jpg");
 }
 
-/* line 280, ../../scss/layout/_staff-card-images.scss */
+/* line 364, ../../scss/layout/_staff-card-images.scss */
 .card-image-alyx-d {
   background-image: url("../img/staff/alyx.jpg");
 }
 
-/* line 283, ../../scss/layout/_staff-card-images.scss */
+/* line 368, ../../scss/layout/_staff-card-images.scss */
 .card-image-kelly-e {
   background-image: url("../img/staff/Kelly Eoff.jpg");
 }
 
-/* line 286, ../../scss/layout/_staff-card-images.scss */
+/* line 372, ../../scss/layout/_staff-card-images.scss */
 .card-image-jeanette-g {
   background-image: url("../img/staff/new/jeanette-garcia.jpg");
 }
 
 /*San Jose */
-/* line 292, ../../scss/layout/_staff-card-images.scss */
+/* line 377, ../../scss/layout/_staff-card-images.scss */
 .card-image-raul-s {
   background-image: url("../img/staff/raul.jpg");
 }
 
-/* line 295, ../../scss/layout/_staff-card-images.scss */
+/* line 381, ../../scss/layout/_staff-card-images.scss */
 .card-image-chuck-h {
   background-image: url("../img/staff/new/chuck-hill.jpg");
 }
 
-/* line 298, ../../scss/layout/_staff-card-images.scss */
+/* line 385, ../../scss/layout/_staff-card-images.scss */
 .card-image-david-h {
   background-image: url("../img/staff/david-h.jpg");
 }
 
-/* line 301, ../../scss/layout/_staff-card-images.scss */
+/* line 389, ../../scss/layout/_staff-card-images.scss */
 .card-image-jeff-w {
   background-image: url("../img/staff/new/jeff-white.jpg");
 }
 
-/* line 304, ../../scss/layout/_staff-card-images.scss */
+/* line 393, ../../scss/layout/_staff-card-images.scss */
 .card-image-joe-f {
   background-image: url("../img/staff/joe-f.jpg");
 }
 
-/* line 307, ../../scss/layout/_staff-card-images.scss */
+/* line 397, ../../scss/layout/_staff-card-images.scss */
 .card-image-lane-d {
   background-image: url("../img/staff/new/lane-dore.jpg");
 }
 
-/* line 310, ../../scss/layout/_staff-card-images.scss */
+/* line 401, ../../scss/layout/_staff-card-images.scss */
 .card-image-nancy-d {
   background-image: url("../img/staff/new/nancy-dore.jpg");
 }
 
-/* line 313, ../../scss/layout/_staff-card-images.scss */
+/* line 405, ../../scss/layout/_staff-card-images.scss */
 .card-image-carey-m {
   background-image: url("../img/staff/carey-m.jpg");
 }
 
-/* line 316, ../../scss/layout/_staff-card-images.scss */
+/* line 409, ../../scss/layout/_staff-card-images.scss */
 .card-image-ken-s {
   background-image: url("../img/staff/ken-s.jpg");
 }
 
-/* line 319, ../../scss/layout/_staff-card-images.scss */
+/* line 413, ../../scss/layout/_staff-card-images.scss */
 .card-image-m-gonzales {
   background-image: url("../img/staff/new/mike-gonzales.jpg");
 }
 
-/* line 322, ../../scss/layout/_staff-card-images.scss */
+/* line 417, ../../scss/layout/_staff-card-images.scss */
 .card-image-al-m {
   background-image: url("../img/staff/new/al-mendoza.jpg");
 }
 
-/* line 325, ../../scss/layout/_staff-card-images.scss */
+/* line 421, ../../scss/layout/_staff-card-images.scss */
 .card-image-oscar-h {
   background-image: url("../img/staff/oscar-h.jpg");
   background-position: center;
 }
 
-/* line 329, ../../scss/layout/_staff-card-images.scss */
+/* line 426, ../../scss/layout/_staff-card-images.scss */
 .card-image-rudy-m {
   background-image: url("../img/staff/rudy-m.jpg");
 }
 
-/* line 332, ../../scss/layout/_staff-card-images.scss */
+/* line 430, ../../scss/layout/_staff-card-images.scss */
 .card-image-kacy-n {
   background-image: url("../img/staff/new/kacy-ngo.jpg");
 }
 
-/* line 335, ../../scss/layout/_staff-card-images.scss */
+/* line 434, ../../scss/layout/_staff-card-images.scss */
 .card-image-jon-cruz {
   background-image: url("../img/staff/new/jonathan-cruz.jpg");
 }
 
-/* line 338, ../../scss/layout/_staff-card-images.scss */
+/* line 438, ../../scss/layout/_staff-card-images.scss */
 .card-image-rick-rodriguez {
   background-image: url("../img/staff/new/rick-rodriguez.jpg");
 }
 
 /* Corp */
-/* line 345, ../../scss/layout/_staff-card-images.scss */
+/* line 444, ../../scss/layout/_staff-card-images.scss */
 .card-image-reed-m {
   background-image: url("../img/staff/reed.jpg");
 }
 
-/* line 348, ../../scss/layout/_staff-card-images.scss */
+/* line 448, ../../scss/layout/_staff-card-images.scss */
 .card-image-tom-g {
   background-image: url("../img/staff/new/tom-gribbin.jpg");
 }
 
-/* line 351, ../../scss/layout/_staff-card-images.scss */
+/* line 452, ../../scss/layout/_staff-card-images.scss */
 .card-image-chris-j {
   background-image: url("../img/staff/new/chirs-jacobsen.jpg");
 }
 
-/* line 354, ../../scss/layout/_staff-card-images.scss */
+/* line 456, ../../scss/layout/_staff-card-images.scss */
 .card-image-peggy-s {
   background-image: url("../img/staff/peggy-stockwell.jpg");
 }
 
-/* line 357, ../../scss/layout/_staff-card-images.scss */
+/* line 460, ../../scss/layout/_staff-card-images.scss */
 .card-image-kurt-v {
   background-image: url("../img/staff/new/kurt-vincelette.jpg");
 }
 
-/* line 360, ../../scss/layout/_staff-card-images.scss */
+/* line 464, ../../scss/layout/_staff-card-images.scss */
 .card-image-obie-g {
   background-image: url("../img/staff/new/obie-gomez.jpg");
 }
 
-/* line 363, ../../scss/layout/_staff-card-images.scss */
+/* line 468, ../../scss/layout/_staff-card-images.scss */
 .card-image-bryan-f {
   background-image: url("../img/staff/Bryan.jpg");
 }
 
-/* line 366, ../../scss/layout/_staff-card-images.scss */
+/* line 472, ../../scss/layout/_staff-card-images.scss */
+.card-image-felisha-elmore {
+  background-image: url("../img/staff/new/felisha-elmore.jpg");
+}
+
+/* line 476, ../../scss/layout/_staff-card-images.scss */
 .card-image-wendy-b {
   background-image: url("../img/staff/Wendy.jpg");
 }
 
-/* line 369, ../../scss/layout/_staff-card-images.scss */
+/* line 480, ../../scss/layout/_staff-card-images.scss */
 .card-image-dave-d {
   background-image: url("../img/staff/new/dave-drake.jpg");
 }
 
-/* line 372, ../../scss/layout/_staff-card-images.scss */
+/* line 484, ../../scss/layout/_staff-card-images.scss */
 .card-image-tony-h {
   background-image: url("../img/staff/tony-han.jpg");
 }
 
-/* line 375, ../../scss/layout/_staff-card-images.scss */
+/* line 488, ../../scss/layout/_staff-card-images.scss */
 .card-image-nate-s {
   background-image: url("../img/staff/new/nate-scott.jpg");
 }
 
-/* line 378, ../../scss/layout/_staff-card-images.scss */
+/* line 492, ../../scss/layout/_staff-card-images.scss */
 .card-image-irvin-c {
   background-image: url("../img/staff/new/irvin-cano.jpg");
 }
 
-/* line 381, ../../scss/layout/_staff-card-images.scss */
+/* line 496, ../../scss/layout/_staff-card-images.scss */
 .card-image-izzy-rivas {
   background-image: url("../img/staff/new/izzy-rivas.jpg");
 }
 
-/* line 384, ../../scss/layout/_staff-card-images.scss */
+/* line 500, ../../scss/layout/_staff-card-images.scss */
 .card-image-josh-c {
   background-image: url("../img/staff/new/josh-coyne.jpg");
 }
 
-/* line 387, ../../scss/layout/_staff-card-images.scss */
+/* line 504, ../../scss/layout/_staff-card-images.scss */
 .card-image-trina-s {
   background-image: url("../img/staff/trina-scott.jpg");
 }
 
-/* line 390, ../../scss/layout/_staff-card-images.scss */
+/* line 508, ../../scss/layout/_staff-card-images.scss */
 .card-image-alin-v {
-  background-image: url("../img/staff/alin.jpg");
+  background-image: url("../img/staff/new/alin.jpg");
 }
 
-/* line 393, ../../scss/layout/_staff-card-images.scss */
+/* line 512, ../../scss/layout/_staff-card-images.scss */
 .card-image-mickey-p {
   background-image: url("../img/staff/mickey-p.jpg");
 }
 
-/* line 396, ../../scss/layout/_staff-card-images.scss */
+/* line 516, ../../scss/layout/_staff-card-images.scss */
 .card-image-mae-famatid {
   background-image: url("../img/staff/new/mae-famatid.jpg");
 }
 
-/* line 399, ../../scss/layout/_staff-card-images.scss */
+/* line 520, ../../scss/layout/_staff-card-images.scss */
 .card-image-carol-b {
   background-image: url("../img/staff/carol-b.jpg");
 }
 
-/* line 402, ../../scss/layout/_staff-card-images.scss */
+/* line 524, ../../scss/layout/_staff-card-images.scss */
 .card-image-laura-z {
   background-image: url("../img/staff/new/laura-zavala.jpg");
 }
 
-/* line 405, ../../scss/layout/_staff-card-images.scss */
+/* line 528, ../../scss/layout/_staff-card-images.scss */
 .card-image-linda-r {
   background-image: url("../img/staff/new/linda-ruiz.jpg");
 }
 
-/* line 408, ../../scss/layout/_staff-card-images.scss */
+/* line 532, ../../scss/layout/_staff-card-images.scss */
 .card-image-jessica-m {
   background-image: url("../img/staff/new/jessica-mendoza.jpg");
 }
 
-/* line 411, ../../scss/layout/_staff-card-images.scss */
+/* line 536, ../../scss/layout/_staff-card-images.scss */
 .card-image-monica-g {
   background-image: url("../img/staff/monica.jpg");
 }
 
-/* line 414, ../../scss/layout/_staff-card-images.scss */
+/* line 540, ../../scss/layout/_staff-card-images.scss */
 .card-image-esly-v {
   background-image: url("../img/staff/esly.jpg");
 }
 
-/* line 417, ../../scss/layout/_staff-card-images.scss */
+/* line 544, ../../scss/layout/_staff-card-images.scss */
 .card-image-lisa-l {
   background-image: url("../img/staff/new/lisa-lamaack.jpg");
 }
 
-/* line 420, ../../scss/layout/_staff-card-images.scss */
+/* line 548, ../../scss/layout/_staff-card-images.scss */
 .card-image-blair-m {
   background-image: url("../img/staff/new/blair-minor.jpg");
 }
 
-/* line 423, ../../scss/layout/_staff-card-images.scss */
+/* line 552, ../../scss/layout/_staff-card-images.scss */
 .card-image-shelley-a {
   background-image: url("../img/staff/new/shelley-anderson.jpg");
 }
 
 /* Santa Rosa */
-/* line 429, ../../scss/layout/_staff-card-images.scss */
+/* line 558, ../../scss/layout/_staff-card-images.scss */
 .card-image-lorrie-d {
   background-image: url("../img/staff/lorrie-d.jpg");
 }
 
-/* line 432, ../../scss/layout/_staff-card-images.scss */
-.card-image-brad-r {
-  background-image: url("../img/staff/brad-rugg.jpg");
+/* line 562, ../../scss/layout/_staff-card-images.scss */
+.card-image-sandy-cline {
+  background-image: url("../img/staff/new/sandy-cline.jpg");
 }
 
-/* line 435, ../../scss/layout/_staff-card-images.scss */
+/* line 566, ../../scss/layout/_staff-card-images.scss */
+.card-image-brad-r {
+  background-image: url("../img/staff/new/brad-rugg.jpg");
+}
+
+/* line 570, ../../scss/layout/_staff-card-images.scss */
 .card-image-jesse-l {
   background-image: url("../img/staff/jesse.jpg");
 }
 
-/* line 438, ../../scss/layout/_staff-card-images.scss */
+/* line 574, ../../scss/layout/_staff-card-images.scss */
 .card-image-hal-mapes {
   background-image: url("../img/staff/new/hal-mapes.jpg");
 }
@@ -4581,53 +4755,53 @@ h1 {
     float: left;
   }
 }
-/* line 50, ../../scss/layout/_profiles.scss */
+/* line 46, ../../scss/layout/_profiles.scss */
 #profiles #job-details #small {
   display: block;
   text-align: center;
 }
 @media (min-width: 75em) {
-  /* line 50, ../../scss/layout/_profiles.scss */
+  /* line 46, ../../scss/layout/_profiles.scss */
   #profiles #job-details #small {
     display: none;
   }
 }
-/* line 57, ../../scss/layout/_profiles.scss */
+/* line 53, ../../scss/layout/_profiles.scss */
 #profiles #job-details #large {
   display: none;
 }
 @media (min-width: 75em) {
-  /* line 57, ../../scss/layout/_profiles.scss */
+  /* line 53, ../../scss/layout/_profiles.scss */
   #profiles #job-details #large {
     display: block;
   }
 }
-/* line 63, ../../scss/layout/_profiles.scss */
+/* line 59, ../../scss/layout/_profiles.scss */
 #profiles #job-details ul {
   text-align: center;
 }
 @media (min-width: 75em) {
-  /* line 63, ../../scss/layout/_profiles.scss */
+  /* line 59, ../../scss/layout/_profiles.scss */
   #profiles #job-details ul {
     text-align: left;
   }
 }
-/* line 69, ../../scss/layout/_profiles.scss */
+/* line 65, ../../scss/layout/_profiles.scss */
 #profiles #job-details p {
   margin: 0;
 }
-/* line 75, ../../scss/layout/_profiles.scss */
+/* line 70, ../../scss/layout/_profiles.scss */
 #profiles #fusion-logo {
   display: -webkit-flex;
   display: flex;
   max-width: 30%;
   margin: 0 auto;
 }
-/* line 81, ../../scss/layout/_profiles.scss */
+/* line 76, ../../scss/layout/_profiles.scss */
 #profiles #fusion-branch h1, #profiles #fusion-branch h2 {
   color: white;
 }
-/* line 84, ../../scss/layout/_profiles.scss */
+/* line 79, ../../scss/layout/_profiles.scss */
 #profiles #fusion-branch h1 {
   font-size: 38px;
   font-size: 2.23529rem;
@@ -4635,49 +4809,49 @@ h1 {
   margin-bottom: 0;
 }
 @media (min-width: 360px) {
-  /* line 84, ../../scss/layout/_profiles.scss */
+  /* line 79, ../../scss/layout/_profiles.scss */
   #profiles #fusion-branch h1 {
     font-size: 79px;
     font-size: calc(11.40473vw + 38px - 0.11405 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 84, ../../scss/layout/_profiles.scss */
+  /* line 79, ../../scss/layout/_profiles.scss */
   #profiles #fusion-branch h1 {
     font-size: 120px;
     font-size: 7.05882rem;
   }
 }
-/* line 89, ../../scss/layout/_profiles.scss */
+/* line 84, ../../scss/layout/_profiles.scss */
 #profiles #fusion-branch h2 {
   font-size: 26px;
   font-size: 1.52941rem;
 }
 @media (min-width: 360px) {
-  /* line 89, ../../scss/layout/_profiles.scss */
+  /* line 84, ../../scss/layout/_profiles.scss */
   #profiles #fusion-branch h2 {
     font-size: 37px;
     font-size: calc(3.05981vw + 26px - 0.0306 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 89, ../../scss/layout/_profiles.scss */
+  /* line 84, ../../scss/layout/_profiles.scss */
   #profiles #fusion-branch h2 {
     font-size: 48px;
     font-size: 2.82353rem;
   }
 }
-/* line 96, ../../scss/layout/_profiles.scss */
+/* line 91, ../../scss/layout/_profiles.scss */
 #profiles #branch-locations h1 {
   color: #0033a0;
   text-align: center;
 }
-/* line 101, ../../scss/layout/_profiles.scss */
+/* line 96, ../../scss/layout/_profiles.scss */
 #profiles #branch-locations article {
   max-width: 1380px;
   margin: 0 auto;
 }
-/* line 106, ../../scss/layout/_profiles.scss */
+/* line 101, ../../scss/layout/_profiles.scss */
 #profiles #branch-locations .branch-map {
   display: -webkit-flex;
   display: flex;
@@ -4685,26 +4859,26 @@ h1 {
   flex-direction: column-reverse;
 }
 @media (min-width: 47em) {
-  /* line 106, ../../scss/layout/_profiles.scss */
+  /* line 101, ../../scss/layout/_profiles.scss */
   #profiles #branch-locations .branch-map {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
-/* line 113, ../../scss/layout/_profiles.scss */
+/* line 108, ../../scss/layout/_profiles.scss */
 #profiles #branch-locations .branches-info {
   max-width: 40%;
   margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 47em) {
-  /* line 113, ../../scss/layout/_profiles.scss */
+  /* line 108, ../../scss/layout/_profiles.scss */
   #profiles #branch-locations .branches-info {
     text-align: left;
     margin: 0 10%;
   }
 }
-/* line 124, ../../scss/layout/_profiles.scss */
+/* line 119, ../../scss/layout/_profiles.scss */
 #profiles .location {
   display: -webkit-flex;
   display: flex;
@@ -4713,63 +4887,63 @@ h1 {
   color: #0033a0;
 }
 @media (min-width: 47em) {
-  /* line 124, ../../scss/layout/_profiles.scss */
+  /* line 119, ../../scss/layout/_profiles.scss */
   #profiles .location {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
-/* line 131, ../../scss/layout/_profiles.scss */
+/* line 126, ../../scss/layout/_profiles.scss */
 #profiles .location .map {
   padding-right: 0;
 }
 @media (min-width: 47em) {
-  /* line 131, ../../scss/layout/_profiles.scss */
+  /* line 126, ../../scss/layout/_profiles.scss */
   #profiles .location .map {
     padding-right: 10%;
   }
 }
-/* line 137, ../../scss/layout/_profiles.scss */
+/* line 132, ../../scss/layout/_profiles.scss */
 #profiles .location h1 {
   font-size: 40px;
   font-size: 2.35294rem;
   text-align: center;
 }
 @media (min-width: 360px) {
-  /* line 137, ../../scss/layout/_profiles.scss */
+  /* line 132, ../../scss/layout/_profiles.scss */
   #profiles .location h1 {
     font-size: 60px;
     font-size: calc(5.56328vw + 40px - 0.05563 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 137, ../../scss/layout/_profiles.scss */
+  /* line 132, ../../scss/layout/_profiles.scss */
   #profiles .location h1 {
     font-size: 80px;
     font-size: 4.70588rem;
   }
 }
-/* line 141, ../../scss/layout/_profiles.scss */
+/* line 136, ../../scss/layout/_profiles.scss */
 #profiles .location h2 {
   font-size: 40px;
   font-size: 2.35294rem;
   margin-bottom: 0;
 }
 @media (min-width: 360px) {
-  /* line 141, ../../scss/layout/_profiles.scss */
+  /* line 136, ../../scss/layout/_profiles.scss */
   #profiles .location h2 {
     font-size: 44px;
     font-size: calc(1.11266vw + 40px - 0.01113 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 141, ../../scss/layout/_profiles.scss */
+  /* line 136, ../../scss/layout/_profiles.scss */
   #profiles .location h2 {
     font-size: 48px;
     font-size: 2.82353rem;
   }
 }
-/* line 145, ../../scss/layout/_profiles.scss */
+/* line 140, ../../scss/layout/_profiles.scss */
 #profiles .location address {
   font-size: 35px;
   font-size: 2.05882rem;
@@ -4777,26 +4951,26 @@ h1 {
   text-align: center;
 }
 @media (min-width: 360px) {
-  /* line 145, ../../scss/layout/_profiles.scss */
+  /* line 140, ../../scss/layout/_profiles.scss */
   #profiles .location address {
     font-size: 38px;
     font-size: calc(0.83449vw + 35px - 0.00834 * 360px);
   }
 }
 @media (min-width: 1080px) {
-  /* line 145, ../../scss/layout/_profiles.scss */
+  /* line 140, ../../scss/layout/_profiles.scss */
   #profiles .location address {
     font-size: 41px;
     font-size: 2.41176rem;
   }
 }
 @media (min-width: 47em) {
-  /* line 145, ../../scss/layout/_profiles.scss */
+  /* line 140, ../../scss/layout/_profiles.scss */
   #profiles .location address {
     text-align: left;
   }
 }
-/* line 153, ../../scss/layout/_profiles.scss */
+/* line 148, ../../scss/layout/_profiles.scss */
 #profiles .location .course-logos {
   display: -webkit-flex;
   display: flex;
@@ -5184,23 +5358,20 @@ body.open .lightbox {
     bottom: 0;
   }
 }
-/* line 2, ../../scss/layout/_vendors.scss */
+/* line 1, ../../scss/layout/_vendors.scss */
 #vendor-list {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 5, ../../scss/layout/_vendors.scss */
-#vendor-list ul {
-  -webkit-flex-direction: row;
-  flex-direction: row;
-}
 @media (min-width: 47em) {
-  /* line 5, ../../scss/layout/_vendors.scss */
-  #vendor-list ul {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+  /* line 1, ../../scss/layout/_vendors.scss */
+  #vendor-list {
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -5234,4 +5405,97 @@ body.open .lightbox {
 /* line 20, ../../scss/layout/_career.scss */
 #careers-page h1 {
   text-align: left;
+}
+
+/* line 1, ../../scss/layout/_admin.scss */
+.admin-nav {
+  background: #233141;
+  width: 250px;
+  position: fixed;
+  z-index: 9;
+  height: 100vh;
+}
+/* line 8, ../../scss/layout/_admin.scss */
+.admin-nav .admin-links {
+  margin: 5% 5% 5% 0;
+  padding: .5em .75em;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 14, ../../scss/layout/_admin.scss */
+.admin-nav .admin-links:hover {
+  background-color: #001b53;
+}
+/* line 18, ../../scss/layout/_admin.scss */
+.admin-nav .admin-links a {
+  color: white;
+}
+
+/* line 6, ../../scss/layout/_job-profiles.scss */
+#job-profiles h1 {
+  text-align: left;
+  line-height: 1.25;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+/* line 13, ../../scss/layout/_job-profiles.scss */
+#job-profiles h2 {
+  font-size: 1.25rem;
+}
+/* line 17, ../../scss/layout/_job-profiles.scss */
+#job-profiles .profile-intro {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5%;
+  margin-bottom: 2%;
+}
+/* line 23, ../../scss/layout/_job-profiles.scss */
+#job-profiles .profile-intro img {
+  float: left;
+  width: 100%;
+  margin-right: 5%;
+}
+@media (min-width: 47em) {
+  /* line 23, ../../scss/layout/_job-profiles.scss */
+  #job-profiles .profile-intro img {
+    width: 25%;
+  }
+}
+
+/* line 2, ../../scss/layout/_emergency.scss */
+#emergency div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 47em) {
+  /* line 2, ../../scss/layout/_emergency.scss */
+  #emergency div {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+/* line 13, ../../scss/layout/_emergency.scss */
+#emergency ul {
+  float: left;
+}
+/* line 17, ../../scss/layout/_emergency.scss */
+#emergency img {
+  padding: 10% 5% 0 5%;
+  width: 70%;
+}
+@media (min-width: 47em) {
+  /* line 17, ../../scss/layout/_emergency.scss */
+  #emergency img {
+    width: 15%;
+    padding: 0;
+  }
 }
