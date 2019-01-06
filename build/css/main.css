@@ -2280,10 +2280,11 @@ h1.card-title {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 300;
+  margin-top: 0;
   letter-spacing: 2px;
 }
 
-/* line 106, ../../scss/modules/_card-grid.scss */
+/* line 107, ../../scss/modules/_card-grid.scss */
 .card-text {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
