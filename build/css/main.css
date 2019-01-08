@@ -4627,42 +4627,47 @@ h1 {
 }
 
 /* line 544, ../../scss/layout/_staff-card-images.scss */
+.card-image-verenis-figueroa {
+  background-image: url("../img/staff/new/verenis-figueroa.jpg");
+}
+
+/* line 548, ../../scss/layout/_staff-card-images.scss */
 .card-image-lisa-l {
   background-image: url("../img/staff/new/lisa-lamaack.jpg");
 }
 
-/* line 548, ../../scss/layout/_staff-card-images.scss */
+/* line 552, ../../scss/layout/_staff-card-images.scss */
 .card-image-blair-m {
   background-image: url("../img/staff/new/blair-minor.jpg");
 }
 
-/* line 552, ../../scss/layout/_staff-card-images.scss */
+/* line 556, ../../scss/layout/_staff-card-images.scss */
 .card-image-shelley-a {
   background-image: url("../img/staff/new/shelley-anderson.jpg");
 }
 
 /* Santa Rosa */
-/* line 558, ../../scss/layout/_staff-card-images.scss */
+/* line 562, ../../scss/layout/_staff-card-images.scss */
 .card-image-lorrie-d {
   background-image: url("../img/staff/lorrie-d.jpg");
 }
 
-/* line 562, ../../scss/layout/_staff-card-images.scss */
+/* line 566, ../../scss/layout/_staff-card-images.scss */
 .card-image-sandy-cline {
   background-image: url("../img/staff/new/sandy-cline.jpg");
 }
 
-/* line 566, ../../scss/layout/_staff-card-images.scss */
+/* line 570, ../../scss/layout/_staff-card-images.scss */
 .card-image-brad-r {
   background-image: url("../img/staff/new/brad-rugg.jpg");
 }
 
-/* line 570, ../../scss/layout/_staff-card-images.scss */
+/* line 574, ../../scss/layout/_staff-card-images.scss */
 .card-image-jesse-l {
   background-image: url("../img/staff/jesse.jpg");
 }
 
-/* line 574, ../../scss/layout/_staff-card-images.scss */
+/* line 578, ../../scss/layout/_staff-card-images.scss */
 .card-image-hal-mapes {
   background-image: url("../img/staff/new/hal-mapes.jpg");
 }
