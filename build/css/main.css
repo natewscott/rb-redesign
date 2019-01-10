@@ -2026,12 +2026,12 @@ fieldset .legend {
   max-width: 1280px;
 }
 
-/* line 5, ../../scss/modules/_accordion.scss */
+/* line 6, ../../scss/modules/_accordion.scss */
 .accordion input {
   display: none;
 }
 
-/* line 8, ../../scss/modules/_accordion.scss */
+/* line 10, ../../scss/modules/_accordion.scss */
 .box {
   position: relative;
   background: white;
@@ -2039,7 +2039,7 @@ fieldset .legend {
   transition: all .15s ease-in-out;
 }
 
-/* line 14, ../../scss/modules/_accordion.scss */
+/* line 17, ../../scss/modules/_accordion.scss */
 .box::before {
   content: '';
   position: absolute;
@@ -2052,7 +2052,7 @@ fieldset .legend {
   box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 
-/* line 25, ../../scss/modules/_accordion.scss */
+/* line 29, ../../scss/modules/_accordion.scss */
 header.box {
   background: #00BCD4;
   z-index: 100;
@@ -2060,7 +2060,7 @@ header.box {
   box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, 0.12), 0 2px 4px -4px rgba(0, 0, 0, 0.24);
 }
 
-/* line 31, ../../scss/modules/_accordion.scss */
+/* line 36, ../../scss/modules/_accordion.scss */
 header .box-title {
   margin: 0;
   font-weight: normal;
@@ -2069,7 +2069,7 @@ header .box-title {
   cursor: initial;
 }
 
-/* line 38, ../../scss/modules/_accordion.scss */
+/* line 44, ../../scss/modules/_accordion.scss */
 .box-title {
   width: calc(100% - 40px);
   height: 64px;
@@ -2085,14 +2085,14 @@ header .box-title {
   user-select: none;
 }
 
-/* line 47, ../../scss/modules/_accordion.scss */
+/* line 59, ../../scss/modules/_accordion.scss */
 .box-content {
   padding: 30px 20px;
   color: rgba(0, 0, 0, 0.54);
   display: none;
 }
 
-/* line 53, ../../scss/modules/_accordion.scss */
+/* line 66, ../../scss/modules/_accordion.scss */
 .box-close {
   position: absolute;
   height: 64px;
@@ -2103,14 +2103,14 @@ header .box-title {
   display: none;
 }
 
-/* line 62, ../../scss/modules/_accordion.scss */
+/* line 76, ../../scss/modules/_accordion.scss */
 input:checked + .box {
   height: auto;
   margin: 16px 0;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
 }
 
-/* line 70, ../../scss/modules/_accordion.scss */
+/* line 86, ../../scss/modules/_accordion.scss */
 input:checked + .box .box-content,
 input:checked + .box .box-close {
   display: -webkit-flex;
@@ -2119,7 +2119,7 @@ input:checked + .box .box-close {
   flex-direction: column;
 }
 @media (min-width: 47em) {
-  /* line 70, ../../scss/modules/_accordion.scss */
+  /* line 86, ../../scss/modules/_accordion.scss */
   input:checked + .box .box-content,
   input:checked + .box .box-close {
     -webkit-flex-direction: row;
@@ -2129,18 +2129,18 @@ input:checked + .box .box-close {
   }
 }
 
-/* line 82, ../../scss/modules/_accordion.scss */
+/* line 102, ../../scss/modules/_accordion.scss */
 iframe {
   max-width: calc(100% - 10px);
 }
 
-/* line 86, ../../scss/modules/_accordion.scss */
+/* line 108, ../../scss/modules/_accordion.scss */
 .arrows section .box-title {
   padding-left: 44px;
   width: calc(100% - 64px);
 }
 
-/* line 90, ../../scss/modules/_accordion.scss */
+/* line 113, ../../scss/modules/_accordion.scss */
 .arrows section .box-title:before {
   position: absolute;
   display: block;
@@ -2152,7 +2152,7 @@ iframe {
   color: rgba(0, 0, 0, 0.54);
 }
 
-/* line 100, ../../scss/modules/_accordion.scss */
+/* line 124, ../../scss/modules/_accordion.scss */
 input:checked + section.box .box-title:before {
   transform: rotate(90deg);
 }
@@ -4547,127 +4547,132 @@ h1 {
 }
 
 /* line 480, ../../scss/layout/_staff-card-images.scss */
+.card-image-crystal-garcia {
+  background-image: url("../img/staff/new/crystal-garcia.jpg");
+}
+
+/* line 484, ../../scss/layout/_staff-card-images.scss */
 .card-image-dave-d {
   background-image: url("../img/staff/new/dave-drake.jpg");
 }
 
-/* line 484, ../../scss/layout/_staff-card-images.scss */
+/* line 488, ../../scss/layout/_staff-card-images.scss */
 .card-image-tony-h {
   background-image: url("../img/staff/tony-han.jpg");
 }
 
-/* line 488, ../../scss/layout/_staff-card-images.scss */
+/* line 492, ../../scss/layout/_staff-card-images.scss */
 .card-image-nate-s {
   background-image: url("../img/staff/new/nate-scott.jpg");
 }
 
-/* line 492, ../../scss/layout/_staff-card-images.scss */
+/* line 496, ../../scss/layout/_staff-card-images.scss */
 .card-image-irvin-c {
   background-image: url("../img/staff/new/irvin-cano.jpg");
 }
 
-/* line 496, ../../scss/layout/_staff-card-images.scss */
+/* line 500, ../../scss/layout/_staff-card-images.scss */
 .card-image-izzy-rivas {
   background-image: url("../img/staff/new/izzy-rivas.jpg");
 }
 
-/* line 500, ../../scss/layout/_staff-card-images.scss */
+/* line 504, ../../scss/layout/_staff-card-images.scss */
 .card-image-josh-c {
   background-image: url("../img/staff/new/josh-coyne.jpg");
 }
 
-/* line 504, ../../scss/layout/_staff-card-images.scss */
+/* line 508, ../../scss/layout/_staff-card-images.scss */
 .card-image-trina-s {
   background-image: url("../img/staff/trina-scott.jpg");
 }
 
-/* line 508, ../../scss/layout/_staff-card-images.scss */
+/* line 512, ../../scss/layout/_staff-card-images.scss */
 .card-image-alin-v {
   background-image: url("../img/staff/new/alin.jpg");
 }
 
-/* line 512, ../../scss/layout/_staff-card-images.scss */
+/* line 516, ../../scss/layout/_staff-card-images.scss */
 .card-image-mickey-p {
   background-image: url("../img/staff/mickey-p.jpg");
 }
 
-/* line 516, ../../scss/layout/_staff-card-images.scss */
+/* line 520, ../../scss/layout/_staff-card-images.scss */
 .card-image-mae-famatid {
   background-image: url("../img/staff/new/mae-famatid.jpg");
 }
 
-/* line 520, ../../scss/layout/_staff-card-images.scss */
+/* line 524, ../../scss/layout/_staff-card-images.scss */
 .card-image-carol-b {
   background-image: url("../img/staff/carol-b.jpg");
 }
 
-/* line 524, ../../scss/layout/_staff-card-images.scss */
+/* line 528, ../../scss/layout/_staff-card-images.scss */
 .card-image-laura-z {
   background-image: url("../img/staff/new/laura-zavala.jpg");
 }
 
-/* line 528, ../../scss/layout/_staff-card-images.scss */
+/* line 532, ../../scss/layout/_staff-card-images.scss */
 .card-image-linda-r {
   background-image: url("../img/staff/new/linda-ruiz.jpg");
 }
 
-/* line 532, ../../scss/layout/_staff-card-images.scss */
+/* line 536, ../../scss/layout/_staff-card-images.scss */
 .card-image-jessica-m {
   background-image: url("../img/staff/new/jessica-mendoza.jpg");
 }
 
-/* line 536, ../../scss/layout/_staff-card-images.scss */
+/* line 540, ../../scss/layout/_staff-card-images.scss */
 .card-image-monica-g {
   background-image: url("../img/staff/monica.jpg");
 }
 
-/* line 540, ../../scss/layout/_staff-card-images.scss */
+/* line 544, ../../scss/layout/_staff-card-images.scss */
 .card-image-esly-v {
   background-image: url("../img/staff/esly.jpg");
 }
 
-/* line 544, ../../scss/layout/_staff-card-images.scss */
+/* line 548, ../../scss/layout/_staff-card-images.scss */
 .card-image-verenis-figueroa {
   background-image: url("../img/staff/new/verenis-figueroa.jpg");
 }
 
-/* line 548, ../../scss/layout/_staff-card-images.scss */
+/* line 552, ../../scss/layout/_staff-card-images.scss */
 .card-image-lisa-l {
   background-image: url("../img/staff/new/lisa-lamaack.jpg");
 }
 
-/* line 552, ../../scss/layout/_staff-card-images.scss */
+/* line 556, ../../scss/layout/_staff-card-images.scss */
 .card-image-blair-m {
   background-image: url("../img/staff/new/blair-minor.jpg");
 }
 
-/* line 556, ../../scss/layout/_staff-card-images.scss */
+/* line 560, ../../scss/layout/_staff-card-images.scss */
 .card-image-shelley-a {
   background-image: url("../img/staff/new/shelley-anderson.jpg");
 }
 
 /* Santa Rosa */
-/* line 562, ../../scss/layout/_staff-card-images.scss */
+/* line 566, ../../scss/layout/_staff-card-images.scss */
 .card-image-lorrie-d {
   background-image: url("../img/staff/lorrie-d.jpg");
 }
 
-/* line 566, ../../scss/layout/_staff-card-images.scss */
+/* line 570, ../../scss/layout/_staff-card-images.scss */
 .card-image-sandy-cline {
   background-image: url("../img/staff/new/sandy-cline.jpg");
 }
 
-/* line 570, ../../scss/layout/_staff-card-images.scss */
+/* line 574, ../../scss/layout/_staff-card-images.scss */
 .card-image-brad-r {
   background-image: url("../img/staff/new/brad-rugg.jpg");
 }
 
-/* line 574, ../../scss/layout/_staff-card-images.scss */
+/* line 578, ../../scss/layout/_staff-card-images.scss */
 .card-image-jesse-l {
   background-image: url("../img/staff/jesse.jpg");
 }
 
-/* line 578, ../../scss/layout/_staff-card-images.scss */
+/* line 582, ../../scss/layout/_staff-card-images.scss */
 .card-image-hal-mapes {
   background-image: url("../img/staff/new/hal-mapes.jpg");
 }
